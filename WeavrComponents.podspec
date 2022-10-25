@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '0.1'
+  spec.version      = '1.0.0'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
@@ -24,7 +24,6 @@ Pod::Spec.new do |spec|
     sp.vendored_frameworks =  'WeavrComponents.xcframework' 
   end
 
-  spec.dependency 'IdensicMobileSDK, '~> 1.19.5'
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
 
