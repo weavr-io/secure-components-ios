@@ -1,4 +1,0 @@
-framework module WeavrComponents {
-  header "WeavrComponents-Swift.h"
-  requires objc
-}
