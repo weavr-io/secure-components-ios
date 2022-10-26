@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WeavrComponents
 import Foundation
+@_exported import IdensicMobileSDK
 import Security
 import Swift
 import UIKit
@@ -74,6 +75,32 @@ extension WeavrComponents.SecureTextField : UIKit.UITextFieldDelegate {
 extension WeavrComponents.SecureTextField {
   @_Concurrency.MainActor(unsafe) open func addDoneButtonOnKeyboard()
 }
+@frozen public enum WeavrKYCHandlers {
+  case tokenExpirationHandler((Swift.String) -> Swift.Void)
+  case verificationHandler(Swift.Bool)
+  case dismissHandler(IdensicMobileSDK.SNSMobileSDK, UIKit.UIViewController)
+}
+@frozen public enum WeavrExceptionHandlers {
+  case weavrApiExceptionHandler(Swift.String)
+}
+@frozen public enum WeavrKYCListeners {
+  case onStatusDidChange(IdensicMobileSDK.SNSMobileSDK, IdensicMobileSDK.SNSMobileSDK.Status)
+  case onEvent(IdensicMobileSDK.SNSMobileSDK, IdensicMobileSDK.SNSEvent)
+  case onDidDismiss(IdensicMobileSDK.SNSMobileSDK)
+}
+@frozen public enum WeavrKYCStatus {
+  case ready
+  case failed(description: Swift.String, failReason: IdensicMobileSDK.SNSFailReason, verboseStatus: Swift.String)
+  case initial
+  case incomplete
+  case pending
+  case temporarilyDeclined
+  case finallyRejected
+  case approved
+  case actionCompleted
+}
+@frozen public enum KYCFailReason {
+}
 public enum ENV {
   case PRODUCTION
   case SANDBOX
@@ -93,6 +120,7 @@ public enum ENV {
   public static func createGroup(components: [WeavrComponents.SecureTextField]) -> WeavrComponents.UXComponetGroup
   public static func isAssociated() -> Swift.Bool
   public static func resetAssociation() -> Swift.Bool
+  public static let kyc: WeavrComponents.KYCWrapper
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SecureCardNumberLabel : WeavrComponents.SecureLabel {
@@ -201,6 +229,10 @@ public enum KeychainSwiftAccessOptions {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class KYCWrapper {
+  public func startKyc(vc: UIKit.UIViewController, token: Swift.String, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SecureCardPinField : WeavrComponents.SecureTextField {
   @_Concurrency.MainActor(unsafe) open func setup()
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -216,6 +248,9 @@ public enum KeychainSwiftAccessOptions {
 }
 extension WeavrComponents.SecureFieldType : Swift.Equatable {}
 extension WeavrComponents.SecureFieldType : Swift.Hashable {}
+extension WeavrComponents.WeavrExceptionHandlers : Swift.Sendable {}
+extension WeavrComponents.WeavrKYCStatus : Swift.Sendable {}
+extension WeavrComponents.KYCFailReason : Swift.Sendable {}
 extension WeavrComponents.ENV : Swift.Equatable {}
 extension WeavrComponents.ENV : Swift.Hashable {}
 extension WeavrComponents.KeychainSwiftAccessOptions : Swift.Equatable {}
