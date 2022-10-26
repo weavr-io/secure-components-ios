@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '1.0.0'
+  spec.version      = '0.16.0'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
   spec.summary      = 'Secure Components'
-  spec.source       = { :git => 'https://github.com/weavr-io/secure-components-ios.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'git@github.com:weavr-io/secure-components-ios.git', :tag => spec.version.to_s }
   spec.requires_arc = true
   spec.ios.deployment_target    = '11.0'
   spec.xcconfig = {
