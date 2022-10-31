@@ -230,7 +230,7 @@ public enum KeychainSwiftAccessOptions {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KYCWrapper {
-  public func startKyc(vc: UIKit.UIViewController, token: Swift.String, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
+  public func startKyc(vc: UIKit.UIViewController, apiKey: Swift.String, token: Swift.String, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SecureCardPinField : WeavrComponents.SecureTextField {
