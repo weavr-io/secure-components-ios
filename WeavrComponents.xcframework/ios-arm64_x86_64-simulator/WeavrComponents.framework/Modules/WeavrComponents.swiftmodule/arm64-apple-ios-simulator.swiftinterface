@@ -58,6 +58,8 @@ public enum SecureFieldType {
     @_Concurrency.MainActor(unsafe) @objc get
     @_Concurrency.MainActor(unsafe) @objc set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func textRange(from _: UIKit.UITextPosition, to _: UIKit.UITextPosition) -> UIKit.UITextRange?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func text(in _: UIKit.UITextRange) -> Swift.String?
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var keyboardType: UIKit.UIKeyboardType {
     @_Concurrency.MainActor(unsafe) @objc get
     @_Concurrency.MainActor(unsafe) @objc set
@@ -177,7 +179,7 @@ open class KeychainSwift {
   open func clear() -> Swift.Bool
   @objc deinit
 }
-public struct KeychainSwiftConstants {
+public enum KeychainSwiftConstants {
   public static var accessGroup: Swift.String {
     get
   }
@@ -230,7 +232,7 @@ public enum KeychainSwiftAccessOptions {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class KYCWrapper {
-  public func startKyc(vc: UIKit.UIViewController, apiKey: Swift.String, token: Swift.String, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
+  public func startKyc(vc: UIKit.UIViewController, reference: Swift.String, token: Swift.String? = nil, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, locale: Swift.String = "", kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SecureCardPinField : WeavrComponents.SecureTextField {

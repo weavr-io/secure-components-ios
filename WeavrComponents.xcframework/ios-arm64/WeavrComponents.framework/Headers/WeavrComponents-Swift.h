@@ -238,6 +238,8 @@ SWIFT_CLASS("_TtC15WeavrComponents21SecureCardNumberLabel")
 @end
 
 @class NSAttributedString;
+@class UITextPosition;
+@class UITextRange;
 
 SWIFT_CLASS("_TtC15WeavrComponents15SecureTextField")
 @interface SecureTextField : UITextField
@@ -246,6 +248,8 @@ SWIFT_CLASS("_TtC15WeavrComponents15SecureTextField")
 @property (nonatomic, copy) NSString * _Nullable text;
 @property (nonatomic, strong) NSAttributedString * _Nullable attributedText;
 @property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
+- (UITextRange * _Nullable)textRangeFromPosition:(UITextPosition * _Nonnull)_ toPosition:(UITextPosition * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)textInRange:(UITextRange * _Nonnull)_ SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic) UIKeyboardType keyboardType;
 @end
 
