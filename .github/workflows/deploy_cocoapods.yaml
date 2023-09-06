@@ -1,0 +1,26 @@
+name: Deploy Cocoapods
+
+on:
+  push:
+    tags:        
+      - '**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
+jobs:
+  deploy:
+    runs-on: macos-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Cocoapods
+        run: gem install cocoapods
+      - name: Deploy to Cocoapods
+        run: |
+          set -eo pipefail
+          pod trunk push --allow-warnings
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_SECRET }}
