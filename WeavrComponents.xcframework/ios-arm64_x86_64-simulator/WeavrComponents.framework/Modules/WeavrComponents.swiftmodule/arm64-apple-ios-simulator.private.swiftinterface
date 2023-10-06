@@ -16,7 +16,6 @@ public protocol OTPDelegate : AnyObject {
   func didChangeValidity(isValid: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SecurePasscodeFieldStack : UIKit.UIStackView {
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var numberOfFields: Swift.Int
   @_Concurrency.MainActor(unsafe) weak open var delegate: WeavrComponents.OTPDelegate?
   @_Concurrency.MainActor(unsafe) open var placeholder: Swift.Character?
   @_Concurrency.MainActor(unsafe) open var font: UIKit.UIFont?
@@ -321,10 +320,6 @@ public enum KeychainSwiftAccessOptions {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SecurePasscodeField : WeavrComponents.SecureTextField {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func deleteBackward()
-  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var passcodeMaxLength: Swift.Int {
-    @objc get
-    @objc set
-  }
   @_Concurrency.MainActor(unsafe) open func setup()
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit

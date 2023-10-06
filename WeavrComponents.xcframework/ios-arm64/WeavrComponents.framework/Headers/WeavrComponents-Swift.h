@@ -312,14 +312,12 @@ SWIFT_CLASS("_TtC15WeavrComponents18SecureCardPinLabel")
 SWIFT_CLASS("_TtC15WeavrComponents19SecurePasscodeField")
 @interface SecurePasscodeField : SecureTextField
 - (void)deleteBackward;
-@property (nonatomic) IBInspectable NSInteger passcodeMaxLength;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC15WeavrComponents24SecurePasscodeFieldStack")
 @interface SecurePasscodeFieldStack : UIStackView
-@property (nonatomic) IBInspectable NSInteger numberOfFields;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

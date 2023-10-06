@@ -67,105 +67,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "numberOfFields",
-            "printedName": "numberOfFields",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@WeavrComponents@objc(cs)SecurePasscodeFieldStack(py)numberOfFields",
-            "mangledName": "$s15WeavrComponents24SecurePasscodeFieldStackC14numberOfFieldsSivp",
-            "moduleName": "WeavrComponents",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@WeavrComponents@objc(cs)SecurePasscodeFieldStack(im)numberOfFields",
-                "mangledName": "$s15WeavrComponents24SecurePasscodeFieldStackC14numberOfFieldsSivg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@WeavrComponents@objc(cs)SecurePasscodeFieldStack(im)setNumberOfFields:",
-                "mangledName": "$s15WeavrComponents24SecurePasscodeFieldStackC14numberOfFieldsSivs",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents24SecurePasscodeFieldStackC14numberOfFieldsSivM",
-                "mangledName": "$s15WeavrComponents24SecurePasscodeFieldStackC14numberOfFieldsSivM",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -10024,105 +9925,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
-            "name": "passcodeMaxLength",
-            "printedName": "passcodeMaxLength",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@WeavrComponents@objc(cs)SecurePasscodeField(py)passcodeMaxLength",
-            "mangledName": "$s15WeavrComponents19SecurePasscodeFieldC17passcodeMaxLengthSivp",
-            "moduleName": "WeavrComponents",
-            "isOpen": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "AccessControl",
-              "IBInspectable",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@WeavrComponents@objc(cs)SecurePasscodeField(im)passcodeMaxLength",
-                "mangledName": "$s15WeavrComponents19SecurePasscodeFieldC17passcodeMaxLengthSivg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@WeavrComponents@objc(cs)SecurePasscodeField(im)setPasscodeMaxLength:",
-                "mangledName": "$s15WeavrComponents19SecurePasscodeFieldC17passcodeMaxLengthSivs",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "isOpen": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents19SecurePasscodeFieldC17passcodeMaxLengthSivM",
-                "mangledName": "$s15WeavrComponents19SecurePasscodeFieldC17passcodeMaxLengthSivM",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "isOpen": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "setup",
             "printedName": "setup()",
@@ -11296,63 +11098,63 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "IntegerLiteral",
-      "offset": 382,
+      "offset": 362,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "Array",
-      "offset": 444,
+      "offset": 424,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 516,
+      "offset": 496,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 665,
+      "offset": 645,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "FloatLiteral",
-      "offset": 759,
+      "offset": 739,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "FloatLiteral",
-      "offset": 833,
+      "offset": 813,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "FloatLiteral",
-      "offset": 907,
+      "offset": 887,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "Array",
-      "offset": 950,
+      "offset": 930,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeFieldStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 4562,
+      "offset": 4542,
       "length": 5,
       "value": "false"
     },
@@ -12073,7 +11875,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecureTextField.swift",
       "kind": "StringLiteral",
-      "offset": 4174,
+      "offset": 4251,
       "length": 2,
       "value": "\"\""
     },
@@ -12171,7 +11973,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecurePasscodeField.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
+      "offset": 406,
       "length": 1,
       "value": "4"
     },
