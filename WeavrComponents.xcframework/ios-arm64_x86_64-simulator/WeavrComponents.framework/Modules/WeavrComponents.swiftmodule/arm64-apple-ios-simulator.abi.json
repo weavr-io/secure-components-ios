@@ -1379,18 +1379,58 @@
           {
             "kind": "Function",
             "name": "checkDeviceIsEnrolled",
-            "printedName": "checkDeviceIsEnrolled()",
+            "printedName": "checkDeviceIsEnrolled(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WeavrResult",
+                        "printedName": "WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ErrorResponse",
+                            "printedName": "WeavrComponents.ErrorResponse",
+                            "usr": "s:15WeavrComponents13ErrorResponseC"
+                          }
+                        ],
+                        "usr": "s:15WeavrComponents0A6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15WeavrComponents11OkayWrapperC21checkDeviceIsEnrolledSbyF",
-            "mangledName": "$s15WeavrComponents11OkayWrapperC21checkDeviceIsEnrolledSbyF",
+            "usr": "s:15WeavrComponents11OkayWrapperC21checkDeviceIsEnrolled10completionyyAA0A6ResultOySbAA13ErrorResponseCGcSg_tF",
+            "mangledName": "$s15WeavrComponents11OkayWrapperC21checkDeviceIsEnrolled10completionyyAA0A6ResultOySbAA13ErrorResponseCGcSg_tF",
             "moduleName": "WeavrComponents",
             "declAttributes": [
               "AccessControl"
@@ -8135,6 +8175,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Security",
         "printedName": "Security",
         "declKind": "Import",
@@ -10316,6 +10366,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ConfigElements",
         "printedName": "ConfigElements",
@@ -11273,525 +11333,525 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14302,
+      "offset": 14883,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14332,
+      "offset": 14913,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14357,
+      "offset": 14938,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14382,
+      "offset": 14963,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14414,
+      "offset": 14995,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14447,
+      "offset": 15028,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14479,
+      "offset": 15060,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14505,
+      "offset": 15086,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14534,
+      "offset": 15115,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14557,
+      "offset": 15138,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14577,
+      "offset": 15158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14605,
+      "offset": 15186,
       "length": 3,
       "value": "173"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14645,
+      "offset": 15226,
       "length": 3,
       "value": "174"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14691,
+      "offset": 15272,
       "length": 3,
       "value": "175"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14723,
+      "offset": 15304,
       "length": 3,
       "value": "176"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14302,
+      "offset": 14883,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14332,
+      "offset": 14913,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14357,
+      "offset": 14938,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14382,
+      "offset": 14963,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14414,
+      "offset": 14995,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14447,
+      "offset": 15028,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14479,
+      "offset": 15060,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14505,
+      "offset": 15086,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14534,
+      "offset": 15115,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14557,
+      "offset": 15138,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14577,
+      "offset": 15158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14605,
+      "offset": 15186,
       "length": 3,
       "value": "173"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14645,
+      "offset": 15226,
       "length": 3,
       "value": "174"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14691,
+      "offset": 15272,
       "length": 3,
       "value": "175"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14723,
+      "offset": 15304,
       "length": 3,
       "value": "176"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14302,
+      "offset": 14883,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14332,
+      "offset": 14913,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14357,
+      "offset": 14938,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14382,
+      "offset": 14963,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14414,
+      "offset": 14995,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14447,
+      "offset": 15028,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14479,
+      "offset": 15060,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14505,
+      "offset": 15086,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14534,
+      "offset": 15115,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14557,
+      "offset": 15138,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14577,
+      "offset": 15158,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14605,
+      "offset": 15186,
       "length": 3,
       "value": "173"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14645,
+      "offset": 15226,
       "length": 3,
       "value": "174"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14691,
+      "offset": 15272,
       "length": 3,
       "value": "175"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 14723,
+      "offset": 15304,
       "length": 3,
       "value": "176"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15623,
+      "offset": 16204,
       "length": 11,
       "value": "\"UNDEFINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15649,
+      "offset": 16230,
       "length": 5,
       "value": "\"NEW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15673,
+      "offset": 16254,
       "length": 9,
       "value": "\"PENDING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15703,
+      "offset": 16284,
       "length": 11,
       "value": "\"COMPLETED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15733,
+      "offset": 16314,
       "length": 9,
       "value": "\"EXPIRED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15762,
+      "offset": 16343,
       "length": 10,
       "value": "\"DECLINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15799,
+      "offset": 16380,
       "length": 17,
       "value": "\"NETWORK_FAILURE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15623,
+      "offset": 16204,
       "length": 11,
       "value": "\"UNDEFINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15649,
+      "offset": 16230,
       "length": 5,
       "value": "\"NEW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15673,
+      "offset": 16254,
       "length": 9,
       "value": "\"PENDING\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15703,
+      "offset": 16284,
       "length": 11,
       "value": "\"COMPLETED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15733,
+      "offset": 16314,
       "length": 9,
       "value": "\"EXPIRED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15762,
+      "offset": 16343,
       "length": 10,
       "value": "\"DECLINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15799,
+      "offset": 16380,
       "length": 17,
       "value": "\"NETWORK_FAILURE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15901,
+      "offset": 16482,
       "length": 18,
       "value": "\"UNDEFINED_STATUS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15934,
+      "offset": 16515,
       "length": 5,
       "value": "\"NEW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15957,
+      "offset": 16538,
       "length": 8,
       "value": "\"ISSUED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15984,
+      "offset": 16565,
       "length": 9,
       "value": "\"EXPIRED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16013,
+      "offset": 16594,
       "length": 10,
       "value": "\"VERIFIED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16043,
+      "offset": 16624,
       "length": 10,
       "value": "\"DECLINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16084,
+      "offset": 16665,
       "length": 21,
       "value": "\"RETRY_WITH_PASSCODE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16122,
+      "offset": 16703,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15901,
+      "offset": 16482,
       "length": 18,
       "value": "\"UNDEFINED_STATUS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15934,
+      "offset": 16515,
       "length": 5,
       "value": "\"NEW\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15957,
+      "offset": 16538,
       "length": 8,
       "value": "\"ISSUED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 15984,
+      "offset": 16565,
       "length": 9,
       "value": "\"EXPIRED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16013,
+      "offset": 16594,
       "length": 10,
       "value": "\"VERIFIED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16043,
+      "offset": 16624,
       "length": 10,
       "value": "\"DECLINED\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16084,
+      "offset": 16665,
       "length": 21,
       "value": "\"RETRY_WITH_PASSCODE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/okay\/OkayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 16122,
+      "offset": 16703,
       "length": 7,
       "value": "\"ERROR\""
     },

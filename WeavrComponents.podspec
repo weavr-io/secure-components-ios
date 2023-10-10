@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '1.4.4'
+  spec.version      = '1.4.5'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
@@ -28,14 +28,14 @@ Pod::Spec.new do |spec|
   spec.subspec 'Combined' do |sp|
     sp.dependency 'WeavrComponents/Core' 
     sp.dependency 'CryptoXC', '0.3'
-    sp.dependency 'PSASDK', '1.2.4'
+    sp.dependency 'PSASDK', '1.2.5'
     sp.dependency 'FlutterCommunicationChannel', '1.2.11'
   end
   
   spec.subspec 'Flutter' do |sp|
     sp.dependency 'WeavrComponents/Core' 
     sp.dependency 'CryptoXC', '0.3'
-    sp.dependency 'PSASDK', '1.2.4'
+    sp.dependency 'PSASDK', '1.2.5'
   end
 
   spec.subspec 'KYC' do |sp|

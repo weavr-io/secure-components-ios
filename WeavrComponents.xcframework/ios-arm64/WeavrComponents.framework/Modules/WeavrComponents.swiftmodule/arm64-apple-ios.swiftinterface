@@ -42,7 +42,7 @@ extension WeavrComponents.SecurePasscodeFieldStack : UIKit.UITextFieldDelegate {
   public func initialize(psaEnv: WeavrComponents.PsaENV)
   public func updateDeviceToken(deviceToken: Swift.String)
   public func checkIsReadyForEnrollment() -> Swift.Bool
-  public func checkDeviceIsEnrolled() -> Swift.Bool
+  public func checkDeviceIsEnrolled(completion: ((WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> Swift.Void)? = nil)
   public func checkReadyForAuth() -> Swift.Bool
   public func startChallenge(userInfo: [Swift.AnyHashable : Any], with: PSACommon.PSATheme?, resourceProvider: PSA.ResourceProvider?, loaderViewController: UIKit.UIViewController?, completion: @escaping (Swift.Bool, WeavrComponents.WeavrPSASharedStatus) -> Swift.Void)
   public func startChallenge(userInfo: [Swift.AnyHashable : Any], completion: @escaping (Swift.Bool, WeavrComponents.WeavrPSASharedStatus) -> Swift.Void)
