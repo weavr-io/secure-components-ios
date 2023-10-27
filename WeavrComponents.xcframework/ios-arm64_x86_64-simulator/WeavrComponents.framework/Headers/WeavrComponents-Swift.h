@@ -273,6 +273,7 @@ SWIFT_CLASS("_TtC15WeavrComponents14SecureCVVLabel")
 
 SWIFT_CLASS("_TtC15WeavrComponents21SecureCardNumberLabel")
 @interface SecureCardNumberLabel : SecureLabel
+@property (nonatomic) IBInspectable BOOL isVertical;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, copy) NSString * _Nullable text;
 @end
@@ -632,6 +633,7 @@ SWIFT_CLASS("_TtC15WeavrComponents14SecureCVVLabel")
 
 SWIFT_CLASS("_TtC15WeavrComponents21SecureCardNumberLabel")
 @interface SecureCardNumberLabel : SecureLabel
+@property (nonatomic) IBInspectable BOOL isVertical;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, copy) NSString * _Nullable text;
 @end
