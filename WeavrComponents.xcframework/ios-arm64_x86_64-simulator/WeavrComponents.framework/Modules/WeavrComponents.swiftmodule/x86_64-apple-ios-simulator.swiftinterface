@@ -69,6 +69,10 @@ public enum WeavrPSASharedStatus : Swift.Int {
   case InvalidSessionID
   case InvalidChallengeStatus
   case Declined
+  case INVALID_PUB_KEY_ARG
+  case INVALID_CLIENT_URL_ARG
+  case INVALID_PIN_RETRY_ARG
+  case USER_FORGOT_PIN
   public func statusMessage() -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
