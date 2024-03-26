@@ -12498,56 +12498,56 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 259,
+      "offset": 195,
       "length": 18,
       "value": "\"passcodeLength94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 303,
+      "offset": 239,
       "length": 9,
       "value": "\"uiKey94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 278,
       "length": 13,
       "value": "\"randomKey94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 323,
       "length": 15,
       "value": "\"bearerToken94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 440,
+      "offset": 376,
       "length": 54,
       "value": "\"io.weavr.uxcomponents-react-native.deviceFingerprint\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 599,
+      "offset": 535,
       "length": 7,
       "value": "\"PrKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 635,
+      "offset": 571,
       "length": 7,
       "value": "\"PbKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/SeasonUtil.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 615,
       "length": 16,
       "value": "\"userExternalId\""
     },
