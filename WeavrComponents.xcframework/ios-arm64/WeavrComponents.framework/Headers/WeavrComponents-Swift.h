@@ -397,6 +397,8 @@ SWIFT_CLASS("_TtC15WeavrComponents19SecurePasswordField")
 
 
 
+
+
 SWIFT_CLASS("_TtC15WeavrComponents13WeavrKYCTheme")
 @interface WeavrKYCTheme : SNSTheme
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

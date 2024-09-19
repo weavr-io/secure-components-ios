@@ -8,6 +8,7 @@ import FccAbstractCore
 import FlutterCommunicationChannel
 import Foundation
 import IdensicMobileSDK
+import PDFKit
 import PSA
 import Security
 import Swift
@@ -57,7 +58,7 @@ extension WeavrComponents.SecurePasscodeFieldStack : UIKit.UITextFieldDelegate {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class KYCWrapper {
-  final public func startKyc(vc: UIKit.UIViewController, reference: Swift.String, token: Swift.String? = nil, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, locale: Swift.String = "", theme: WeavrComponents.WeavrKYCTheme? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
+  final public func startKyc(vc: UIKit.UIViewController, reference: Swift.String, token: Swift.String? = nil, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, locale: Swift.String, theme: WeavrComponents.WeavrKYCTheme? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
   final public func setAnalyticsEnabled(isEnabled: Swift.Bool)
   @objc deinit
 }
@@ -74,10 +75,6 @@ extension WeavrComponents.SecurePasscodeFieldStack : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-@frozen public enum WeavrResult<Success, Failure> {
-  case success(Success)
-  case failure(Failure)
-}
 public struct OkayBrandingResponse : Swift.Codable {
   public let textColor: Swift.String?
   public let confirmButtonColor: Swift.String?
@@ -88,6 +85,10 @@ public struct OkayBrandingResponse : Swift.Codable {
   public let declineTextColor: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@frozen public enum WeavrResult<Success, Failure> {
+  case success(Success)
+  case failure(Failure)
 }
 @frozen public enum WeavrKYCHandlers {
   case tokenExpirationHandler((Swift.String) -> Swift.Void)
@@ -123,21 +124,6 @@ public struct OkayBrandingResponse : Swift.Codable {
   }
   @_Concurrency.MainActor(unsafe) public func setTokeniseText(toDetokenise: Swift.String, callback: ((WeavrComponents.WeavrResult<Swift.String?, WeavrComponents.ErrorResponse>) -> Swift.Void)? = nil)
   @objc deinit
-}
-public struct WeavrSecureLoginData : Swift.Codable {
-  public let credentials: WeavrComponents.WeavrSecureLoginDataCredentials?
-  public let identity: WeavrComponents.WeavrSecureLoginDataCredentials?
-  public let token: Swift.String?
-  public let tokenType: Swift.String?
-  public let programmeId: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct WeavrSecureLoginDataCredentials : Swift.Codable {
-  public let id: Swift.String?
-  public let type: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct FlutterOkayWrapper {
   public func initializeFlutterPSA(psaEnv: WeavrComponents.PsaENV)
@@ -180,7 +166,7 @@ extension WeavrComponents.SecureTextField : UIKit.UITextFieldDelegate {
 extension WeavrComponents.SecureTextField {
   @_Concurrency.MainActor(unsafe) public func addDoneButtonOnKeyboard()
 }
-public enum WeavrChallengeType {
+public enum WeavrChallengeType : Swift.Equatable {
   case undefinedType
   case paymentInitiation
   case accountInformation
@@ -188,6 +174,7 @@ public enum WeavrChallengeType {
   case beneficiaryManagement
   case unknown(Swift.String)
   public func statusMessage() -> Swift.String
+  public static func == (a: WeavrComponents.WeavrChallengeType, b: WeavrComponents.WeavrChallengeType) -> Swift.Bool
 }
 extension WeavrComponents.OkayWrapper {
   final public func initiateBiometric(completion: @escaping (WeavrComponents.WeavrResult<Swift.String?, WeavrComponents.ErrorResponse>) -> Swift.Void)
@@ -261,6 +248,21 @@ public protocol UXComponetGroupProtocol {
   @_Concurrency.MainActor(unsafe) public func enableCopyTextToClipboardOnLongClick(enabled: Swift.Bool, completion: ((_ message: Swift.String) -> Swift.Void)?)
   @objc deinit
 }
+public struct WeavrSecureLoginData : Swift.Codable {
+  public let credentials: WeavrComponents.WeavrSecureLoginDataCredentials?
+  public let identity: WeavrComponents.WeavrSecureLoginDataCredentials?
+  public let token: Swift.String?
+  public let tokenType: Swift.String?
+  public let programmeId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct WeavrSecureLoginDataCredentials : Swift.Codable {
+  public let id: Swift.String?
+  public let type: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @objc @_inheritsConvenienceInitializers open class WeavrKYCTheme : IdensicMobileSDK.SNSTheme {
   @objc override dynamic public init()
   @objc deinit
@@ -313,6 +315,12 @@ public struct ErrorResponse : Swift.Codable, Swift.Error {
   public let body: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers final public class WeavrBiometric {
+  @objc deinit
+}
+extension WeavrComponents.WeavrBiometric {
+  public static func showBiometricScreen(from vc: UIKit.UIViewController, token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> Swift.Void)
 }
 extension WeavrComponents.WeavrExceptionHandlers : Swift.Sendable {}
 extension WeavrComponents.WeavrKYCStatus : Swift.Sendable {}
