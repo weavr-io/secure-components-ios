@@ -28,9 +28,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CryptoXCStandalone",
-            path: "./CryptoXC.xcframework"
+            path: "dependencies/CryptoXC/CryptoXC.xcframework"
         ),
-        
         .target(
             name: "WeavrComponents",
             dependencies: [
