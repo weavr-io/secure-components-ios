@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '1.6.4'
+  spec.version      = '1.6.5'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
@@ -12,8 +12,6 @@ Pod::Spec.new do |spec|
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited)',
     # 'LIBRARY_SEARCH_PATHS' => '$(SDKROOT)/usr/lib/swift',
   }
- 
-
 
   spec.default_subspec = 'Default'
 
@@ -22,26 +20,22 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Core' do |sp|
-    sp.vendored_frameworks = 'WeavrComponents.xcframework' 
+    sp.vendored_frameworks = 'WeavrComponents.xcframework', 'dependencies/CryptoXC/CryptoXC.xcframework'
   end
 
   spec.subspec 'Combined' do |sp|
-    sp.dependency 'WeavrComponents/Core' 
-    sp.dependency 'CryptoXC', '0.3'
+    sp.dependency 'WeavrComponents/Core'
     sp.dependency 'PSASDK', '1.2.18'
     sp.dependency 'FlutterCommunicationChannel', '1.4.2'
   end
   
   spec.subspec 'Flutter' do |sp|
-    sp.dependency 'WeavrComponents/Core' 
-    sp.dependency 'CryptoXC', '0.3'
+    sp.dependency 'WeavrComponents/Core'
     sp.dependency 'PSASDK', '1.2.18'
   end
 
   spec.subspec 'KYC' do |sp|
     sp.dependency 'WeavrComponents/Core'
-    sp.dependency 'CryptoXC', '0.3'
-
   end
  
 end
