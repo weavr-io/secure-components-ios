@@ -26,18 +26,13 @@ let package = Package(
             name: "WeavrComponentsStandalone",
             path: "./WeavrComponents.xcframework"
         ),
-        .binaryTarget(
-            name: "CryptoXCStandalone",
-            path: "dependencies/CryptoXC/CryptoXC.xcframework"
-        ),
         .target(
             name: "WeavrComponents",
             dependencies: [
                 .product(name: "FCC", package: "fcc_spm"),
                 .product(name: "OkaySDK", package: "PSAiOS"),
                 .product(name: "IdensicMobileSDK", package: "IdensicMobileSDK-iOS"),
-                "WeavrComponentsStandalone",
-                "CryptoXCStandalone"
+                "WeavrComponentsStandalone"
             ],
             path: "Wrapper"
         )

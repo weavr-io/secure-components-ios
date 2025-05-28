@@ -2,12 +2,14 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WeavrComponents
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
-import CryptoXC
+import ApproovURLSession
+import CryptoKit
 import DeveloperToolsSupport
 import FccAbstractCore
 import FlutterCommunicationChannel
 import Foundation
 import IdensicMobileSDK
+import LocalAuthentication
 import PDFKit
 import PSA
 import Security
@@ -170,7 +172,7 @@ public enum WeavrChallengeType : Swift.Equatable {
   case undefinedType
   case paymentInitiation
   case accountInformation
-  case threedsInitiation
+  case threeDSInitiation
   case beneficiaryManagement
   case unknown(Swift.String)
   public func statusMessage() -> Swift.String
@@ -201,19 +203,26 @@ public enum ENV {
 @_hasMissingDesignatedInitializers public class AppConstants {
   @objc deinit
 }
+public struct UXComponentsStatus {
+  public let fixedPasscodeLength: Swift.Bool
+  public let userNeedsRelogin: Swift.Bool
+}
 @_hasMissingDesignatedInitializers final public class UXComponents {
   public static let kyc: WeavrComponents.KYCWrapper
   public static let psa: WeavrComponents.OkayWrapper
   public static var version: Swift.String {
     get
   }
+  @available(*, deprecated, message: "Please use initialize(environment: ENV, uiKey: String, completion: ((Result<UXComponentsStatus, ErrorResponse>) -> Void)) instead")
   public static func initialize(env: WeavrComponents.ENV, uiKey: Swift.String, completion: ((Swift.String) -> Swift.Void)? = nil)
+  public static func initialize(environment env: WeavrComponents.ENV, uiKey: Swift.String, completion: @escaping ((Swift.Result<WeavrComponents.UXComponentsStatus, WeavrComponents.ErrorResponse>) -> Swift.Void))
   public static func clearUXComponentsCache()
   public static func weavrSecureLogin(email: Swift.String, tokenizePassword: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> Swift.Void)
   public static func setUserToken(token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.String, WeavrComponents.ErrorResponse>) -> Swift.Void)
   public static func createGroup(components: [WeavrComponents.SecureTextField]) -> WeavrComponents.UXComponetGroup
   public static func isAssociated() -> Swift.Bool
   public static func resetAssociation() -> Swift.Bool
+  public static func setAppCheckToken(_ token: Swift.String) -> Swift.Bool
   public static func getDeviceFingerprint() -> Swift.String?
   @objc deinit
 }
@@ -293,17 +302,26 @@ public enum WeavrPSASharedStatus : Swift.Int {
   case InvalidUserExternalID
   case InvalidTenantId
   case InvalidDisableMultipleRetry
-  case INVALID_PUB_KEY_ARG
-  case INVALID_CLIENT_URL_ARG
-  case INVALID_PIN_RETRY_ARG
-  case USER_FORGOT_PIN
+  case InvalidPubKeyArg
+  case InvalidClientURLArg
+  case InvalidPinRetryArg
+  case UserForgotPin
   case InvalidPinFallback
+  case UserCanceled
+  case NonceSigningFailed
+  case EncryptionError
+  case SCAChallengeFailed
+  case ServiceError
+  case PresentationError
   public func statusMessage() -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var identifier: Swift.String
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SecureCardPinField : WeavrComponents.SecureTextField {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -316,11 +334,22 @@ public struct ErrorResponse : Swift.Codable, Swift.Error {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_hasMissingDesignatedInitializers final public class WeavrBiometric {
-  @objc deinit
+public enum WeavrErrorCode : Swift.Int {
+  case cantSetUIKey
+  case cantSetSecureFieldsLength
+  case cantRecreateKeyPairs
+  case cantEnableSecurityService
+  case cantRetrieveSecurityServiceKey
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-extension WeavrComponents.WeavrBiometric {
+@_hasMissingDesignatedInitializers final public class WeavrBiometric {
+  public static func startAuthentication(from vc: UIKit.UIViewController, completion: @escaping ((Swift.Result<Swift.String, WeavrComponents.ErrorResponse>) -> Swift.Void))
   public static func showBiometricScreen(from vc: UIKit.UIViewController, token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> Swift.Void)
+  @objc deinit
 }
 extension WeavrComponents.WeavrExceptionHandlers : Swift.Sendable {}
 extension WeavrComponents.WeavrKYCStatus : Swift.Sendable {}
@@ -333,3 +362,6 @@ extension WeavrComponents.ENV : Swift.Hashable {}
 extension WeavrComponents.WeavrPSASharedStatus : Swift.Equatable {}
 extension WeavrComponents.WeavrPSASharedStatus : Swift.Hashable {}
 extension WeavrComponents.WeavrPSASharedStatus : Swift.RawRepresentable {}
+extension WeavrComponents.WeavrErrorCode : Swift.Equatable {}
+extension WeavrComponents.WeavrErrorCode : Swift.Hashable {}
+extension WeavrComponents.WeavrErrorCode : Swift.RawRepresentable {}
