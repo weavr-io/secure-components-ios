@@ -3,8 +3,7 @@
 
 ````java
 //Weavr Component and KYC
-pod 'WeavrComponents' ,'3.0.0-rc1'
-pod 'IdensicMobileSDK' , '1.19.5'
+pod 'WeavrComponents' ,'3.0.0-rc2'
 ````
 ````java
 source 'https://cdn.cocoapods.org/'
@@ -30,11 +29,13 @@ post_install do |installer|
 :::
 
 **3. Import and initialise the framework using your UI Key.**
+
 ````java
 import WeavrComponents
 ````
 
 Next, you need to initialise your framework using the UI key you will find on your innovator portal
+
 ````java
 UXComponents.initialize(env: ENV.PRODUCTION, uiKey: "Your UI Key")
 ````

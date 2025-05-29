@@ -19,7 +19,8 @@ let package = Package(
     dependencies: [
         .package(url: "https://gitlab.okaythis.com/public-package/fcc_spm.git", from: "1.4.2"),
         .package(url: "https://github.com/Okaythis/PSAiOS", from: "1.2.18"),
-        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.31.0")
+        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.31.0"),
+        .package(url: "https://github.com/approov/approov-service-urlsession", from: "3.3.3")
     ],
     targets: [
         .binaryTarget(
