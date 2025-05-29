@@ -33,6 +33,7 @@ let package = Package(
                 .product(name: "FCC", package: "fcc_spm"),
                 .product(name: "OkaySDK", package: "PSAiOS"),
                 .product(name: "IdensicMobileSDK", package: "IdensicMobileSDK-iOS"),
+                .product(name: "ApproovURLSession", package: "approov-service-urlsession"),
                 "WeavrComponentsStandalone"
             ],
             path: "Wrapper"
