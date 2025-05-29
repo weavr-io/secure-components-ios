@@ -3,7 +3,8 @@
 
 ````java
 //Weavr Component and KYC
-pod 'WeavrComponents' ,'3.0.0-rc2'
+pod 'WeavrComponents' ,'3.0.0-rc3'
+pod 'IdensicMobileSDK' , '~> 1.31.0'
 ````
 ````java
 source 'https://cdn.cocoapods.org/'
