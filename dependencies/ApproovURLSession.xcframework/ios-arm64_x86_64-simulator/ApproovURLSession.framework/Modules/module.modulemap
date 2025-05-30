@@ -1,0 +1,11 @@
+framework module ApproovURLSession {
+  umbrella header "ApproovURLSession-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ApproovURLSession.Swift {
+  header "ApproovURLSession-Swift.h"
+  requires objc
+}

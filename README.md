@@ -3,7 +3,7 @@
 
 ````java
 //Weavr Component and KYC
-pod 'WeavrComponents' ,'3.0.0-rc4'
+pod 'WeavrComponents' ,'3.0.0-rc5'
 pod 'IdensicMobileSDK' , '~> 1.31.0'
 ````
 ````java

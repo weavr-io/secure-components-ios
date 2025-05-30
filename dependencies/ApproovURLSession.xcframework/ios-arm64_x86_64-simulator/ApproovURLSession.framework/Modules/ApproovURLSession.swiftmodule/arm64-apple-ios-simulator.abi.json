@@ -1,0 +1,4580 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ApproovURLSession",
+    "printedName": "ApproovURLSession",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Approov",
+        "printedName": "Approov",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovError",
+        "printedName": "ApproovError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "initializationFailure",
+            "printedName": "initializationFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovError.Type) -> (Swift.String) -> ApproovURLSession.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ApproovURLSession.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A5ErrorO21initializationFailureyACSS_tcACmF",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO21initializationFailureyACSS_tcACmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "configurationError",
+            "printedName": "configurationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovError.Type) -> (Swift.String) -> ApproovURLSession.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ApproovURLSession.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A5ErrorO013configurationC0yACSS_tcACmF",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO013configurationC0yACSS_tcACmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "pinningError",
+            "printedName": "pinningError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovError.Type) -> (Swift.String) -> ApproovURLSession.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ApproovURLSession.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A5ErrorO07pinningC0yACSS_tcACmF",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO07pinningC0yACSS_tcACmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "networkingError",
+            "printedName": "networkingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovError.Type) -> (Swift.String) -> ApproovURLSession.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ApproovURLSession.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A5ErrorO010networkingC0yACSS_tcACmF",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO010networkingC0yACSS_tcACmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "permanentError",
+            "printedName": "permanentError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovError.Type) -> (Swift.String) -> ApproovURLSession.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ApproovURLSession.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A5ErrorO09permanentC0yACSS_tcACmF",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO09permanentC0yACSS_tcACmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "rejectionError",
+            "printedName": "rejectionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovError.Type) -> (Swift.String, Swift.String, Swift.String) -> ApproovURLSession.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String) -> ApproovURLSession.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String, ARC: Swift.String, rejectionReasons: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "ApproovURLSession.ApproovError",
+                        "usr": "s:17ApproovURLSession0A5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A5ErrorO09rejectionC0yACSS_S2StcACmF",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO09rejectionC0yACSS_S2StcACmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ApproovURLSession0A5ErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO20localizedDescriptionSSvp",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ApproovURLSession0A5ErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s17ApproovURLSession0A5ErrorO20localizedDescriptionSSvg",
+                "moduleName": "ApproovURLSession",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ApproovURLSession0A5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s17ApproovURLSession0A5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ApproovURLSession0A5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s17ApproovURLSession0A5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "ApproovURLSession",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17ApproovURLSession0A5ErrorO",
+        "mangledName": "$s17ApproovURLSession0A5ErrorO",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovFetchDecision",
+        "printedName": "ApproovFetchDecision",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ShouldProceed",
+            "printedName": "ShouldProceed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovFetchDecision.Type) -> ApproovURLSession.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision",
+                    "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "ApproovURLSession.ApproovFetchDecision",
+                        "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO13ShouldProceedyA2CmF",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO13ShouldProceedyA2CmF",
+            "moduleName": "ApproovURLSession"
+          },
+          {
+            "kind": "Var",
+            "name": "ShouldRetry",
+            "printedName": "ShouldRetry",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovFetchDecision.Type) -> ApproovURLSession.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision",
+                    "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "ApproovURLSession.ApproovFetchDecision",
+                        "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO11ShouldRetryyA2CmF",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO11ShouldRetryyA2CmF",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ShouldFail",
+            "printedName": "ShouldFail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovFetchDecision.Type) -> ApproovURLSession.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision",
+                    "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "ApproovURLSession.ApproovFetchDecision",
+                        "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO10ShouldFailyA2CmF",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO10ShouldFailyA2CmF",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ShouldIgnore",
+            "printedName": "ShouldIgnore",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ApproovURLSession.ApproovFetchDecision.Type) -> ApproovURLSession.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision",
+                    "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ApproovURLSession.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "ApproovURLSession.ApproovFetchDecision",
+                        "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO12ShouldIgnoreyA2CmF",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO12ShouldIgnoreyA2CmF",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovFetchDecision",
+                "printedName": "ApproovURLSession.ApproovFetchDecision",
+                "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovFetchDecision",
+                "printedName": "ApproovURLSession.ApproovFetchDecision",
+                "usr": "s:17ApproovURLSession0A13FetchDecisionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO2eeoiySbAC_ACtFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO9hashValueSivp",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO9hashValueSivp",
+            "moduleName": "ApproovURLSession",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ApproovURLSession0A13FetchDecisionO9hashValueSivg",
+                "mangledName": "$s17ApproovURLSession0A13FetchDecisionO9hashValueSivg",
+                "moduleName": "ApproovURLSession",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A13FetchDecisionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17ApproovURLSession0A13FetchDecisionO4hash4intoys6HasherVz_tF",
+            "moduleName": "ApproovURLSession",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17ApproovURLSession0A13FetchDecisionO",
+        "mangledName": "$s17ApproovURLSession0A13FetchDecisionO",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovUpdateResponse",
+        "printedName": "ApproovUpdateResponse",
+        "declKind": "Struct",
+        "usr": "s:17ApproovURLSession0A14UpdateResponseV",
+        "mangledName": "$s17ApproovURLSession0A14UpdateResponseV",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovService",
+        "printedName": "ApproovService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:comment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC10initialize6config7commentySS_SSSgtKFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC10initialize6config7commentySS_SSSgtKFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProceedOnNetworkFailure",
+            "printedName": "setProceedOnNetworkFailure(proceed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC26setProceedOnNetworkFailure7proceedySb_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC26setProceedOnNetworkFailure7proceedySb_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDevKey",
+            "printedName": "setDevKey(devKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC9setDevKey03devF0ySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC9setDevKey03devF0ySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBindingHeader",
+            "printedName": "setBindingHeader(header:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC16setBindingHeader6headerySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC16setBindingHeader6headerySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setApproovHeader",
+            "printedName": "setApproovHeader(header:prefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC03setA6Header6header6prefixySS_SStFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC03setA6Header6header6prefixySS_SStFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSubstitutionHeader",
+            "printedName": "addSubstitutionHeader(header:prefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC21addSubstitutionHeader6header6prefixySS_SSSgtFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC21addSubstitutionHeader6header6prefixySS_SSSgtFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeSubstitutionHeader",
+            "printedName": "removeSubstitutionHeader(header:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC24removeSubstitutionHeader6headerySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC24removeSubstitutionHeader6headerySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSubstitutionQueryParam",
+            "printedName": "addSubstitutionQueryParam(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC25addSubstitutionQueryParam3keyySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC25addSubstitutionQueryParam3keyySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeSubstitutionQueryParam",
+            "printedName": "removeSubstitutionQueryParam(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC28removeSubstitutionQueryParam3keyySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC28removeSubstitutionQueryParam3keyySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addExclusionURLRegex",
+            "printedName": "addExclusionURLRegex(urlRegex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC20addExclusionURLRegex8urlRegexySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC20addExclusionURLRegex8urlRegexySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeExclusionURLRegex",
+            "printedName": "removeExclusionURLRegex(urlRegex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC23removeExclusionURLRegex8urlRegexySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC23removeExclusionURLRegex8urlRegexySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prefetch",
+            "printedName": "prefetch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC8prefetchyyFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC8prefetchyyFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "precheck",
+            "printedName": "precheck()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC8precheckyyKFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC8precheckyyKFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeviceID",
+            "printedName": "getDeviceID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC11getDeviceIDSSSgyFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC11getDeviceIDSSSgyFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDataHashInToken",
+            "printedName": "setDataHashInToken(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC18setDataHashInToken4dataySS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC18setDataHashInToken4dataySS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchToken",
+            "printedName": "fetchToken(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC10fetchToken3urlS2S_tKFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC10fetchToken3urlS2S_tKFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMessageSignature",
+            "printedName": "getMessageSignature(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC19getMessageSignature7messageSSSgSS_tFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC19getMessageSignature7messageSSSgSS_tFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchSecureString",
+            "printedName": "fetchSecureString(key:newDef:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC17fetchSecureString3key6newDefSSSgSS_AGtKFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC17fetchSecureString3key6newDefSSSgSS_AGtKFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchCustomJWT",
+            "printedName": "fetchCustomJWT(payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC14fetchCustomJWT7payloadSSSgSS_tKFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC14fetchCustomJWT7payloadSSSgSS_tKFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateRequestWithApproov",
+            "printedName": "updateRequestWithApproov(request:sessionConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovUpdateResponse",
+                "printedName": "ApproovURLSession.ApproovUpdateResponse",
+                "usr": "s:17ApproovURLSession0A14UpdateResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLSessionConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionConfiguration",
+                    "printedName": "Foundation.URLSessionConfiguration",
+                    "usr": "c:objc(cs)NSURLSessionConfiguration"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSession0A7ServiceC017updateRequestWithA07request13sessionConfigAA0A14UpdateResponseV10Foundation10URLRequestV_So25NSURLSessionConfigurationCSgtFZ",
+            "mangledName": "$s17ApproovURLSession0A7ServiceC017updateRequestWithA07request13sessionConfigAA0A14UpdateResponseV10Foundation10URLRequestV_So25NSURLSessionConfigurationCSgtFZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17ApproovURLSession0A7ServiceC",
+        "mangledName": "$s17ApproovURLSession0A7ServiceC",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovSessionTaskObserver",
+        "printedName": "ApproovSessionTaskObserver",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enableLogging",
+            "printedName": "enableLogging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvpZ",
+            "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvpZ",
+            "moduleName": "ApproovURLSession",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvgZ",
+                "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvgZ",
+                "moduleName": "ApproovURLSession",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvsZ",
+                "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvsZ",
+                "moduleName": "ApproovURLSession",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvMZ",
+                "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverC13enableLoggingSbvMZ",
+                "moduleName": "ApproovURLSession",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "observeValue",
+            "printedName": "observeValue(forKeyPath:of:change:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueChangeKey",
+                        "printedName": "Foundation.NSKeyValueChangeKey",
+                        "usr": "c:@T@NSKeyValueChangeKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutableRawPointer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutableRawPointer",
+                    "printedName": "Swift.UnsafeMutableRawPointer",
+                    "usr": "s:Sv"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovSessionTaskObserver(im)observeValueForKeyPath:ofObject:change:context:",
+            "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyg6ChangeI0aypGSgSvSgtF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovSessionTaskObserver",
+                "printedName": "ApproovURLSession.ApproovSessionTaskObserver",
+                "usr": "c:@M@ApproovURLSession@objc(cs)ApproovSessionTaskObserver"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovSessionTaskObserver(im)init",
+            "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverCACycfc",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ApproovURLSession@objc(cs)ApproovSessionTaskObserver",
+        "mangledName": "$s17ApproovURLSession0A19SessionTaskObserverC",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovURLSession",
+        "printedName": "ApproovURLSession",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:delegate:delegateQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovURLSession",
+                "printedName": "ApproovURLSession.ApproovURLSession",
+                "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionDelegate",
+                    "printedName": "any Foundation.URLSessionDelegate",
+                    "usr": "c:objc(pl)NSURLSessionDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17ApproovURLSessionAAC13configuration8delegate0D5QueueABSo25NSURLSessionConfigurationC_So0F8Delegate_pSgSo011NSOperationE0CSgtcfc",
+            "mangledName": "$s17ApproovURLSessionAAC13configuration8delegate0D5QueueABSo25NSURLSessionConfigurationC_So0F8Delegate_pSgSo011NSOperationE0CSgtcfc",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovURLSession",
+                "printedName": "ApproovURLSession.ApproovURLSession",
+                "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17ApproovURLSessionAAC13configurationABSo25NSURLSessionConfigurationC_tcfc",
+            "mangledName": "$s17ApproovURLSessionAAC13configurationABSo25NSURLSessionConfigurationC_tcfc",
+            "moduleName": "ApproovURLSession",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)dataTaskWithURL:",
+            "mangledName": "$s17ApproovURLSessionAAC8dataTask4withSo016NSURLSessionDataD0C10Foundation3URLV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "dataTaskWithURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)dataTaskWithRequest:",
+            "mangledName": "$s17ApproovURLSessionAAC8dataTask4withSo016NSURLSessionDataD0C10Foundation10URLRequestV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "dataTaskWithRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)dataTaskWithURL:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC8dataTask4with17completionHandlerSo016NSURLSessionDataD0C10Foundation3URLV_yAH0I0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "dataTaskWithURL:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)dataTaskWithRequest:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC8dataTask4with17completionHandlerSo016NSURLSessionDataD0C10Foundation10URLRequestV_yAH0I0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "dataTaskWithRequest:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)downloadTaskWithURL:",
+            "mangledName": "$s17ApproovURLSessionAAC12downloadTask4withSo020NSURLSessionDownloadD0C10Foundation3URLV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "downloadTaskWithURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)downloadTaskWithRequest:",
+            "mangledName": "$s17ApproovURLSessionAAC12downloadTask4withSo020NSURLSessionDownloadD0C10Foundation10URLRequestV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "downloadTaskWithRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)downloadTaskWithURL:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC12downloadTask4with17completionHandlerSo020NSURLSessionDownloadD0C10Foundation3URLV_yAJSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "downloadTaskWithURL:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)downloadTaskWithRequest:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC12downloadTask4with17completionHandlerSo020NSURLSessionDownloadD0C10Foundation10URLRequestV_yAH3URLVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "downloadTaskWithRequest:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(withResumeData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)downloadTaskWithResumeData:",
+            "mangledName": "$s17ApproovURLSessionAAC12downloadTask14withResumeDataSo020NSURLSessionDownloadD0C10Foundation0G0V_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "downloadTaskWithResumeData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(withResumeData:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)downloadTaskWithResumeData:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC12downloadTask14withResumeData17completionHandlerSo020NSURLSessionDownloadD0C10Foundation0G0V_yAH3URLVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "downloadTaskWithResumeData:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromData:",
+            "mangledName": "$s17ApproovURLSessionAAC10uploadTask4with4fromSo018NSURLSessionUploadD0C10Foundation10URLRequestV_AH4DataVtF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:from:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromData:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC10uploadTask4with4from17completionHandlerSo018NSURLSessionUploadD0C10Foundation10URLRequestV_AI4DataVSgyAN_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromData:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:fromFile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromFile:",
+            "mangledName": "$s17ApproovURLSessionAAC10uploadTask4with8fromFileSo018NSURLSessionUploadD0C10Foundation10URLRequestV_AH3URLVtF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromFile:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:fromFile:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromFile:completionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC10uploadTask4with8fromFile17completionHandlerSo018NSURLSessionUploadD0C10Foundation10URLRequestV_AI3URLVyAI4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromFile:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(withStreamedRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)uploadTaskWithStreamedRequest:",
+            "mangledName": "$s17ApproovURLSessionAAC10uploadTask19withStreamedRequestSo018NSURLSessionUploadD0C10Foundation10URLRequestV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "uploadTaskWithStreamedRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTaskPublisherWithApproov",
+            "printedName": "dataTaskPublisherWithApproov(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataTaskPublisher",
+                "printedName": "Foundation.URLSession.DataTaskPublisher",
+                "usr": "s:So12NSURLSessionC10FoundationE17DataTaskPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC021dataTaskPublisherWithA03forSo12NSURLSessionC10FoundationE04DatadE0VAG10URLRequestV_tF",
+            "mangledName": "$s17ApproovURLSessionAAC021dataTaskPublisherWithA03forSo12NSURLSessionC10FoundationE04DatadE0VAG10URLRequestV_tF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTaskPublisherApproov",
+            "printedName": "dataTaskPublisherApproov(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataTaskPublisher",
+                "printedName": "Foundation.URLSession.DataTaskPublisher",
+                "usr": "s:So12NSURLSessionC10FoundationE17DataTaskPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC017dataTaskPublisherA03forSo12NSURLSessionC10FoundationE04DatadE0VAG10URLRequestV_tF",
+            "mangledName": "$s17ApproovURLSessionAAC017dataTaskPublisherA03forSo12NSURLSessionC10FoundationE04DatadE0VAG10URLRequestV_tF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishTasksAndInvalidate",
+            "printedName": "finishTasksAndInvalidate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)finishTasksAndInvalidate",
+            "mangledName": "$s17ApproovURLSessionAAC24finishTasksAndInvalidateyyF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "finishTasksAndInvalidate",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flush",
+            "printedName": "flush(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)flushWithCompletionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC5flush17completionHandleryyyc_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "flushWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTasksWithCompletionHandler",
+            "printedName": "getTasksWithCompletionHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Foundation.URLSessionDataTask], [Foundation.URLSessionUploadTask], [Foundation.URLSessionDownloadTask]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Foundation.URLSessionDataTask], [Foundation.URLSessionUploadTask], [Foundation.URLSessionDownloadTask])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLSessionDataTask]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLSessionDataTask",
+                            "printedName": "Foundation.URLSessionDataTask",
+                            "usr": "c:objc(cs)NSURLSessionDataTask"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLSessionUploadTask]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLSessionUploadTask",
+                            "printedName": "Foundation.URLSessionUploadTask",
+                            "usr": "c:objc(cs)NSURLSessionUploadTask"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLSessionDownloadTask]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLSessionDownloadTask",
+                            "printedName": "Foundation.URLSessionDownloadTask",
+                            "usr": "c:objc(cs)NSURLSessionDownloadTask"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)getTasksWithCompletionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC29getTasksWithCompletionHandleryyySaySo20NSURLSessionDataTaskCG_SaySo0h6UploadJ0CGSaySo0h8DownloadJ0CGtcF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "getTasksWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllTasks",
+            "printedName": "getAllTasks(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Foundation.URLSessionTask]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLSessionTask]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLSessionTask",
+                        "printedName": "Foundation.URLSessionTask",
+                        "usr": "c:objc(cs)NSURLSessionTask"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)getAllTasksWithCompletionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC11getAllTasks17completionHandleryySaySo16NSURLSessionTaskCGc_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "getAllTasksWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidateAndCancel",
+            "printedName": "invalidateAndCancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)invalidateAndCancel",
+            "mangledName": "$s17ApproovURLSessionAAC19invalidateAndCancelyyF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "invalidateAndCancel",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)resetWithCompletionHandler:",
+            "mangledName": "$s17ApproovURLSessionAAC5reset17completionHandleryyyc_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "objc_name": "resetWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketTask",
+            "printedName": "webSocketTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)webSocketTaskWithURL:",
+            "mangledName": "$s17ApproovURLSessionAAC13webSocketTask4withSo015NSURLSessionWebdE0C10Foundation3URLV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "intro_iOS": "13.0",
+            "objc_name": "webSocketTaskWithURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketTask",
+            "printedName": "webSocketTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)webSocketTaskWithRequest:",
+            "mangledName": "$s17ApproovURLSessionAAC13webSocketTask4withSo015NSURLSessionWebdE0C10Foundation10URLRequestV_tF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "intro_iOS": "13.0",
+            "objc_name": "webSocketTaskWithRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketTask",
+            "printedName": "webSocketTask(with:protocols:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)webSocketTaskWithURL:protocols:",
+            "mangledName": "$s17ApproovURLSessionAAC13webSocketTask4with9protocolsSo015NSURLSessionWebdE0C10Foundation3URLV_SaySSGtF",
+            "moduleName": "ApproovURLSession",
+            "overriding": true,
+            "intro_iOS": "13.0",
+            "objc_name": "webSocketTaskWithURL:protocols:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataWithApproov",
+            "printedName": "dataWithApproov(for:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC08dataWithA03for8delegate10Foundation4DataV_So13NSURLResponseCtAF10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s17ApproovURLSessionAAC08dataWithA03for8delegate10Foundation4DataV_So13NSURLResponseCtAF10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataWithApproov",
+            "printedName": "dataWithApproov(from:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC08dataWithA04from8delegate10Foundation4DataV_So13NSURLResponseCtAF3URLV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s17ApproovURLSessionAAC08dataWithA04from8delegate10Foundation4DataV_So13NSURLResponseCtAF3URLV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadWithApproov",
+            "printedName": "uploadWithApproov(for:fromFile:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC010uploadWithA03for8fromFile8delegate10Foundation4DataV_So13NSURLResponseCtAG10URLRequestV_AG3URLVSo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s17ApproovURLSessionAAC010uploadWithA03for8fromFile8delegate10Foundation4DataV_So13NSURLResponseCtAG10URLRequestV_AG3URLVSo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadWithApproov",
+            "printedName": "uploadWithApproov(for:from:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC010uploadWithA03for4from8delegate10Foundation4DataV_So13NSURLResponseCtAG10URLRequestV_AISo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s17ApproovURLSessionAAC010uploadWithA03for4from8delegate10Foundation4DataV_So13NSURLResponseCtAG10URLRequestV_AISo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadWithApproov",
+            "printedName": "downloadWithApproov(for:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.URL, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC012downloadWithA03for8delegate10Foundation3URLV_So13NSURLResponseCtAF10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s17ApproovURLSessionAAC012downloadWithA03for8delegate10Foundation3URLV_So13NSURLResponseCtAF10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadWithApproov",
+            "printedName": "downloadWithApproov(from:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.URL, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17ApproovURLSessionAAC012downloadWithA04from8delegate10Foundation3URLV_So13NSURLResponseCtAH_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s17ApproovURLSessionAAC012downloadWithA04from8delegate10Foundation3URLV_So13NSURLResponseCtAH_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "ApproovURLSession",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovURLSession",
+                "printedName": "ApproovURLSession.ApproovURLSession",
+                "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession(im)init",
+            "mangledName": "$s17ApproovURLSessionAACABycfc",
+            "moduleName": "ApproovURLSession",
+            "deprecated": true,
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "7.0",
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Available"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ApproovURLSession@objc(cs)ApproovURLSession",
+        "mangledName": "$s17ApproovURLSessionAAC",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLSession",
+        "superclassNames": [
+          "Foundation.URLSession",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Approov",
+        "printedName": "Approov",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "ApproovURLSession"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 3213,
+      "length": 28,
+      "value": "\"ApproovService.initializer\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3568,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 3716,
+      "length": 22,
+      "value": "\"ApproovService.state\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3856,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 3935,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 4023,
+      "length": 15,
+      "value": "\"Approov-Token\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 4165,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 4541,
+      "length": 29,
+      "value": "\"ApproovService.substitution\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 2030,
+      "length": 40,
+      "value": "\"io.approov.ApproovService.loggingQueue\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2174,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 2517,
+      "length": 18,
+      "value": "\"ApproovSession: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 2612,
+      "length": 7,
+      "value": "\"state\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 3298,
+      "length": 28,
+      "value": "\"ApproovSessionTaskObserver\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 3858,
+      "length": 8,
+      "value": "\"taskId\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 3950,
+      "length": 90,
+      "value": "\"Added completion handler for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 4003,
+      "length": 1,
+      "value": "\". Count: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 4039,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 4967,
+      "length": 15,
+      "value": "\"sessionConfig\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 5076,
+      "length": 95,
+      "value": "\"Added session configuration for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 5138,
+      "length": 1,
+      "value": "\". Count: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 5170,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7216,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7354,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7499,
+      "length": 9,
+      "value": "\"keyPath\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7533,
+      "length": 52,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7547,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7553,
+      "length": 1,
+      "value": "\" (Object: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7583,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7622,
+      "length": 68,
+      "value": "\"Object Type: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7649,
+      "length": 1,
+      "value": "\", Context Address: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7689,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8150,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8161,
+      "length": 23,
+      "value": "\"State change detected\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8532,
+      "length": 6,
+      "value": "\"task\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8567,
+      "length": 56,
+      "value": "\"Stopped observing task with id: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8622,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 9177,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 9219,
+      "length": 22,
+      "value": "\"Deallocating context\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10089,
+      "length": 34,
+      "value": "\"completionHandlers.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10236,
+      "length": 44,
+      "value": "\"Removed completion handler from dictionary\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10645,
+      "length": 34,
+      "value": "\"completionHandlers.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10792,
+      "length": 79,
+      "value": "\"No completion handler found in dictionary: count: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10870,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 11448,
+      "length": 30,
+      "value": "\"sessionConfigs.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 11591,
+      "length": 39,
+      "value": "\"Removed sessionConfig from dictionary\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 11995,
+      "length": 30,
+      "value": "\"sessionConfigs.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 12138,
+      "length": 70,
+      "value": "\"No sessionConfig found in dictionary: count: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 12207,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13460,
+      "length": 12,
+      "value": "\"task.state\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13598,
+      "length": 51,
+      "value": "\"Will suspend task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13648,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13988,
+      "length": 15,
+      "value": "\"task.newState\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 14190,
+      "length": 54,
+      "value": "\"Suspended task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 14243,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15178,
+      "length": 23,
+      "value": "\"updateCurrentRequest:\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15670,
+      "length": 49,
+      "value": "\"task.perform(sel, with: updateResponse.request)\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15908,
+      "length": 60,
+      "value": "\"Performed selector on task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15967,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 16328,
+      "length": 86,
+      "value": "\"ApproovService: Unable to modify NSURLRequest headers; object instance is of type %@\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17120,
+      "length": 30,
+      "value": "\"task.resume() will be called\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17373,
+      "length": 56,
+      "value": "\"Will resume task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17428,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17875,
+      "length": 22,
+      "value": "\"task.resume() called\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 18120,
+      "length": 52,
+      "value": "\"Resumed task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 18171,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 18305,
+      "length": 74,
+      "value": "\"ApproovService: Task was not in suspended state after Approov processing\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19147,
+      "length": 15,
+      "value": "\"task.resume()\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19385,
+      "length": 52,
+      "value": "\"Resumed task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19436,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19920,
+      "length": 46,
+      "value": "\"task.state == URLSessionTask.State.suspended\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 20177,
+      "length": 71,
+      "value": "\"Will process custom delegate for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 20247,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21313,
+      "length": 45,
+      "value": "\"completionHandler as! CompletionHandlerData\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21538,
+      "length": 23,
+      "value": "\"error with no message\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21626,
+      "length": 78,
+      "value": "\"Delegate handler with error message for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21703,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22427,
+      "length": 44,
+      "value": "\"completionHandler as! CompletionHandlerURL\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22651,
+      "length": 23,
+      "value": "\"error with no message\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22739,
+      "length": 78,
+      "value": "\"Delegate handler with error message for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22816,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23326,
+      "length": 15,
+      "value": "\"task.cancel()\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23588,
+      "length": 57,
+      "value": "\"Invoked cancel for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23644,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23886,
+      "length": 70,
+      "value": "\"ApproovService: Pinning Delegate from url session pointer is invalid\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24070,
+      "length": 76,
+      "value": "\"ApproovService: Pinning Session pointer is invalid\/not of type URLSession \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24501,
+      "length": 64,
+      "value": "\"No decision from token fetch and no completion handler invoked\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24764,
+      "length": 48,
+      "value": "\"Error for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24811,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 1691,
+      "length": 178,
+      "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 1917,
+      "length": 178,
+      "value": "[0x30, 0x82, 0x01, 0xa2, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x8f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 2144,
+      "length": 178,
+      "value": "[0x30, 0x82, 0x02, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x02, 0x0f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 2378,
+      "length": 190,
+      "value": "[0x30, 0x59, 0x30, 0x13, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x06, 0x08, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x03, 0x01, 0x07, 0x03, 0x42, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 2624,
+      "length": 172,
+      "value": "[0x30, 0x76, 0x30, 0x10, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x06, 0x05, 0x2b, 0x81, 0x04, 0x00, 0x22, 0x03, 0x62, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2934,
+      "length": 20,
+      "value": "\"ApproovService.pki\""
+    },
+    {
+      "filePath": "\/Users\/josep.rodriguez.lopez\/git\/ios\/components\/Pods\/ApproovURLSession\/Sources\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3185,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
