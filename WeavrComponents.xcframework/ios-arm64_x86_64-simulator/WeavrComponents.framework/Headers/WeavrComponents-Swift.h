@@ -408,6 +408,7 @@ SWIFT_CLASS("_TtC15WeavrComponents19SecurePasswordField")
 
 
 
+
 SWIFT_CLASS("_TtC15WeavrComponents13WeavrKYCTheme")
 @interface WeavrKYCTheme : SNSTheme
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -815,6 +816,7 @@ SWIFT_CLASS("_TtC15WeavrComponents19SecurePasswordField")
 @interface SecureTextField (SWIFT_EXTENSION(WeavrComponents)) <UITextFieldDelegate>
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
