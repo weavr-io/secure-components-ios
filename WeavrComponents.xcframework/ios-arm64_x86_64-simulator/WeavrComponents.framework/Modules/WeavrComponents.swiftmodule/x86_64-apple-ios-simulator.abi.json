@@ -1654,6 +1654,958 @@
         "moduleName": "WeavrComponents"
       },
       {
+        "kind": "TypeDecl",
+        "name": "TrackOperationResolveBlock",
+        "printedName": "TrackOperationResolveBlock",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onProcessCompleted",
+            "printedName": "onProcessCompleted(addingExtraData:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents26TrackOperationResolveBlockC18onProcessCompleted15addingExtraData10completionySDySSypG_ys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s15WeavrComponents26TrackOperationResolveBlockC18onProcessCompleted15addingExtraData10completionySDySSypG_ys6ResultOyyts5Error_pGctF",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onProcessFailed",
+            "printedName": "onProcessFailed(addingExtraData:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents26TrackOperationResolveBlockC15onProcessFailed15addingExtraData10completionySDySSypG_ys6ResultOyyts5Error_pGctF",
+            "mangledName": "$s15WeavrComponents26TrackOperationResolveBlockC15onProcessFailed15addingExtraData10completionySDySSypG_ys6ResultOyyts5Error_pGctF",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15WeavrComponents26TrackOperationResolveBlockC",
+        "mangledName": "$s15WeavrComponents26TrackOperationResolveBlockC",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Event",
+        "printedName": "Event",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "eventName",
+            "printedName": "eventName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents5EventV9eventNameSSvp",
+            "mangledName": "$s15WeavrComponents5EventV9eventNameSSvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents5EventV9eventNameSSvg",
+                "mangledName": "$s15WeavrComponents5EventV9eventNameSSvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "category",
+            "printedName": "category",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents5EventV8categorySSvp",
+            "mangledName": "$s15WeavrComponents5EventV8categorySSvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents5EventV8categorySSvg",
+                "mangledName": "$s15WeavrComponents5EventV8categorySSvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents5EventV9timestamp10Foundation4DateVvp",
+            "mangledName": "$s15WeavrComponents5EventV9timestamp10Foundation4DateVvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents5EventV9timestamp10Foundation4DateVvg",
+                "mangledName": "$s15WeavrComponents5EventV9timestamp10Foundation4DateVvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extraData",
+            "printedName": "extraData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents5EventV9extraDataSDySSypGvp",
+            "mangledName": "$s15WeavrComponents5EventV9extraDataSDySSypGvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents5EventV9extraDataSDySSypGvg",
+                "mangledName": "$s15WeavrComponents5EventV9extraDataSDySSypGvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "operationState",
+            "printedName": "operationState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents5EventV14operationStateSSSgvp",
+            "mangledName": "$s15WeavrComponents5EventV14operationStateSSSgvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents5EventV14operationStateSSSgvg",
+                "mangledName": "$s15WeavrComponents5EventV14operationStateSSSgvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "operationId",
+            "printedName": "operationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents5EventV11operationIdSSSgvp",
+            "mangledName": "$s15WeavrComponents5EventV11operationIdSSSgvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents5EventV11operationIdSSSgvg",
+                "mangledName": "$s15WeavrComponents5EventV11operationIdSSSgvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(category:eventName:extraData:operationState:operationId:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "WeavrComponents.Event",
+                "usr": "s:15WeavrComponents5EventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "hasDefaultArg": true,
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15WeavrComponents5EventV8category9eventName9extraData14operationState0I2Id9timestampACSS_SSSDySSypGSSSgAK10Foundation4DateVtcfc",
+            "mangledName": "$s15WeavrComponents5EventV8category9eventName9extraData14operationState0I2Id9timestampACSS_SSSDySSypGSSSgAK10Foundation4DateVtcfc",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15WeavrComponents5EventV",
+        "mangledName": "$s15WeavrComponents5EventV",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Analytics",
+        "printedName": "Analytics",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Tracker",
+            "printedName": "Tracker",
+            "children": [
+              {
+                "kind": "Function",
+                "name": "trackEvent",
+                "printedName": "trackEvent(event:completion:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Event",
+                    "printedName": "WeavrComponents.Event",
+                    "usr": "s:15WeavrComponents5EventV"
+                  },
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:15WeavrComponents9AnalyticsO7TrackerP10trackEvent5event10completionyAA0F0V_ys6ResultOyyts5Error_pGctF",
+                "mangledName": "$s15WeavrComponents9AnalyticsO7TrackerP10trackEvent5event10completionyAA0F0V_ys6ResultOyyts5Error_pGctF",
+                "moduleName": "WeavrComponents",
+                "genericSig": "<τ_0_0 where τ_0_0 : WeavrComponents.Analytics.Tracker>",
+                "sugared_genericSig": "<Self where Self : WeavrComponents.Analytics.Tracker>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Protocol",
+            "usr": "s:15WeavrComponents9AnalyticsO7TrackerP",
+            "mangledName": "$s15WeavrComponents9AnalyticsO7TrackerP",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "trackEvent",
+            "printedName": "trackEvent(event:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Event",
+                "printedName": "WeavrComponents.Event",
+                "usr": "s:15WeavrComponents5EventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.Result<(), any Swift.Error>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Result",
+                        "printedName": "Swift.Result<(), any Swift.Error>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:s6ResultO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents9AnalyticsO10trackEvent5event10completionyAA0E0V_ys6ResultOyyts5Error_pGcSgtFZ",
+            "mangledName": "$s15WeavrComponents9AnalyticsO10trackEvent5event10completionyAA0E0V_ys6ResultOyyts5Error_pGcSgtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackOperation",
+            "printedName": "trackOperation(category:operationName:userId:extraData:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TrackOperationResolveBlock",
+                "printedName": "WeavrComponents.TrackOperationResolveBlock",
+                "usr": "s:15WeavrComponents26TrackOperationResolveBlockC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<(), any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<(), any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents9AnalyticsO14trackOperation8category13operationName6userId9extraData10completionAA05TrackE12ResolveBlockCSS_S2SSgSDySSypGSgys6ResultOyyts5Error_pGctFZ",
+            "mangledName": "$s15WeavrComponents9AnalyticsO14trackOperation8category13operationName6userId9extraData10completionAA05TrackE12ResolveBlockCSS_S2SSgSDySSypGSgys6ResultOyyts5Error_pGctFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15WeavrComponents9AnalyticsO",
+        "mangledName": "$s15WeavrComponents9AnalyticsO",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1720,6 +2672,16 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -2342,6 +3304,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -3406,16 +4378,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -5271,73 +6233,6 @@
             "declKind": "Func",
             "usr": "s:15WeavrComponents12UXComponentsC05clearC5CacheyyFZ",
             "mangledName": "$s15WeavrComponents12UXComponentsC05clearC5CacheyyFZ",
-            "moduleName": "WeavrComponents",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "weavrSecureLogin",
-            "printedName": "weavrSecureLogin(email:tokenizePassword:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WeavrResult",
-                    "printedName": "WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WeavrSecureLoginData",
-                        "printedName": "WeavrComponents.WeavrSecureLoginData",
-                        "usr": "s:15WeavrComponents0A15SecureLoginDataV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ErrorResponse",
-                        "printedName": "WeavrComponents.ErrorResponse",
-                        "usr": "s:15WeavrComponents13ErrorResponseV"
-                      }
-                    ],
-                    "usr": "s:15WeavrComponents0A6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15WeavrComponents12UXComponentsC16weavrSecureLogin5email16tokenizePassword10completionySS_SSyAA0A6ResultOyAA0aeF4DataVAA13ErrorResponseVGctFZ",
-            "mangledName": "$s15WeavrComponents12UXComponentsC16weavrSecureLogin5email16tokenizePassword10completionySS_SSyAA0A6ResultOyAA0aeF4DataVAA13ErrorResponseVGctFZ",
             "moduleName": "WeavrComponents",
             "static": true,
             "declAttributes": [
@@ -8740,6 +9635,23 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
       {
@@ -10712,6 +11624,16 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "WeavrComponents",
         "declAttributes": [
@@ -13064,92 +13986,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UserDefaults",
-        "printedName": "UserDefaults",
-        "declKind": "Class",
-        "usr": "c:objc(cs)NSUserDefaults",
-        "moduleName": "Foundation",
-        "isOpen": true,
-        "objc_name": "NSUserDefaults",
-        "declAttributes": [
-          "ObjC",
-          "NonSendable",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "UIDevice",
         "printedName": "UIDevice",
         "children": [
@@ -13348,6 +14184,92 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserDefaults",
+        "printedName": "UserDefaults",
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSUserDefaults",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "objc_name": "NSUserDefaults",
+        "declAttributes": [
+          "ObjC",
+          "NonSendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -13445,6 +14367,41 @@
       "value": "4"
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/TrackOperationResolveBlock.swift",
+      "kind": "Dictionary",
+      "offset": 453,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/TrackOperationResolveBlock.swift",
+      "kind": "Dictionary",
+      "offset": 721,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/UIDevice+Identifier.swift",
+      "kind": "StringLiteral",
+      "offset": 656,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/UIDevice+Identifier.swift",
+      "kind": "IntegerLiteral",
+      "offset": 748,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/Event.swift",
+      "kind": "Dictionary",
+      "offset": 465,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/BiometricScreens\/PinFallbackViewController\/PinFallbackViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
@@ -13468,7 +14425,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 6720,
+      "offset": 4701,
       "length": 5,
       "value": "false"
     },
@@ -13485,6 +14442,503 @@
       "offset": 527,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 20,
+      "value": "\"initialisation_sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 343,
+      "length": 11,
+      "value": "\"enrolment\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 396,
+      "length": 18,
+      "value": "\"biometrics_login\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 454,
+      "length": 32,
+      "value": "\"strong_customer_authentication\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 16,
+      "value": "\"initialise_sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 630,
+      "length": 22,
+      "value": "\"env_selection_failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 27,
+      "value": "\"cannot_recreate_key_pairs\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 22,
+      "value": "\"saving_ui_key_failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 30,
+      "value": "\"security_service_unavailable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 17,
+      "value": "\"start_enrolment\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1012,
+      "length": 25,
+      "value": "\"no_biometrics_available\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1077,
+      "length": 25,
+      "value": "\"passed_biometrics_check\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1139,
+      "length": 28,
+      "value": "\"failed_to_generate_keypair\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1203,
+      "length": 25,
+      "value": "\"otp_challenge_displayed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1264,
+      "length": 25,
+      "value": "\"otp_challenge_cancelled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1322,
+      "length": 22,
+      "value": "\"otp_challenge_failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1377,
+      "length": 22,
+      "value": "\"otp_challenge_passed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1442,
+      "length": 21,
+      "value": "\"completed_enrolment\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1503,
+      "length": 18,
+      "value": "\"failed_enrolment\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1561,
+      "length": 19,
+      "value": "\"analytics_failure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1677,
+      "length": 20,
+      "value": "\"enrolment_required\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1745,
+      "length": 27,
+      "value": "\"server_rejected_enrolment\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1812,
+      "length": 19,
+      "value": "\"failed_biometrics\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1871,
+      "length": 19,
+      "value": "\"passed_biometrics\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 1938,
+      "length": 29,
+      "value": "\"server_rejects_signed_nonce\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2009,
+      "length": 22,
+      "value": "\"pin_fallback_started\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2079,
+      "length": 29,
+      "value": "\"server_rejects_pin_fallback\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2153,
+      "length": 27,
+      "value": "\"logs_in_with_pin_fallback\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2224,
+      "length": 25,
+      "value": "\"logs_in_with_biometrics\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2285,
+      "length": 15,
+      "value": "\"network_error\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2390,
+      "length": 20,
+      "value": "\"challenge_received\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2457,
+      "length": 27,
+      "value": "\"challenge_details_fetched\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2530,
+      "length": 26,
+      "value": "\"biometric_attempt_failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2594,
+      "length": 17,
+      "value": "\"biometric_error\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2664,
+      "length": 34,
+      "value": "\"challenge_local_biometric_passed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2750,
+      "length": 32,
+      "value": "\"biometric_verification_started\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2836,
+      "length": 34,
+      "value": "\"biometric_verification_succeeded\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 2927,
+      "length": 38,
+      "value": "\"biometric_verification_failed_server\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3011,
+      "length": 39,
+      "value": "\"challenge_flow_completed_successfully\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3093,
+      "length": 23,
+      "value": "\"challenge_flow_failed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3213,
+      "length": 31,
+      "value": "\"challenge_ui_navigation_start\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3296,
+      "length": 33,
+      "value": "\"challenge_ui_navigation_success\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3381,
+      "length": 33,
+      "value": "\"challenge_ui_navigation_failure\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3462,
+      "length": 28,
+      "value": "\"biometric_prompt_displayed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3538,
+      "length": 29,
+      "value": "\"biometric_cancelled_by_user\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3611,
+      "length": 24,
+      "value": "\"pin_fallback_initiated\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3682,
+      "length": 28,
+      "value": "\"pin_entry_screen_displayed\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3752,
+      "length": 23,
+      "value": "\"pin_submitted_by_user\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3829,
+      "length": 35,
+      "value": "\"pin_fallback_verification_started\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3920,
+      "length": 37,
+      "value": "\"pin_fallback_verification_succeeded\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4016,
+      "length": 41,
+      "value": "\"pin_fallback_verification_failed_server\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4139,
+      "length": 9,
+      "value": "\"BIO_001\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4187,
+      "length": 9,
+      "value": "\"BIO_002\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4235,
+      "length": 9,
+      "value": "\"BIO_003\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4281,
+      "length": 9,
+      "value": "\"BIO_004\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4332,
+      "length": 9,
+      "value": "\"BIO_005\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4377,
+      "length": 9,
+      "value": "\"BIO_006\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4431,
+      "length": 9,
+      "value": "\"BIO_003\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4480,
+      "length": 9,
+      "value": "\"BIO_999\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4535,
+      "length": 16,
+      "value": "\"BIO_PROMPT_000\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4640,
+      "length": 9,
+      "value": "\"KEY_001\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4688,
+      "length": 9,
+      "value": "\"KEY_002\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4768,
+      "length": 9,
+      "value": "\"OTP_001\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4811,
+      "length": 9,
+      "value": "\"OTP_002\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4853,
+      "length": 9,
+      "value": "\"OTP_003\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4948,
+      "length": 9,
+      "value": "\"ENR_001\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 4997,
+      "length": 9,
+      "value": "\"ENR_002\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 5042,
+      "length": 9,
+      "value": "\"ENR_003\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 5092,
+      "length": 9,
+      "value": "\"ENR_999\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 5170,
+      "length": 11,
+      "value": "\"biometric\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/AnalyticsErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 5210,
+      "length": 5,
+      "value": "\"otp\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/BiometricScreens\/PaymentConfirmationViewController\/Views\/PaymentInformationView\/PaymentInformationView.swift",
@@ -13531,7 +14985,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4353,
+      "offset": 3695,
       "length": 5,
       "value": "false"
     },
@@ -13804,14 +15258,21 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/core\/PSAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2653,
+      "offset": 2646,
+      "length": 29,
+      "value": "\"The user must be logged in.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/core\/PSAConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2716,
       "length": 28,
       "value": "\"Authentication successful!\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/core\/PSAConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2716,
+      "offset": 2779,
       "length": 16,
       "value": "\"Enter your PIN\""
     },
@@ -14003,6 +15464,13 @@
       "offset": 227,
       "length": 15,
       "value": "\"enrolment_key\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/JSONSerialization+Extensions.swift",
+      "kind": "Array",
+      "offset": 331,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/sumsub\/InitialSumsubVC.swift",
@@ -14213,20 +15681,6 @@
       "offset": 386,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/DeviceData.swift",
-      "kind": "StringLiteral",
-      "offset": 1394,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/DeviceData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1486,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Keychain\/KeychainOperations.swift",

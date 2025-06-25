@@ -46,6 +46,30 @@ extension WeavrComponents.SecurePasscodeFieldStack : UIKit.UITextFieldDelegate {
   public static func createView(isSegmented: Swift.Bool) -> UIKit.UIView
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class TrackOperationResolveBlock {
+  public func onProcessCompleted(addingExtraData data: [Swift.String : Any] = [:], completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> () = { _ in })
+  public func onProcessFailed(addingExtraData data: [Swift.String : Any] = [:], completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> () = { _ in })
+  @objc deinit
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var identifier: Swift.String
+}
+public struct Event {
+  public let eventName: Swift.String
+  public let category: Swift.String
+  public let timestamp: Foundation.Date
+  public let extraData: [Swift.String : Any]
+  public let operationState: Swift.String?
+  public let operationId: Swift.String?
+  public init(category: Swift.String, eventName: Swift.String, extraData: [Swift.String : Any] = [:], operationState: Swift.String? = nil, operationId: Swift.String? = nil, timestamp: Foundation.Date = Date())
+}
+public enum Analytics {
+  public protocol Tracker {
+    func trackEvent(event: WeavrComponents.Event, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
+  }
+  public static func trackEvent(event: WeavrComponents.Event, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
+  public static func trackOperation(category: Swift.String, operationName: Swift.String, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> () = { _ in }) -> WeavrComponents.TrackOperationResolveBlock
+}
 @_hasMissingDesignatedInitializers final public class KYCWrapper {
   final public func startKyc(vc: UIKit.UIViewController, reference: Swift.String, token: Swift.String? = nil, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, locale: Swift.String, theme: WeavrComponents.WeavrKYCTheme? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
   final public func setAnalyticsEnabled(isEnabled: Swift.Bool)
@@ -129,7 +153,6 @@ public struct UXComponentsStatus {
   public static func initialize(env: WeavrComponents.ENV, uiKey: Swift.String, completion: ((Swift.String) -> Swift.Void)? = nil)
   public static func initialize(environment env: WeavrComponents.ENV, uiKey: Swift.String, completion: @escaping ((Swift.Result<WeavrComponents.UXComponentsStatus, WeavrComponents.ErrorResponse>) -> Swift.Void))
   public static func clearUXComponentsCache()
-  public static func weavrSecureLogin(email: Swift.String, tokenizePassword: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> Swift.Void)
   public static func setUserToken(token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.String, WeavrComponents.ErrorResponse>) -> Swift.Void)
   public static func createGroup(components: [WeavrComponents.SecureTextField]) -> WeavrComponents.UXComponetGroup
   public static func isAssociated() -> Swift.Bool
@@ -303,9 +326,6 @@ public enum WeavrPSASharedStatus : Swift.Int {
   public var rawValue: Swift.Int {
     get
   }
-}
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor @preconcurrency public static var identifier: Swift.String
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class SecureCardPinField : WeavrComponents.SecureTextField {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
