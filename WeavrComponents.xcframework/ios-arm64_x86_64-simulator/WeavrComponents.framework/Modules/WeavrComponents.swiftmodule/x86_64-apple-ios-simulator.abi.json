@@ -13141,6 +13141,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -15273,8 +15283,8 @@
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/core\/PSAConstants.swift",
       "kind": "StringLiteral",
       "offset": 2779,
-      "length": 16,
-      "value": "\"Enter your PIN\""
+      "length": 21,
+      "value": "\"Enter your Password\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/BiometricAuthentication\/BiometricAuthenticator.swift",
