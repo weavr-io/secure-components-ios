@@ -108,8 +108,11 @@ public protocol Biometrics {
   func checkIsReadyForEnrollment() -> Swift.Bool
   func checkReadyForAuth() -> Swift.Bool
   func updateDeviceToken(deviceToken: Swift.String)
+  @available(*, deprecated, renamed: "isEnrolled", message: "Use isEnrolled instead")
   func checkDeviceIsEnrolled()
+  @available(*, deprecated, renamed: "isEnrolled", message: "Use isEnrolled instead")
   func checkDeviceIsEnrolled(completion: @escaping ((WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> Swift.Void))
+  func isEnrolled() -> Swift.Bool
   func startChallenge(userInfo: [Swift.AnyHashable : Any], completion: @escaping (Swift.Bool, WeavrComponents.WeavrPSASharedStatus, WeavrComponents.WeavrChallengeType) -> Swift.Void)
   func startEnrollment(vc: UIKit.UIViewController, token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.String?, WeavrComponents.ErrorResponse>) -> Swift.Void)
   func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>) -> Swift.Void)

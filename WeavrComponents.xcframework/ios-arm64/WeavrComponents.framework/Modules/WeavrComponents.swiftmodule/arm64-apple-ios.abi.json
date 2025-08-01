@@ -4528,8 +4528,10 @@
             "moduleName": "WeavrComponents",
             "genericSig": "<τ_0_0 where τ_0_0 : WeavrComponents.Biometrics>",
             "sugared_genericSig": "<Self where Self : WeavrComponents.Biometrics>",
+            "deprecated": true,
             "protocolReq": true,
             "declAttributes": [
+              "Available",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -4581,6 +4583,33 @@
             "declKind": "Func",
             "usr": "s:15WeavrComponents10BiometricsP21checkDeviceIsEnrolled10completionyyAA0A6ResultOySbAA13ErrorResponseVGc_tF",
             "mangledName": "$s15WeavrComponents10BiometricsP21checkDeviceIsEnrolled10completionyyAA0A6ResultOySbAA13ErrorResponseVGc_tF",
+            "moduleName": "WeavrComponents",
+            "genericSig": "<τ_0_0 where τ_0_0 : WeavrComponents.Biometrics>",
+            "sugared_genericSig": "<Self where Self : WeavrComponents.Biometrics>",
+            "deprecated": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEnrolled",
+            "printedName": "isEnrolled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents10BiometricsP10isEnrolledSbyF",
+            "mangledName": "$s15WeavrComponents10BiometricsP10isEnrolledSbyF",
             "moduleName": "WeavrComponents",
             "genericSig": "<τ_0_0 where τ_0_0 : WeavrComponents.Biometrics>",
             "sugared_genericSig": "<Self where Self : WeavrComponents.Biometrics>",
@@ -13909,6 +13938,13 @@
         "moduleName": "WeavrComponents"
       },
       {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
         "kind": "TypeDecl",
         "name": "WeavrBiometric",
         "printedName": "WeavrBiometric",
@@ -15322,95 +15358,102 @@
       "value": "\"Mobile number not available\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
-      "length": 13,
-      "value": "\"_num_chunks\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 221,
-      "length": 9,
-      "value": "\"_chunk_\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 263,
-      "length": 18,
-      "value": "\"passcodeLength94\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 309,
-      "length": 9,
-      "value": "\"uiKey94\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 350,
-      "length": 13,
-      "value": "\"randomKey94\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 393,
-      "length": 15,
-      "value": "\"bearerToken94\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 444,
-      "length": 16,
-      "value": "\"userExternalId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 493,
-      "length": 16,
-      "value": "\"encryptedNonce\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 547,
-      "length": 21,
-      "value": "\"isReadyForEnrolment\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 602,
-      "length": 25,
-      "value": "\"pushNotificationEnabled\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 658,
-      "length": 14,
-      "value": "\"enrolmentKey\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 704,
-      "length": 15,
-      "value": "\"appCheckToken\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/SecureLabels\/SecureCardNumberLabel.swift",
       "kind": "BooleanLiteral",
       "offset": 111,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2542,
+      "length": 13,
+      "value": "\"_num_chunks\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2583,
+      "length": 9,
+      "value": "\"_chunk_\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2629,
+      "length": 18,
+      "value": "\"passcodeLength94\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2679,
+      "length": 9,
+      "value": "\"uiKey94\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2724,
+      "length": 13,
+      "value": "\"randomKey94\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2771,
+      "length": 15,
+      "value": "\"bearerToken94\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2826,
+      "length": 16,
+      "value": "\"userExternalId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2879,
+      "length": 16,
+      "value": "\"encryptedNonce\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2937,
+      "length": 21,
+      "value": "\"isReadyForEnrolment\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 2996,
+      "length": 25,
+      "value": "\"pushNotificationEnabled\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 3056,
+      "length": 14,
+      "value": "\"enrolmentKey\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 3106,
+      "length": 15,
+      "value": "\"appCheckToken\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
+      "kind": "StringLiteral",
+      "offset": 3161,
+      "length": 19,
+      "value": "\"deviceFingerprint\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Keychain\/KeyChainSwift.swift",
@@ -15695,7 +15738,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Keychain\/KeychainOperations.swift",
       "kind": "StringLiteral",
-      "offset": 348,
+      "offset": 723,
       "length": 54,
       "value": "\"io.weavr.uxcomponents-react-native.deviceFingerprint\""
     },
