@@ -47,8 +47,8 @@ extension WeavrComponents.SecurePasscodeFieldStack : UIKit.UITextFieldDelegate {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class TrackOperationResolveBlock {
-  public func onProcessCompleted(addingExtraData data: [Swift.String : Any] = [:], completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> () = { _ in })
-  public func onProcessFailed(addingExtraData data: [Swift.String : Any] = [:], completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> () = { _ in })
+  public func onProcessCompleted(addingExtraData data: [Swift.String : Any] = [:], completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void = { _ in })
+  public func onProcessFailed(addingExtraData data: [Swift.String : Any] = [:], completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void = { _ in })
   @objc deinit
 }
 extension UIKit.UIDevice {
@@ -68,7 +68,7 @@ public enum Analytics {
     func trackEvent(event: WeavrComponents.Event, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)
   }
   public static func trackEvent(event: WeavrComponents.Event, completion: ((Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void)? = nil)
-  public static func trackOperation(category: Swift.String, operationName: Swift.String, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> () = { _ in }) -> WeavrComponents.TrackOperationResolveBlock
+  public static func trackOperation(category: Swift.String, operationName: Swift.String, userId: Swift.String? = nil, extraData: [Swift.String : Any]? = nil, completion: @escaping (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void = { _ in }) -> WeavrComponents.TrackOperationResolveBlock
 }
 @_hasMissingDesignatedInitializers final public class KYCWrapper {
   final public func startKyc(vc: UIKit.UIViewController, reference: Swift.String, token: Swift.String? = nil, mailAddress: Swift.String? = nil, phone: Swift.String? = nil, locale: Swift.String, theme: WeavrComponents.WeavrKYCTheme? = nil, kycHandlers: ((WeavrComponents.WeavrKYCHandlers) -> Swift.Void)?, weavrExceptionHandlers: ((WeavrComponents.WeavrExceptionHandlers) -> Swift.Void)?, kycListeners: ((WeavrComponents.WeavrKYCListeners) -> Swift.Void)?)
@@ -115,8 +115,8 @@ public protocol Biometrics {
   func isEnrolled() -> Swift.Bool
   func startChallenge(userInfo: [Swift.AnyHashable : Any], completion: @escaping (Swift.Bool, WeavrComponents.WeavrPSASharedStatus, WeavrComponents.WeavrChallengeType) -> Swift.Void)
   func startEnrollment(vc: UIKit.UIViewController, token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.String?, WeavrComponents.ErrorResponse>) -> Swift.Void)
-  func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>) -> Swift.Void)
-  func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>) -> Swift.Void, onForgotPasscode: (() -> Swift.Void)?)
+  func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> Swift.Void)
+  func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> Swift.Void, onForgotPasscode: (() -> Swift.Void)?)
 }
 public enum PsaENV {
   case PRODUCTION
@@ -271,20 +271,17 @@ public enum ENV {
   @_Concurrency.MainActor @preconcurrency public func enableCopyTextToClipboardOnLongClick(enabled: Swift.Bool, completion: ((_ message: Swift.String) -> Swift.Void)?)
   @objc deinit
 }
-public struct WeavrSecureLoginData : Swift.Codable {
-  public let credentials: WeavrComponents.WeavrSecureLoginDataCredentials?
-  public let identity: WeavrComponents.WeavrSecureLoginDataCredentials?
-  public let token: Swift.String?
-  public let tokenType: Swift.String?
-  public let programmeId: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
+public enum TokenType : Swift.Codable, Swift.Equatable {
+  case auth
+  case access
+  case other(type: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: WeavrComponents.TokenType, b: WeavrComponents.TokenType) -> Swift.Bool
 }
-public struct WeavrSecureLoginDataCredentials : Swift.Codable {
-  public let id: Swift.String?
-  public let type: Swift.String?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct WeavrSecureLoginData {
+  public let token: Swift.String
+  public let tokenType: WeavrComponents.TokenType
 }
 @objc @_inheritsConvenienceInitializers open class WeavrKYCTheme : IdensicMobileSDK.SNSTheme {
   @objc override dynamic public init()

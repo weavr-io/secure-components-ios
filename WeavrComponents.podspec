@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '3.0.2'
+  spec.version      = '3.1.0'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }

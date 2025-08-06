@@ -4789,7 +4789,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>) -> ()",
+                "printedName": "(WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4799,21 +4799,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "WeavrResult",
-                    "printedName": "WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>",
+                    "printedName": "WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "WeavrComponents.WeavrSecureLoginData?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "WeavrSecureLoginData",
-                            "printedName": "WeavrComponents.WeavrSecureLoginData",
-                            "usr": "s:15WeavrComponents0A15SecureLoginDataV"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "WeavrSecureLoginData",
+                        "printedName": "WeavrComponents.WeavrSecureLoginData",
+                        "usr": "s:15WeavrComponents0A15SecureLoginDataV"
                       },
                       {
                         "kind": "TypeNominal",
@@ -4828,8 +4820,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15WeavrComponents10BiometricsP22startBiometricPSALogin10completionyyAA0A6ResultOyAA0A15SecureLoginDataVSgAA13ErrorResponseVGc_tF",
-            "mangledName": "$s15WeavrComponents10BiometricsP22startBiometricPSALogin10completionyyAA0A6ResultOyAA0A15SecureLoginDataVSgAA13ErrorResponseVGc_tF",
+            "usr": "s:15WeavrComponents10BiometricsP22startBiometricPSALogin10completionyyAA0A6ResultOyAA0A15SecureLoginDataVAA13ErrorResponseVGc_tF",
+            "mangledName": "$s15WeavrComponents10BiometricsP22startBiometricPSALogin10completionyyAA0A6ResultOyAA0A15SecureLoginDataVAA13ErrorResponseVGc_tF",
             "moduleName": "WeavrComponents",
             "genericSig": "<τ_0_0 where τ_0_0 : WeavrComponents.Biometrics>",
             "sugared_genericSig": "<Self where Self : WeavrComponents.Biometrics>",
@@ -4853,7 +4845,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>) -> ()",
+                "printedName": "(WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -4863,21 +4855,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "WeavrResult",
-                    "printedName": "WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData?, WeavrComponents.ErrorResponse>",
+                    "printedName": "WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "WeavrComponents.WeavrSecureLoginData?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "WeavrSecureLoginData",
-                            "printedName": "WeavrComponents.WeavrSecureLoginData",
-                            "usr": "s:15WeavrComponents0A15SecureLoginDataV"
-                          }
-                        ],
-                        "usr": "s:Sq"
+                        "name": "WeavrSecureLoginData",
+                        "printedName": "WeavrComponents.WeavrSecureLoginData",
+                        "usr": "s:15WeavrComponents0A15SecureLoginDataV"
                       },
                       {
                         "kind": "TypeNominal",
@@ -4917,8 +4901,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15WeavrComponents10BiometricsP22startBiometricPSALogin10completion16onForgotPasscodeyyAA0A6ResultOyAA0A15SecureLoginDataVSgAA13ErrorResponseVGc_yycSgtF",
-            "mangledName": "$s15WeavrComponents10BiometricsP22startBiometricPSALogin10completion16onForgotPasscodeyyAA0A6ResultOyAA0A15SecureLoginDataVSgAA13ErrorResponseVGc_yycSgtF",
+            "usr": "s:15WeavrComponents10BiometricsP22startBiometricPSALogin10completion16onForgotPasscodeyyAA0A6ResultOyAA0A15SecureLoginDataVAA13ErrorResponseVGc_yycSgtF",
+            "mangledName": "$s15WeavrComponents10BiometricsP22startBiometricPSALogin10completion16onForgotPasscodeyyAA0A6ResultOyAA0A15SecureLoginDataVAA13ErrorResponseVGc_yycSgtF",
             "moduleName": "WeavrComponents",
             "genericSig": "<τ_0_0 where τ_0_0 : WeavrComponents.Biometrics>",
             "sugared_genericSig": "<Self where Self : WeavrComponents.Biometrics>",
@@ -10421,330 +10405,140 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
         "kind": "TypeDecl",
-        "name": "WeavrSecureLoginData",
-        "printedName": "WeavrSecureLoginData",
+        "name": "TokenType",
+        "printedName": "TokenType",
         "children": [
           {
             "kind": "Var",
-            "name": "credentials",
-            "printedName": "credentials",
+            "name": "auth",
+            "printedName": "auth",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials?",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.TokenType.Type) -> WeavrComponents.TokenType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "WeavrSecureLoginDataCredentials",
-                    "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials",
-                    "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV11credentialsAA0acdE11CredentialsVSgvp",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV11credentialsAA0acdE11CredentialsVSgvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
+                    "name": "TokenType",
+                    "printedName": "WeavrComponents.TokenType",
+                    "usr": "s:15WeavrComponents9TokenTypeO"
+                  },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials?",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.TokenType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "WeavrSecureLoginDataCredentials",
-                        "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials",
-                        "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV"
+                        "name": "TokenType",
+                        "printedName": "WeavrComponents.TokenType",
+                        "usr": "s:15WeavrComponents9TokenTypeO"
                       }
-                    ],
-                    "usr": "s:Sq"
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A15SecureLoginDataV11credentialsAA0acdE11CredentialsVSgvg",
-                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV11credentialsAA0acdE11CredentialsVSgvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
+                ]
               }
-            ]
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents9TokenTypeO4authyA2CmF",
+            "mangledName": "$s15WeavrComponents9TokenTypeO4authyA2CmF",
+            "moduleName": "WeavrComponents"
           },
           {
             "kind": "Var",
-            "name": "identity",
-            "printedName": "identity",
+            "name": "access",
+            "printedName": "access",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials?",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.TokenType.Type) -> WeavrComponents.TokenType",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "WeavrSecureLoginDataCredentials",
-                    "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials",
-                    "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV8identityAA0acdE11CredentialsVSgvp",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV8identityAA0acdE11CredentialsVSgvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
+                    "name": "TokenType",
+                    "printedName": "WeavrComponents.TokenType",
+                    "usr": "s:15WeavrComponents9TokenTypeO"
+                  },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials?",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.TokenType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "WeavrSecureLoginDataCredentials",
-                        "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials",
-                        "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV"
+                        "name": "TokenType",
+                        "printedName": "WeavrComponents.TokenType",
+                        "usr": "s:15WeavrComponents9TokenTypeO"
                       }
-                    ],
-                    "usr": "s:Sq"
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A15SecureLoginDataV8identityAA0acdE11CredentialsVSgvg",
-                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV8identityAA0acdE11CredentialsVSgvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
+                ]
               }
-            ]
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents9TokenTypeO6accessyA2CmF",
+            "mangledName": "$s15WeavrComponents9TokenTypeO6accessyA2CmF",
+            "moduleName": "WeavrComponents"
           },
           {
             "kind": "Var",
-            "name": "token",
-            "printedName": "token",
+            "name": "other",
+            "printedName": "other",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.TokenType.Type) -> (Swift.String) -> WeavrComponents.TokenType",
                 "children": [
                   {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV5tokenSSSgvp",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV5tokenSSSgvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> WeavrComponents.TokenType",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "TokenType",
+                        "printedName": "WeavrComponents.TokenType",
+                        "usr": "s:15WeavrComponents9TokenTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(type: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
                       }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A15SecureLoginDataV5tokenSSSgvg",
-                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV5tokenSSSgvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tokenType",
-            "printedName": "tokenType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
+                    ]
+                  },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV9tokenTypeSSSgvp",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV9tokenTypeSSSgvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.TokenType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "TokenType",
+                        "printedName": "WeavrComponents.TokenType",
+                        "usr": "s:15WeavrComponents9TokenTypeO"
                       }
-                    ],
-                    "usr": "s:Sq"
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A15SecureLoginDataV9tokenTypeSSSgvg",
-                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV9tokenTypeSSSgvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "programmeId",
-            "printedName": "programmeId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                ]
               }
             ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV11programmeIdSSSgvp",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV11programmeIdSSSgvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A15SecureLoginDataV11programmeIdSSSgvg",
-                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV11programmeIdSSSgvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents9TokenTypeO5otheryACSS_tcACmF",
+            "mangledName": "$s15WeavrComponents9TokenTypeO5otheryACSS_tcACmF",
+            "moduleName": "WeavrComponents"
           },
           {
             "kind": "Constructor",
@@ -10753,9 +10547,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WeavrSecureLoginData",
-                "printedName": "WeavrComponents.WeavrSecureLoginData",
-                "usr": "s:15WeavrComponents0A15SecureLoginDataV"
+                "name": "TokenType",
+                "printedName": "WeavrComponents.TokenType",
+                "usr": "s:15WeavrComponents9TokenTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -10765,10 +10559,12 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:15WeavrComponents9TokenTypeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s15WeavrComponents9TokenTypeO4fromACs7Decoder_p_tKcfc",
             "moduleName": "WeavrComponents",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -10790,17 +10586,51 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15WeavrComponents0A15SecureLoginDataV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV6encode2toys7Encoder_p_tKF",
+            "usr": "s:15WeavrComponents9TokenTypeO6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s15WeavrComponents9TokenTypeO6encode2toys7Encoder_p_tKF",
             "moduleName": "WeavrComponents",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TokenType",
+                "printedName": "WeavrComponents.TokenType",
+                "usr": "s:15WeavrComponents9TokenTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TokenType",
+                "printedName": "WeavrComponents.TokenType",
+                "usr": "s:15WeavrComponents9TokenTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents9TokenTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15WeavrComponents9TokenTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "implicit": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:15WeavrComponents0A15SecureLoginDataV",
-        "mangledName": "$s15WeavrComponents0A15SecureLoginDataV",
+        "declKind": "Enum",
+        "usr": "s:15WeavrComponents9TokenTypeO",
+        "mangledName": "$s15WeavrComponents9TokenTypeO",
         "moduleName": "WeavrComponents",
         "declAttributes": [
           "AccessControl",
@@ -10834,37 +10664,57 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "WeavrSecureLoginDataCredentials",
-        "printedName": "WeavrSecureLoginDataCredentials",
+        "name": "WeavrSecureLoginData",
+        "printedName": "WeavrSecureLoginData",
         "children": [
           {
             "kind": "Var",
-            "name": "id",
-            "printedName": "id",
+            "name": "token",
+            "printedName": "token",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV2idSSSgvp",
-            "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV2idSSSgvp",
+            "usr": "s:15WeavrComponents0A15SecureLoginDataV5tokenSSvp",
+            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV5tokenSSvp",
             "moduleName": "WeavrComponents",
             "declAttributes": [
               "HasStorage",
@@ -10880,22 +10730,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV2idSSSgvg",
-                "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV2idSSSgvg",
+                "usr": "s:15WeavrComponents0A15SecureLoginDataV5tokenSSvg",
+                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV5tokenSSvg",
                 "moduleName": "WeavrComponents",
                 "implicit": true,
                 "accessorKind": "get"
@@ -10904,27 +10746,19 @@
           },
           {
             "kind": "Var",
-            "name": "type",
-            "printedName": "type",
+            "name": "tokenType",
+            "printedName": "tokenType",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "TokenType",
+                "printedName": "WeavrComponents.TokenType",
+                "usr": "s:15WeavrComponents9TokenTypeO"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV4typeSSSgvp",
-            "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV4typeSSSgvp",
+            "usr": "s:15WeavrComponents0A15SecureLoginDataV9tokenTypeAA05TokenG0Ovp",
+            "mangledName": "$s15WeavrComponents0A15SecureLoginDataV9tokenTypeAA05TokenG0Ovp",
             "moduleName": "WeavrComponents",
             "declAttributes": [
               "HasStorage",
@@ -10940,83 +10774,24 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "TokenType",
+                    "printedName": "WeavrComponents.TokenType",
+                    "usr": "s:15WeavrComponents9TokenTypeO"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV4typeSSSgvg",
-                "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV4typeSSSgvg",
+                "usr": "s:15WeavrComponents0A15SecureLoginDataV9tokenTypeAA05TokenG0Ovg",
+                "mangledName": "$s15WeavrComponents0A15SecureLoginDataV9tokenTypeAA05TokenG0Ovg",
                 "moduleName": "WeavrComponents",
                 "implicit": true,
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeavrSecureLoginDataCredentials",
-                "printedName": "WeavrComponents.WeavrSecureLoginDataCredentials",
-                "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "WeavrComponents",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV6encode2toys7Encoder_p_tKF",
-            "moduleName": "WeavrComponents",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
-        "usr": "s:15WeavrComponents0A26SecureLoginDataCredentialsV",
-        "mangledName": "$s15WeavrComponents0A26SecureLoginDataCredentialsV",
+        "usr": "s:15WeavrComponents0A15SecureLoginDataV",
+        "mangledName": "$s15WeavrComponents0A15SecureLoginDataV",
         "moduleName": "WeavrComponents",
         "declAttributes": [
           "AccessControl"
@@ -11035,20 +10810,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           }
         ]
       },
@@ -14422,7 +14183,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/TrackOperationResolveBlock.swift",
       "kind": "Dictionary",
-      "offset": 721,
+      "offset": 723,
       "length": 3,
       "value": "[]"
     },
@@ -14450,14 +14211,14 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/BiometricScreens\/PinFallbackViewController\/PinFallbackViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 203,
+      "offset": 194,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/BiometricScreens\/PinFallbackViewController\/PinFallbackViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 215,
       "length": 1,
       "value": "0"
     },
@@ -14471,7 +14232,7 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo+Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 4701,
+      "offset": 4730,
       "length": 5,
       "value": "false"
     },
@@ -14996,44 +14757,37 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 190,
+      "offset": 3087,
       "length": 37,
       "value": "\"UXComponents need to be initialised\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 265,
+      "offset": 3162,
       "length": 60,
       "value": "\"No user has been associated. Make sure you have logged in.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 363,
+      "offset": 3260,
       "length": 22,
       "value": "\"Bearer token missing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 421,
+      "offset": 3318,
       "length": 20,
       "value": "\"Random key missing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 3373,
       "length": 19,
       "value": "\"Missing device id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3695,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/UXComponentGroup.swift",
