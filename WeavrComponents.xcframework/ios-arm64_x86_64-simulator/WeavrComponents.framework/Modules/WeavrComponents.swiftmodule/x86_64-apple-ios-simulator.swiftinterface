@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios15.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WeavrComponents
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios15.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WeavrComponents
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import ApproovURLSession
 import CryptoKit
 import DeveloperToolsSupport
@@ -105,18 +105,20 @@ public struct BrandingResponse : Swift.Codable {
 }
 public protocol Biometrics {
   func initialize(psaEnv: WeavrComponents.PsaENV)
+  func updateDeviceToken(fcmToken: Swift.String) async -> Swift.Result<Swift.Bool, WeavrComponents.ErrorResponse>
   func checkIsReadyForEnrollment() -> Swift.Bool
   func checkReadyForAuth() -> Swift.Bool
-  func updateDeviceToken(deviceToken: Swift.String)
-  @available(*, deprecated, renamed: "isEnrolled", message: "Use isEnrolled instead")
-  func checkDeviceIsEnrolled()
-  @available(*, deprecated, renamed: "isEnrolled", message: "Use isEnrolled instead")
-  func checkDeviceIsEnrolled(completion: @escaping ((WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> Swift.Void))
   func isEnrolled() -> Swift.Bool
   func startChallenge(userInfo: [Swift.AnyHashable : Any], completion: @escaping (Swift.Bool, WeavrComponents.WeavrPSASharedStatus, WeavrComponents.WeavrChallengeType) -> Swift.Void)
   func startEnrollment(vc: UIKit.UIViewController, token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.String?, WeavrComponents.ErrorResponse>) -> Swift.Void)
   func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> Swift.Void)
   func startBiometricPSALogin(completion: @escaping (WeavrComponents.WeavrResult<WeavrComponents.WeavrSecureLoginData, WeavrComponents.ErrorResponse>) -> Swift.Void, onForgotPasscode: (() -> Swift.Void)?)
+  @available(*, deprecated, renamed: "updateDeviceToken(fcmToken:)", message: "Use updateDeviceToken(fcmToken:) async instead as it provides you with a result")
+  func updateDeviceToken(deviceToken: Swift.String)
+  @available(*, deprecated, renamed: "isEnrolled", message: "Use isEnrolled instead")
+  func checkDeviceIsEnrolled()
+  @available(*, deprecated, renamed: "isEnrolled", message: "Use isEnrolled instead")
+  func checkDeviceIsEnrolled(completion: @escaping (WeavrComponents.WeavrResult<Swift.Bool, WeavrComponents.ErrorResponse>) -> Swift.Void)
 }
 public enum PsaENV {
   case PRODUCTION
@@ -134,8 +136,12 @@ public protocol UXComponetGroupProtocol {
   func removeComponents(components: [WeavrComponents.SecureTextField])
 }
 @_hasMissingDesignatedInitializers public class UXComponetGroup : WeavrComponents.UXComponetGroupProtocol {
-  public var data: [Swift.String]
-  public var components: [WeavrComponents.SecureTextField]
+  public var data: [Swift.String] {
+    get
+  }
+  public var components: [WeavrComponents.SecureTextField] {
+    get
+  }
   public func addComponents(components: [WeavrComponents.SecureTextField])
   public func removeComponents(components: [WeavrComponents.SecureTextField])
   public func createToken(fieldKeys: [Swift.String], callBack: @escaping (WeavrComponents.WeavrResult<[Swift.String : Swift.String?], WeavrComponents.ErrorResponse>) -> Swift.Void)
@@ -154,7 +160,7 @@ public struct UXComponentsStatus {
   }
   @available(*, deprecated, message: "Please use initialize(environment: ENV, uiKey: String, completion: ((Result<UXComponentsStatus, ErrorResponse>) -> Void)) instead")
   public static func initialize(env: WeavrComponents.ENV, uiKey: Swift.String, completion: ((Swift.String) -> Swift.Void)? = nil)
-  public static func initialize(environment env: WeavrComponents.ENV, uiKey: Swift.String, completion: @escaping ((Swift.Result<WeavrComponents.UXComponentsStatus, WeavrComponents.ErrorResponse>) -> Swift.Void))
+  public static func initialize(environment env: WeavrComponents.ENV, uiKey: Swift.String, completion: @escaping (Swift.Result<WeavrComponents.UXComponentsStatus, WeavrComponents.ErrorResponse>) -> Swift.Void)
   public static func clearUXComponentsCache()
   public static func setUserToken(token: Swift.String, completion: @escaping (WeavrComponents.WeavrResult<Swift.String, WeavrComponents.ErrorResponse>) -> Swift.Void)
   public static func createGroup(components: [WeavrComponents.SecureTextField]) -> WeavrComponents.UXComponetGroup
