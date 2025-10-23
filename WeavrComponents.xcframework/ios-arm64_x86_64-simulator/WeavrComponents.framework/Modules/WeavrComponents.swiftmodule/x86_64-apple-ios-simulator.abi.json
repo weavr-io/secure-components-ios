@@ -5828,6 +5828,51 @@
           },
           {
             "kind": "Var",
+            "name": "isBiometricsEnabled",
+            "printedName": "isBiometricsEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents18UXComponentsStatusV19isBiometricsEnabledSbvp",
+            "mangledName": "$s15WeavrComponents18UXComponentsStatusV19isBiometricsEnabledSbvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents18UXComponentsStatusV19isBiometricsEnabledSbvg",
+                "mangledName": "$s15WeavrComponents18UXComponentsStatusV19isBiometricsEnabledSbvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "userNeedsRelogin",
             "printedName": "userNeedsRelogin",
             "children": [
@@ -15187,6 +15232,13 @@
       "value": "\"externalUserId\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/ServerErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 156,
+      "length": 21,
+      "value": "\"PROGRAMME_NOT_FOUND\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/biometrics\/BiometricScreens\/OtpViewController\/OtpViewController.swift",
       "kind": "StringLiteral",
       "offset": 495,
@@ -15227,6 +15279,13 @@
       "offset": 227,
       "length": 15,
       "value": "\"enrolment_key\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/HTTPStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 147,
+      "length": 3,
+      "value": "409"
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/analytics\/JSONSerialization+Extensions.swift",

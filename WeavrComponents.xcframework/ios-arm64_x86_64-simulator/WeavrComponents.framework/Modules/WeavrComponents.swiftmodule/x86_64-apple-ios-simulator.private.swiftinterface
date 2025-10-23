@@ -150,6 +150,7 @@ public protocol UXComponetGroupProtocol {
 }
 public struct UXComponentsStatus {
   public let fixedPasscodeLength: Swift.Bool
+  public let isBiometricsEnabled: Swift.Bool
   public let userNeedsRelogin: Swift.Bool
 }
 @_hasMissingDesignatedInitializers final public class UXComponents {
