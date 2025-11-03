@@ -1554,6 +1554,3909 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Approov",
+        "printedName": "Approov",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovSessionTaskObserver",
+        "printedName": "ApproovSessionTaskObserver",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enableLogging",
+            "printedName": "enableLogging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvpZ",
+            "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvpZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvgZ",
+                "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvgZ",
+                "moduleName": "WeavrComponents",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvsZ",
+                "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvsZ",
+                "moduleName": "WeavrComponents",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvMZ",
+                "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverC13enableLoggingSbvMZ",
+                "moduleName": "WeavrComponents",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "observeValue",
+            "printedName": "observeValue(forKeyPath:of:change:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Foundation.NSKeyValueChangeKey : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Foundation.NSKeyValueChangeKey : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSKeyValueChangeKey",
+                        "printedName": "Foundation.NSKeyValueChangeKey",
+                        "usr": "c:@T@NSKeyValueChangeKey"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutableRawPointer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutableRawPointer",
+                    "printedName": "Swift.UnsafeMutableRawPointer",
+                    "usr": "s:Sv"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovSessionTaskObserver(im)observeValueForKeyPath:ofObject:change:context:",
+            "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverC12observeValue10forKeyPath2of6change7contextySSSg_ypSgSDySo05NSKeyh6ChangeJ0aypGSgSvSgtF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "observeValueForKeyPath:ofObject:change:context:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovSessionTaskObserver",
+                "printedName": "WeavrComponents.ApproovSessionTaskObserver",
+                "usr": "c:@M@WeavrComponents@objc(cs)ApproovSessionTaskObserver"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovSessionTaskObserver(im)init",
+            "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverCACycfc",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@WeavrComponents@objc(cs)ApproovSessionTaskObserver",
+        "mangledName": "$s15WeavrComponents26ApproovSessionTaskObserverC",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Approov",
+        "printedName": "Approov",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovError",
+        "printedName": "ApproovError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "initializationFailure",
+            "printedName": "initializationFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovError.Type) -> (Swift.String) -> WeavrComponents.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> WeavrComponents.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents12ApproovErrorO21initializationFailureyACSS_tcACmF",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO21initializationFailureyACSS_tcACmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "configurationError",
+            "printedName": "configurationError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovError.Type) -> (Swift.String) -> WeavrComponents.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> WeavrComponents.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents12ApproovErrorO013configurationD0yACSS_tcACmF",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO013configurationD0yACSS_tcACmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "pinningError",
+            "printedName": "pinningError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovError.Type) -> (Swift.String) -> WeavrComponents.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> WeavrComponents.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents12ApproovErrorO07pinningD0yACSS_tcACmF",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO07pinningD0yACSS_tcACmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "networkingError",
+            "printedName": "networkingError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovError.Type) -> (Swift.String) -> WeavrComponents.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> WeavrComponents.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents12ApproovErrorO010networkingD0yACSS_tcACmF",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO010networkingD0yACSS_tcACmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "permanentError",
+            "printedName": "permanentError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovError.Type) -> (Swift.String) -> WeavrComponents.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> WeavrComponents.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents12ApproovErrorO09permanentD0yACSS_tcACmF",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO09permanentD0yACSS_tcACmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "rejectionError",
+            "printedName": "rejectionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovError.Type) -> (Swift.String, Swift.String, Swift.String) -> WeavrComponents.ApproovError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.String, Swift.String) -> WeavrComponents.ApproovError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String, ARC: Swift.String, rejectionReasons: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovError",
+                        "printedName": "WeavrComponents.ApproovError",
+                        "usr": "s:15WeavrComponents12ApproovErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents12ApproovErrorO09rejectionD0yACSS_S2StcACmF",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO09rejectionD0yACSS_S2StcACmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents12ApproovErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO20localizedDescriptionSSvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents12ApproovErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s15WeavrComponents12ApproovErrorO20localizedDescriptionSSvg",
+                "moduleName": "WeavrComponents",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents12ApproovErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s15WeavrComponents12ApproovErrorO16errorDescriptionSSSgvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents12ApproovErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s15WeavrComponents12ApproovErrorO16errorDescriptionSSSgvg",
+                "moduleName": "WeavrComponents",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15WeavrComponents12ApproovErrorO",
+        "mangledName": "$s15WeavrComponents12ApproovErrorO",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovFetchDecision",
+        "printedName": "ApproovFetchDecision",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ShouldProceed",
+            "printedName": "ShouldProceed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovFetchDecision.Type) -> WeavrComponents.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "WeavrComponents.ApproovFetchDecision",
+                    "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "WeavrComponents.ApproovFetchDecision",
+                        "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO13ShouldProceedyA2CmF",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO13ShouldProceedyA2CmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "ShouldRetry",
+            "printedName": "ShouldRetry",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovFetchDecision.Type) -> WeavrComponents.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "WeavrComponents.ApproovFetchDecision",
+                    "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "WeavrComponents.ApproovFetchDecision",
+                        "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO11ShouldRetryyA2CmF",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO11ShouldRetryyA2CmF",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ShouldFail",
+            "printedName": "ShouldFail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovFetchDecision.Type) -> WeavrComponents.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "WeavrComponents.ApproovFetchDecision",
+                    "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "WeavrComponents.ApproovFetchDecision",
+                        "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO10ShouldFailyA2CmF",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO10ShouldFailyA2CmF",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ShouldIgnore",
+            "printedName": "ShouldIgnore",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.ApproovFetchDecision.Type) -> WeavrComponents.ApproovFetchDecision",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApproovFetchDecision",
+                    "printedName": "WeavrComponents.ApproovFetchDecision",
+                    "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.ApproovFetchDecision.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApproovFetchDecision",
+                        "printedName": "WeavrComponents.ApproovFetchDecision",
+                        "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO12ShouldIgnoreyA2CmF",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO12ShouldIgnoreyA2CmF",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovFetchDecision",
+                "printedName": "WeavrComponents.ApproovFetchDecision",
+                "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovFetchDecision",
+                "printedName": "WeavrComponents.ApproovFetchDecision",
+                "usr": "s:15WeavrComponents20ApproovFetchDecisionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO2eeoiySbAC_ACtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO9hashValueSivp",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO9hashValueSivp",
+            "moduleName": "WeavrComponents",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents20ApproovFetchDecisionO9hashValueSivg",
+                "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO9hashValueSivg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents20ApproovFetchDecisionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO4hash4intoys6HasherVz_tF",
+            "moduleName": "WeavrComponents",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15WeavrComponents20ApproovFetchDecisionO",
+        "mangledName": "$s15WeavrComponents20ApproovFetchDecisionO",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovUpdateResponse",
+        "printedName": "ApproovUpdateResponse",
+        "declKind": "Struct",
+        "usr": "s:15WeavrComponents21ApproovUpdateResponseV",
+        "mangledName": "$s15WeavrComponents21ApproovUpdateResponseV",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovService",
+        "printedName": "ApproovService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:comment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC10initialize6config7commentySS_SSSgtKFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC10initialize6config7commentySS_SSSgtKFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setProceedOnNetworkFailure",
+            "printedName": "setProceedOnNetworkFailure(proceed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC26setProceedOnNetworkFailure7proceedySb_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC26setProceedOnNetworkFailure7proceedySb_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDevKey",
+            "printedName": "setDevKey(devKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC9setDevKey03devG0ySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC9setDevKey03devG0ySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBindingHeader",
+            "printedName": "setBindingHeader(header:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC16setBindingHeader6headerySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC16setBindingHeader6headerySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setApproovHeader",
+            "printedName": "setApproovHeader(header:prefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC03setC6Header6header6prefixySS_SStFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC03setC6Header6header6prefixySS_SStFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSubstitutionHeader",
+            "printedName": "addSubstitutionHeader(header:prefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC21addSubstitutionHeader6header6prefixySS_SSSgtFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC21addSubstitutionHeader6header6prefixySS_SSSgtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeSubstitutionHeader",
+            "printedName": "removeSubstitutionHeader(header:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC24removeSubstitutionHeader6headerySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC24removeSubstitutionHeader6headerySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addSubstitutionQueryParam",
+            "printedName": "addSubstitutionQueryParam(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC25addSubstitutionQueryParam3keyySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC25addSubstitutionQueryParam3keyySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeSubstitutionQueryParam",
+            "printedName": "removeSubstitutionQueryParam(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC28removeSubstitutionQueryParam3keyySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC28removeSubstitutionQueryParam3keyySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addExclusionURLRegex",
+            "printedName": "addExclusionURLRegex(urlRegex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC20addExclusionURLRegex8urlRegexySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC20addExclusionURLRegex8urlRegexySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeExclusionURLRegex",
+            "printedName": "removeExclusionURLRegex(urlRegex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC23removeExclusionURLRegex8urlRegexySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC23removeExclusionURLRegex8urlRegexySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prefetch",
+            "printedName": "prefetch()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC8prefetchyyFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC8prefetchyyFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "precheck",
+            "printedName": "precheck()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC8precheckyyKFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC8precheckyyKFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeviceID",
+            "printedName": "getDeviceID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC11getDeviceIDSSSgyFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC11getDeviceIDSSSgyFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDataHashInToken",
+            "printedName": "setDataHashInToken(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC18setDataHashInToken4dataySS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC18setDataHashInToken4dataySS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchToken",
+            "printedName": "fetchToken(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC10fetchToken3urlS2S_tKFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC10fetchToken3urlS2S_tKFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMessageSignature",
+            "printedName": "getMessageSignature(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC19getMessageSignature7messageSSSgSS_tFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC19getMessageSignature7messageSSSgSS_tFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchSecureString",
+            "printedName": "fetchSecureString(key:newDef:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC17fetchSecureString3key6newDefSSSgSS_AGtKFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC17fetchSecureString3key6newDefSSSgSS_AGtKFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchCustomJWT",
+            "printedName": "fetchCustomJWT(payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC14fetchCustomJWT7payloadSSSgSS_tKFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC14fetchCustomJWT7payloadSSSgSS_tKFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateRequestWithApproov",
+            "printedName": "updateRequestWithApproov(request:sessionConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovUpdateResponse",
+                "printedName": "WeavrComponents.ApproovUpdateResponse",
+                "usr": "s:15WeavrComponents21ApproovUpdateResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URLSessionConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionConfiguration",
+                    "printedName": "Foundation.URLSessionConfiguration",
+                    "usr": "c:objc(cs)NSURLSessionConfiguration"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents14ApproovServiceC017updateRequestWithC07request13sessionConfigAA0C14UpdateResponseV10Foundation10URLRequestV_So25NSURLSessionConfigurationCSgtFZ",
+            "mangledName": "$s15WeavrComponents14ApproovServiceC017updateRequestWithC07request13sessionConfigAA0C14UpdateResponseV10Foundation10URLRequestV_So25NSURLSessionConfigurationCSgtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15WeavrComponents14ApproovServiceC",
+        "mangledName": "$s15WeavrComponents14ApproovServiceC",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApproovURLSession",
+        "printedName": "ApproovURLSession",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:delegate:delegateQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovURLSession",
+                "printedName": "WeavrComponents.ApproovURLSession",
+                "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionDelegate",
+                    "printedName": "any Foundation.URLSessionDelegate",
+                    "usr": "c:objc(pl)NSURLSessionDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.OperationQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OperationQueue",
+                    "printedName": "Foundation.OperationQueue",
+                    "usr": "c:objc(cs)NSOperationQueue"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC13configuration8delegate0F5QueueACSo25NSURLSessionConfigurationC_So0H8Delegate_pSgSo011NSOperationG0CSgtcfc",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC13configuration8delegate0F5QueueACSo25NSURLSessionConfigurationC_So0H8Delegate_pSgSo011NSOperationG0CSgtcfc",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovURLSession",
+                "printedName": "WeavrComponents.ApproovURLSession",
+                "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC13configurationACSo25NSURLSessionConfigurationC_tcfc",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC13configurationACSo25NSURLSessionConfigurationC_tcfc",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)dataTaskWithURL:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC8dataTask4withSo016NSURLSessionDataF0C10Foundation3URLV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "dataTaskWithURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)dataTaskWithRequest:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC8dataTask4withSo016NSURLSessionDataF0C10Foundation10URLRequestV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "dataTaskWithRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)dataTaskWithURL:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC8dataTask4with17completionHandlerSo016NSURLSessionDataF0C10Foundation3URLV_yAI0K0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "dataTaskWithURL:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTask",
+            "printedName": "dataTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)dataTaskWithRequest:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC8dataTask4with17completionHandlerSo016NSURLSessionDataF0C10Foundation10URLRequestV_yAI0K0VSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "dataTaskWithRequest:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)downloadTaskWithURL:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC12downloadTask4withSo020NSURLSessionDownloadF0C10Foundation3URLV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "downloadTaskWithURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)downloadTaskWithRequest:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC12downloadTask4withSo020NSURLSessionDownloadF0C10Foundation10URLRequestV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "downloadTaskWithRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)downloadTaskWithURL:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC12downloadTask4with17completionHandlerSo020NSURLSessionDownloadF0C10Foundation3URLV_yAKSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "downloadTaskWithURL:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(with:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)downloadTaskWithRequest:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC12downloadTask4with17completionHandlerSo020NSURLSessionDownloadF0C10Foundation10URLRequestV_yAI3URLVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "downloadTaskWithRequest:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(withResumeData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)downloadTaskWithResumeData:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC12downloadTask14withResumeDataSo020NSURLSessionDownloadF0C10Foundation0I0V_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "downloadTaskWithResumeData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadTask",
+            "printedName": "downloadTask(withResumeData:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDownloadTask",
+                "printedName": "Foundation.URLSessionDownloadTask",
+                "usr": "c:objc(cs)NSURLSessionDownloadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)downloadTaskWithResumeData:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC12downloadTask14withResumeData17completionHandlerSo020NSURLSessionDownloadF0C10Foundation0I0V_yAI3URLVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "downloadTaskWithResumeData:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromData:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC10uploadTask4with4fromSo018NSURLSessionUploadF0C10Foundation10URLRequestV_AI4DataVtF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:from:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromData:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC10uploadTask4with4from17completionHandlerSo018NSURLSessionUploadF0C10Foundation10URLRequestV_AJ4DataVSgyAO_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromData:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:fromFile:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromFile:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC10uploadTask4with8fromFileSo018NSURLSessionUploadF0C10Foundation10URLRequestV_AI3URLVtF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromFile:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(with:fromFile:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLResponse",
+                            "printedName": "Foundation.URLResponse",
+                            "usr": "c:objc(cs)NSURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)uploadTaskWithRequest:fromFile:completionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC10uploadTask4with8fromFile17completionHandlerSo018NSURLSessionUploadF0C10Foundation10URLRequestV_AJ3URLVyAJ4DataVSg_So13NSURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "uploadTaskWithRequest:fromFile:completionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadTask",
+            "printedName": "uploadTask(withStreamedRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionUploadTask",
+                "printedName": "Foundation.URLSessionUploadTask",
+                "usr": "c:objc(cs)NSURLSessionUploadTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)uploadTaskWithStreamedRequest:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC10uploadTask19withStreamedRequestSo018NSURLSessionUploadF0C10Foundation10URLRequestV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "uploadTaskWithStreamedRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTaskPublisherWithApproov",
+            "printedName": "dataTaskPublisherWithApproov(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataTaskPublisher",
+                "printedName": "Foundation.URLSession.DataTaskPublisher",
+                "usr": "s:So12NSURLSessionC10FoundationE17DataTaskPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC021dataTaskPublisherWithC03forSo12NSURLSessionC10FoundationE04DatafG0VAH10URLRequestV_tF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC021dataTaskPublisherWithC03forSo12NSURLSessionC10FoundationE04DatafG0VAH10URLRequestV_tF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataTaskPublisherApproov",
+            "printedName": "dataTaskPublisherApproov(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DataTaskPublisher",
+                "printedName": "Foundation.URLSession.DataTaskPublisher",
+                "usr": "s:So12NSURLSessionC10FoundationE17DataTaskPublisherV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC017dataTaskPublisherC03forSo12NSURLSessionC10FoundationE04DatafG0VAH10URLRequestV_tF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC017dataTaskPublisherC03forSo12NSURLSessionC10FoundationE04DatafG0VAH10URLRequestV_tF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finishTasksAndInvalidate",
+            "printedName": "finishTasksAndInvalidate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)finishTasksAndInvalidate",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC24finishTasksAndInvalidateyyF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "finishTasksAndInvalidate",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "flush",
+            "printedName": "flush(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)flushWithCompletionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC5flush17completionHandleryyyc_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "flushWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTasksWithCompletionHandler",
+            "printedName": "getTasksWithCompletionHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Foundation.URLSessionDataTask], [Foundation.URLSessionUploadTask], [Foundation.URLSessionDownloadTask]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Foundation.URLSessionDataTask], [Foundation.URLSessionUploadTask], [Foundation.URLSessionDownloadTask])",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLSessionDataTask]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLSessionDataTask",
+                            "printedName": "Foundation.URLSessionDataTask",
+                            "usr": "c:objc(cs)NSURLSessionDataTask"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLSessionUploadTask]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLSessionUploadTask",
+                            "printedName": "Foundation.URLSessionUploadTask",
+                            "usr": "c:objc(cs)NSURLSessionUploadTask"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.URLSessionDownloadTask]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLSessionDownloadTask",
+                            "printedName": "Foundation.URLSessionDownloadTask",
+                            "usr": "c:objc(cs)NSURLSessionDownloadTask"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)getTasksWithCompletionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC29getTasksWithCompletionHandleryyySaySo20NSURLSessionDataTaskCG_SaySo0j6UploadL0CGSaySo0j8DownloadL0CGtcF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "getTasksWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllTasks",
+            "printedName": "getAllTasks(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Foundation.URLSessionTask]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.URLSessionTask]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLSessionTask",
+                        "printedName": "Foundation.URLSessionTask",
+                        "usr": "c:objc(cs)NSURLSessionTask"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)getAllTasksWithCompletionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC11getAllTasks17completionHandleryySaySo16NSURLSessionTaskCGc_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "getAllTasksWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidateAndCancel",
+            "printedName": "invalidateAndCancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)invalidateAndCancel",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC19invalidateAndCancelyyF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "invalidateAndCancel",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset(completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)resetWithCompletionHandler:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC5reset17completionHandleryyyc_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "objc_name": "resetWithCompletionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketTask",
+            "printedName": "webSocketTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)webSocketTaskWithURL:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC13webSocketTask4withSo015NSURLSessionWebfG0C10Foundation3URLV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "intro_iOS": "13.0",
+            "objc_name": "webSocketTaskWithURL:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketTask",
+            "printedName": "webSocketTask(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)webSocketTaskWithRequest:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC13webSocketTask4withSo015NSURLSessionWebfG0C10Foundation10URLRequestV_tF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "intro_iOS": "13.0",
+            "objc_name": "webSocketTaskWithRequest:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webSocketTask",
+            "printedName": "webSocketTask(with:protocols:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionWebSocketTask",
+                "printedName": "Foundation.URLSessionWebSocketTask",
+                "usr": "c:objc(cs)NSURLSessionWebSocketTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)webSocketTaskWithURL:protocols:",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC13webSocketTask4with9protocolsSo015NSURLSessionWebfG0C10Foundation3URLV_SaySSGtF",
+            "moduleName": "WeavrComponents",
+            "overriding": true,
+            "intro_iOS": "13.0",
+            "objc_name": "webSocketTaskWithURL:protocols:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataWithApproov",
+            "printedName": "dataWithApproov(for:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC08dataWithC03for8delegate10Foundation4DataV_So13NSURLResponseCtAG10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC08dataWithC03for8delegate10Foundation4DataV_So13NSURLResponseCtAG10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dataWithApproov",
+            "printedName": "dataWithApproov(from:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC08dataWithC04from8delegate10Foundation4DataV_So13NSURLResponseCtAG3URLV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC08dataWithC04from8delegate10Foundation4DataV_So13NSURLResponseCtAG3URLV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadWithApproov",
+            "printedName": "uploadWithApproov(for:fromFile:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC010uploadWithC03for8fromFile8delegate10Foundation4DataV_So13NSURLResponseCtAH10URLRequestV_AH3URLVSo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC010uploadWithC03for8fromFile8delegate10Foundation4DataV_So13NSURLResponseCtAH10URLRequestV_AH3URLVSo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uploadWithApproov",
+            "printedName": "uploadWithApproov(for:from:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC010uploadWithC03for4from8delegate10Foundation4DataV_So13NSURLResponseCtAH10URLRequestV_AJSo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC010uploadWithC03for4from8delegate10Foundation4DataV_So13NSURLResponseCtAH10URLRequestV_AJSo24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadWithApproov",
+            "printedName": "downloadWithApproov(for:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.URL, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC012downloadWithC03for8delegate10Foundation3URLV_So13NSURLResponseCtAG10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC012downloadWithC03for8delegate10Foundation3URLV_So13NSURLResponseCtAG10URLRequestV_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downloadWithApproov",
+            "printedName": "downloadWithApproov(from:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Tuple",
+                "printedName": "(Foundation.URL, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLResponse",
+                    "printedName": "Foundation.URLResponse",
+                    "usr": "c:objc(cs)NSURLResponse"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Foundation.URLSessionTaskDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLSessionTaskDelegate",
+                    "printedName": "any Foundation.URLSessionTaskDelegate",
+                    "usr": "c:objc(pl)NSURLSessionTaskDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents17ApproovURLSessionC012downloadWithC04from8delegate10Foundation3URLV_So13NSURLResponseCtAI_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionC012downloadWithC04from8delegate10Foundation3URLV_So13NSURLResponseCtAI_So24NSURLSessionTaskDelegate_pSgtYaKF",
+            "moduleName": "WeavrComponents",
+            "intro_iOS": "15.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApproovURLSession",
+                "printedName": "WeavrComponents.ApproovURLSession",
+                "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession(im)init",
+            "mangledName": "$s15WeavrComponents17ApproovURLSessionCACycfc",
+            "moduleName": "WeavrComponents",
+            "deprecated": true,
+            "overriding": true,
+            "implicit": true,
+            "intro_iOS": "7.0",
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "Available"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@WeavrComponents@objc(cs)ApproovURLSession",
+        "mangledName": "$s15WeavrComponents17ApproovURLSessionC",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSURLSession",
+        "superclassNames": [
+          "Foundation.URLSession",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3515,13 +7418,6 @@
       },
       {
         "kind": "Import",
-        "name": "ApproovURLSession",
-        "printedName": "ApproovURLSession",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3592,13 +7488,6 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "ApproovURLSession",
-        "printedName": "ApproovURLSession",
         "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
@@ -5766,13 +9655,6 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "ApproovURLSession",
-        "printedName": "ApproovURLSession",
         "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
@@ -9295,13 +13177,6 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "ApproovURLSession",
-        "printedName": "ApproovURLSession",
         "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
@@ -14147,6 +18022,671 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 1691,
+      "length": 178,
+      "value": "[0x30, 0x82, 0x01, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x0f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 1917,
+      "length": 178,
+      "value": "[0x30, 0x82, 0x01, 0xa2, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x01, 0x8f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 2144,
+      "length": 178,
+      "value": "[0x30, 0x82, 0x02, 0x22, 0x30, 0x0d, 0x06, 0x09, 0x2a, 0x86, 0x48, 0x86, 0xf7, 0x0d, 0x01, 0x01, 0x01, 0x05, 0x00, 0x03, 0x82, 0x02, 0x0f, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 2378,
+      "length": 190,
+      "value": "[0x30, 0x59, 0x30, 0x13, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x06, 0x08, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x03, 0x01, 0x07, 0x03, 0x42, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "Array",
+      "offset": 2624,
+      "length": 172,
+      "value": "[0x30, 0x76, 0x30, 0x10, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x06, 0x05, 0x2b, 0x81, 0x04, 0x00, 0x22, 0x03, 0x62, 0x00]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 2934,
+      "length": 20,
+      "value": "\"ApproovService.pki\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/PinningURLSessionDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3185,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 2030,
+      "length": 40,
+      "value": "\"io.approov.ApproovService.loggingQueue\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2174,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 2517,
+      "length": 18,
+      "value": "\"ApproovSession: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 2612,
+      "length": 7,
+      "value": "\"state\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 3298,
+      "length": 28,
+      "value": "\"ApproovSessionTaskObserver\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 3858,
+      "length": 8,
+      "value": "\"taskId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 3950,
+      "length": 90,
+      "value": "\"Added completion handler for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 4003,
+      "length": 1,
+      "value": "\". Count: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 4039,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 4967,
+      "length": 15,
+      "value": "\"sessionConfig\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 5076,
+      "length": 95,
+      "value": "\"Added session configuration for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 5138,
+      "length": 1,
+      "value": "\". Count: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 5170,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7216,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7354,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7499,
+      "length": 9,
+      "value": "\"keyPath\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7533,
+      "length": 52,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7547,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7553,
+      "length": 1,
+      "value": "\" (Object: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7583,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7622,
+      "length": 68,
+      "value": "\"Object Type: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7649,
+      "length": 1,
+      "value": "\", Context Address: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 7689,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8150,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8161,
+      "length": 23,
+      "value": "\"State change detected\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8532,
+      "length": 6,
+      "value": "\"task\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8567,
+      "length": 56,
+      "value": "\"Stopped observing task with id: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 8622,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 9177,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 9219,
+      "length": 22,
+      "value": "\"Deallocating context\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10089,
+      "length": 34,
+      "value": "\"completionHandlers.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10236,
+      "length": 44,
+      "value": "\"Removed completion handler from dictionary\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10645,
+      "length": 34,
+      "value": "\"completionHandlers.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10792,
+      "length": 79,
+      "value": "\"No completion handler found in dictionary: count: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 10870,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 11448,
+      "length": 30,
+      "value": "\"sessionConfigs.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 11591,
+      "length": 39,
+      "value": "\"Removed sessionConfig from dictionary\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 11995,
+      "length": 30,
+      "value": "\"sessionConfigs.keys.contains\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 12138,
+      "length": 70,
+      "value": "\"No sessionConfig found in dictionary: count: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 12207,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13460,
+      "length": 12,
+      "value": "\"task.state\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13598,
+      "length": 51,
+      "value": "\"Will suspend task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13648,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 13988,
+      "length": 15,
+      "value": "\"task.newState\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 14190,
+      "length": 54,
+      "value": "\"Suspended task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 14243,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15178,
+      "length": 23,
+      "value": "\"updateCurrentRequest:\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15670,
+      "length": 49,
+      "value": "\"task.perform(sel, with: updateResponse.request)\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15908,
+      "length": 60,
+      "value": "\"Performed selector on task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 15967,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 16328,
+      "length": 86,
+      "value": "\"ApproovService: Unable to modify NSURLRequest headers; object instance is of type %@\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17120,
+      "length": 30,
+      "value": "\"task.resume() will be called\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17373,
+      "length": 56,
+      "value": "\"Will resume task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17428,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 17875,
+      "length": 22,
+      "value": "\"task.resume() called\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 18120,
+      "length": 52,
+      "value": "\"Resumed task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 18171,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 18305,
+      "length": 74,
+      "value": "\"ApproovService: Task was not in suspended state after Approov processing\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19147,
+      "length": 15,
+      "value": "\"task.resume()\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19385,
+      "length": 52,
+      "value": "\"Resumed task state with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19436,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 19920,
+      "length": 46,
+      "value": "\"task.state == URLSessionTask.State.suspended\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 20177,
+      "length": 71,
+      "value": "\"Will process custom delegate for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 20247,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21313,
+      "length": 45,
+      "value": "\"completionHandler as! CompletionHandlerData\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21538,
+      "length": 23,
+      "value": "\"error with no message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21626,
+      "length": 78,
+      "value": "\"Delegate handler with error message for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 21703,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22427,
+      "length": 44,
+      "value": "\"completionHandler as! CompletionHandlerURL\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22651,
+      "length": 23,
+      "value": "\"error with no message\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22739,
+      "length": 78,
+      "value": "\"Delegate handler with error message for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 22816,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23326,
+      "length": 15,
+      "value": "\"task.cancel()\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23588,
+      "length": 57,
+      "value": "\"Invoked cancel for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23644,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 23886,
+      "length": 70,
+      "value": "\"ApproovService: Pinning Delegate from url session pointer is invalid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24070,
+      "length": 76,
+      "value": "\"ApproovService: Pinning Session pointer is invalid\/not of type URLSession \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24501,
+      "length": 64,
+      "value": "\"No decision from token fetch and no completion handler invoked\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24764,
+      "length": 48,
+      "value": "\"Error for task with ID: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovSessionTaskObserver.swift",
+      "kind": "StringLiteral",
+      "offset": 24811,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 3213,
+      "length": 28,
+      "value": "\"ApproovService.initializer\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3568,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 3716,
+      "length": 22,
+      "value": "\"ApproovService.state\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3856,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 3935,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 4023,
+      "length": 15,
+      "value": "\"Approov-Token\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 4165,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/ApproovURLSession\/ApproovService.swift",
+      "kind": "StringLiteral",
+      "offset": 4541,
+      "length": 29,
+      "value": "\"ApproovService.substitution\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/views\/PinEntryView\/PinEntryView.swift",
       "kind": "StringLiteral",
       "offset": 1016,
@@ -14751,35 +19291,35 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 3087,
+      "offset": 3062,
       "length": 37,
       "value": "\"UXComponents need to be initialised\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 3162,
+      "offset": 3137,
       "length": 60,
       "value": "\"No user has been associated. Make sure you have logged in.\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 3235,
       "length": 22,
       "value": "\"Bearer token missing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 3318,
+      "offset": 3293,
       "length": 20,
       "value": "\"Random key missing\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/WeavrRepo.swift",
       "kind": "StringLiteral",
-      "offset": 3373,
+      "offset": 3348,
       "length": 19,
       "value": "\"Missing device id\""
     },

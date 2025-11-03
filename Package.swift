@@ -16,6 +16,9 @@ let package = Package(
             ]
         ),
     ],
+    dependencies: [
+        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.31.0"),
+    ],
     targets: [
         .binaryTarget(
             name: "WeavrComponentsStandalone",
@@ -29,6 +32,7 @@ let package = Package(
         .target(
             name: "WeavrComponents",
             dependencies: [
+                .product(name: "IdensicMobileSDK", package: "IdensicMobileSDK-iOS"),
                 "WeavrComponentsStandalone",
                 "Approov"
             ],

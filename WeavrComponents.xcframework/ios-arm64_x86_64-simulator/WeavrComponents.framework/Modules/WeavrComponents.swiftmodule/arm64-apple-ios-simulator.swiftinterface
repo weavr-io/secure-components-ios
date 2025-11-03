@@ -2,7 +2,8 @@
 // swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios15.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WeavrComponents
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
-import ApproovURLSession
+import Approov
+import CommonCrypto
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
@@ -16,6 +17,8 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.log
+import os
 public protocol SecurePasscodeFieldStackDelegate : AnyObject {
   func onFocusChange(index: Swift.Int, focused: Swift.Bool)
   func onTextEntryComplete()
@@ -41,6 +44,113 @@ extension WeavrComponents.SecurePasscodeFieldStack : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class ApproovSessionTaskObserver : ObjectiveC.NSObject {
+  public static var enableLogging: Swift.Bool {
+    get
+    set
+  }
+  @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum ApproovError : Swift.Error, Foundation.LocalizedError {
+  case initializationFailure(message: Swift.String)
+  case configurationError(message: Swift.String)
+  case pinningError(message: Swift.String)
+  case networkingError(message: Swift.String)
+  case permanentError(message: Swift.String)
+  case rejectionError(message: Swift.String, ARC: Swift.String, rejectionReasons: Swift.String)
+  public var localizedDescription: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum ApproovFetchDecision {
+  case ShouldProceed
+  case ShouldRetry
+  case ShouldFail
+  case ShouldIgnore
+  public static func == (a: WeavrComponents.ApproovFetchDecision, b: WeavrComponents.ApproovFetchDecision) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ApproovUpdateResponse {
+}
+@_hasMissingDesignatedInitializers public class ApproovService {
+  public static func initialize(config: Swift.String, comment: Swift.String? = nil) throws
+  public static func setProceedOnNetworkFailure(proceed: Swift.Bool)
+  public static func setDevKey(devKey: Swift.String)
+  public static func setBindingHeader(header: Swift.String)
+  public static func setApproovHeader(header: Swift.String, prefix: Swift.String)
+  public static func addSubstitutionHeader(header: Swift.String, prefix: Swift.String?)
+  public static func removeSubstitutionHeader(header: Swift.String)
+  public static func addSubstitutionQueryParam(key: Swift.String)
+  public static func removeSubstitutionQueryParam(key: Swift.String)
+  public static func addExclusionURLRegex(urlRegex: Swift.String)
+  public static func removeExclusionURLRegex(urlRegex: Swift.String)
+  public static func prefetch()
+  public static func precheck() throws
+  public static func getDeviceID() -> Swift.String?
+  public static func setDataHashInToken(data: Swift.String)
+  public static func fetchToken(url: Swift.String) throws -> Swift.String
+  public static func getMessageSignature(message: Swift.String) -> Swift.String?
+  public static func fetchSecureString(key: Swift.String, newDef: Swift.String?) throws -> Swift.String?
+  public static func fetchCustomJWT(payload: Swift.String) throws -> Swift.String?
+  public static func updateRequestWithApproov(request: Foundation.URLRequest, sessionConfig: Foundation.URLSessionConfiguration?) -> WeavrComponents.ApproovUpdateResponse
+  @objc deinit
+}
+@objc public class ApproovURLSession : Foundation.URLSession {
+  public init(configuration: Foundation.URLSessionConfiguration, delegate: (any Foundation.URLSessionDelegate)?, delegateQueue: Foundation.OperationQueue?)
+  convenience public init(configuration: Foundation.URLSessionConfiguration)
+  @objc override dynamic public func dataTask(with url: Foundation.URL) -> Foundation.URLSessionDataTask
+  @objc override dynamic public func dataTask(with request: Foundation.URLRequest) -> Foundation.URLSessionDataTask
+  @objc override dynamic public func dataTask(with url: Foundation.URL, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionDataTask
+  @objc override dynamic public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionDataTask
+  @objc override dynamic public func downloadTask(with url: Foundation.URL) -> Foundation.URLSessionDownloadTask
+  @objc override dynamic public func downloadTask(with request: Foundation.URLRequest) -> Foundation.URLSessionDownloadTask
+  @objc override dynamic public func downloadTask(with: Foundation.URL, completionHandler: @escaping (Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionDownloadTask
+  @objc override dynamic public func downloadTask(with request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionDownloadTask
+  @objc override dynamic public func downloadTask(withResumeData: Foundation.Data) -> Foundation.URLSessionDownloadTask
+  @objc override dynamic public func downloadTask(withResumeData: Foundation.Data, completionHandler: @escaping (Foundation.URL?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionDownloadTask
+  @objc override dynamic public func uploadTask(with request: Foundation.URLRequest, from: Foundation.Data) -> Foundation.URLSessionUploadTask
+  @objc override dynamic public func uploadTask(with request: Foundation.URLRequest, from: Foundation.Data?, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionUploadTask
+  @objc override dynamic public func uploadTask(with request: Foundation.URLRequest, fromFile: Foundation.URL) -> Foundation.URLSessionUploadTask
+  @objc override dynamic public func uploadTask(with request: Foundation.URLRequest, fromFile: Foundation.URL, completionHandler: @escaping (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> Foundation.URLSessionUploadTask
+  @objc override dynamic public func uploadTask(withStreamedRequest: Foundation.URLRequest) -> Foundation.URLSessionUploadTask
+  @available(iOS 13.0, *)
+  public func dataTaskPublisherWithApproov(for request: Foundation.URLRequest) -> Foundation.URLSession.DataTaskPublisher
+  @available(iOS 13.0, *)
+  public func dataTaskPublisherApproov(for request: Foundation.URLRequest) -> Foundation.URLSession.DataTaskPublisher
+  @objc override dynamic public func finishTasksAndInvalidate()
+  @objc override dynamic public func flush(completionHandler: @escaping () -> Swift.Void)
+  @objc override dynamic public func getTasksWithCompletionHandler(_ completionHandler: @escaping ([Foundation.URLSessionDataTask], [Foundation.URLSessionUploadTask], [Foundation.URLSessionDownloadTask]) -> Swift.Void)
+  @objc override dynamic public func getAllTasks(completionHandler: @escaping ([Foundation.URLSessionTask]) -> Swift.Void)
+  @objc override dynamic public func invalidateAndCancel()
+  @objc override dynamic public func reset(completionHandler: @escaping () -> Swift.Void)
+  @available(iOS 13.0, *)
+  @objc override dynamic public func webSocketTask(with: Foundation.URL) -> Foundation.URLSessionWebSocketTask
+  @available(iOS 13.0, *)
+  @objc override dynamic public func webSocketTask(with: Foundation.URLRequest) -> Foundation.URLSessionWebSocketTask
+  @available(iOS 13.0, *)
+  @objc override dynamic public func webSocketTask(with: Foundation.URL, protocols: [Swift.String]) -> Foundation.URLSessionWebSocketTask
+  @available(iOS 15.0, *)
+  public func dataWithApproov(for request: Foundation.URLRequest, delegate: (any Foundation.URLSessionTaskDelegate)? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func dataWithApproov(from url: Foundation.URL, delegate: (any Foundation.URLSessionTaskDelegate)? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func uploadWithApproov(for request: Foundation.URLRequest, fromFile fileURL: Foundation.URL, delegate: (any Foundation.URLSessionTaskDelegate)? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func uploadWithApproov(for request: Foundation.URLRequest, from bodyData: Foundation.Data, delegate: (any Foundation.URLSessionTaskDelegate)? = nil) async throws -> (Foundation.Data, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func downloadWithApproov(for request: Foundation.URLRequest, delegate: (any Foundation.URLSessionTaskDelegate)? = nil) async throws -> (Foundation.URL, Foundation.URLResponse)
+  @available(iOS 15.0, *)
+  public func downloadWithApproov(from url: Foundation.URL, delegate: (any Foundation.URLSessionTaskDelegate)? = nil) async throws -> (Foundation.URL, Foundation.URLResponse)
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SecurePasscodeFactory {
   public static func createView(isSegmented: Swift.Bool) -> UIKit.UIView
@@ -360,6 +470,8 @@ public enum WeavrErrorCode : Swift.Int {
 @_hasMissingDesignatedInitializers final public class WeavrBiometric {
   @objc deinit
 }
+extension WeavrComponents.ApproovFetchDecision : Swift.Equatable {}
+extension WeavrComponents.ApproovFetchDecision : Swift.Hashable {}
 extension WeavrComponents.PsaENV : Swift.Equatable {}
 extension WeavrComponents.PsaENV : Swift.Hashable {}
 extension WeavrComponents.WeavrExceptionHandlers : Swift.Sendable {}

@@ -284,6 +284,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import IdensicMobileSDK;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -307,6 +308,115 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSString;
+SWIFT_CLASS("_TtC15WeavrComponents26ApproovSessionTaskObserver")
+@interface ApproovSessionTaskObserver : NSObject
+/// It is necessary to use KVO and observe the task returned to the user in order to modify the original request
+/// Since we do not want to block the task in order to contact the Approov servers, we have to perform the Approov
+/// network connection asynchronously and depending on the result, modify the header and resume the request or
+/// cancel the task after informing the caller of the error.
+/// @param keyPath the key path of the value being changed
+/// @param object is the source object being changed
+/// @param change is a dictionary describing the change
+/// @param context is an optional value providing context to the change
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURL;
+@class NSURLSessionDataTask;
+@class NSURLRequest;
+@class NSData;
+@class NSURLResponse;
+@class NSURLSessionDownloadTask;
+@class NSURLSessionUploadTask;
+@class NSURLSessionTask;
+@class NSURLSessionWebSocketTask;
+SWIFT_CLASS("_TtC15WeavrComponents17ApproovURLSession")
+@interface ApproovURLSession : NSURLSession
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that retrieves the contents of a URL based on the specified URL request object
+/// https://developer.apple.com/documentation/foundation/urlsession/1410592-datatask
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithRequest:(NSURLRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that retrieves the contents of the specified URL, then calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1410330-datatask
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithURL:(NSURL * _Nonnull)url completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that retrieves the contents of a URL based on the specified URL request object, and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1407613-datatask
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of the specified URL and saves the results to a file
+/// https://developer.apple.com/documentation/foundation/urlsession/1411482-downloadtask
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of a URL based on the specified URL request object
+/// and saves the results to a file
+/// https://developer.apple.com/documentation/foundation/urlsession/1411481-downloadtask
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithRequest:(NSURLRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of the specified URL, saves the results to a file,
+/// and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411608-downloadtask
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithURL:(NSURL * _Nonnull)with completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of a URL based on the specified URL request object,
+/// saves the results to a file, and calls a handler upon completion.
+/// https://developer.apple.com/documentation/foundation/nsurlsession/1411511-downloadtaskwithrequest?language=objc
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task to resume a previously canceled or failed download
+/// https://developer.apple.com/documentation/foundation/urlsession/1409226-downloadtask
+/// NOTE: this call is not protected by Approov
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithResumeData:(NSData * _Nonnull)withResumeData SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task to resume a previously canceled or failed download and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411598-downloadtask
+/// NOTE: this call is not protected by Approov
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithResumeData:(NSData * _Nonnull)withResumeData completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for the specified URL request object and uploads the provided data
+/// https://developer.apple.com/documentation/foundation/urlsession/1409763-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromData:(NSData * _Nonnull)from SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for the specified URL request object, uploads the provided data,
+/// and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411518-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromData:(NSData * _Nullable)from completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for uploading the specified file
+/// https://developer.apple.com/documentation/foundation/urlsession/1411550-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromFile:(NSURL * _Nonnull)fromFile SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for the specified URL request object, uploads the provided data,
+/// and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411518-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromFile:(NSURL * _Nonnull)fromFile completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for uploading data based on the specified URL request
+/// https://developer.apple.com/documentation/foundation/urlsession/1410934-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithStreamedRequest:(NSURLRequest * _Nonnull)withStreamedRequest SWIFT_WARN_UNUSED_RESULT;
+/// Invalidates the session, allowing any outstanding tasks to finish
+/// https://developer.apple.com/documentation/foundation/urlsession/1407428-finishtasksandinvalidate
+- (void)finishTasksAndInvalidate;
+/// Flushes cookies and credentials to disk, clears transient caches, and ensures that future requests
+/// occur on a new TCP connection
+/// https://developer.apple.com/documentation/foundation/urlsession/1411622-flush
+- (void)flushWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+/// Asynchronously calls a completion callback with all data, upload, and download tasks in a session
+/// https://developer.apple.com/documentation/foundation/urlsession/1411578-gettaskswithcompletionhandler
+- (void)getTasksWithCompletionHandler:(void (^ _Nonnull)(NSArray<NSURLSessionDataTask *> * _Nonnull, NSArray<NSURLSessionUploadTask *> * _Nonnull, NSArray<NSURLSessionDownloadTask *> * _Nonnull))completionHandler;
+/// Asynchronously calls a completion callback with all tasks in a session
+/// https://developer.apple.com/documentation/foundation/urlsession/1411618-getalltasks
+- (void)getAllTasksWithCompletionHandler:(void (^ _Nonnull)(NSArray<NSURLSessionTask *> * _Nonnull))completionHandler;
+/// Cancels all outstanding tasks and then invalidates the session
+/// https://developer.apple.com/documentation/foundation/urlsession/1411538-invalidateandcancel
+- (void)invalidateAndCancel;
+/// Empties all cookies, caches and credential stores, removes disk files, flushes in-progress downloads to disk,
+/// and ensures that future requests occur on a new socket
+/// https://developer.apple.com/documentation/foundation/urlsession/1411479-reset
+- (void)resetWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+/// Creates a WebSocket task for the provided URL
+/// https://developer.apple.com/documentation/foundation/urlsession/3181171-websockettask
+- (NSURLSessionWebSocketTask * _Nonnull)webSocketTaskWithURL:(NSURL * _Nonnull)with SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Creates a WebSocket task for the provided URL request
+/// https://developer.apple.com/documentation/foundation/urlsession/3235750-websockettask
+- (NSURLSessionWebSocketTask * _Nonnull)webSocketTaskWithRequest:(NSURLRequest * _Nonnull)with SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Creates a WebSocket task given a URL and an array of protocols
+/// https://developer.apple.com/documentation/foundation/urlsession/3181172-websockettask
+- (NSURLSessionWebSocketTask * _Nonnull)webSocketTaskWithURL:(NSURL * _Nonnull)with protocols:(NSArray<NSString *> * _Nonnull)protocols SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSCoder;
 SWIFT_CLASS("_TtC15WeavrComponents11SecureLabel")
 @interface SecureLabel : UILabel
@@ -314,7 +424,6 @@ SWIFT_CLASS("_TtC15WeavrComponents11SecureLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 SWIFT_CLASS("_TtC15WeavrComponents14SecureCVVLabel")
 @interface SecureCVVLabel : SecureLabel
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -680,6 +789,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import IdensicMobileSDK;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -703,6 +813,115 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSString;
+SWIFT_CLASS("_TtC15WeavrComponents26ApproovSessionTaskObserver")
+@interface ApproovSessionTaskObserver : NSObject
+/// It is necessary to use KVO and observe the task returned to the user in order to modify the original request
+/// Since we do not want to block the task in order to contact the Approov servers, we have to perform the Approov
+/// network connection asynchronously and depending on the result, modify the header and resume the request or
+/// cancel the task after informing the caller of the error.
+/// @param keyPath the key path of the value being changed
+/// @param object is the source object being changed
+/// @param change is a dictionary describing the change
+/// @param context is an optional value providing context to the change
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURL;
+@class NSURLSessionDataTask;
+@class NSURLRequest;
+@class NSData;
+@class NSURLResponse;
+@class NSURLSessionDownloadTask;
+@class NSURLSessionUploadTask;
+@class NSURLSessionTask;
+@class NSURLSessionWebSocketTask;
+SWIFT_CLASS("_TtC15WeavrComponents17ApproovURLSession")
+@interface ApproovURLSession : NSURLSession
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that retrieves the contents of a URL based on the specified URL request object
+/// https://developer.apple.com/documentation/foundation/urlsession/1410592-datatask
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithRequest:(NSURLRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that retrieves the contents of the specified URL, then calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1410330-datatask
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithURL:(NSURL * _Nonnull)url completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that retrieves the contents of a URL based on the specified URL request object, and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1407613-datatask
+- (NSURLSessionDataTask * _Nonnull)dataTaskWithRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of the specified URL and saves the results to a file
+/// https://developer.apple.com/documentation/foundation/urlsession/1411482-downloadtask
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of a URL based on the specified URL request object
+/// and saves the results to a file
+/// https://developer.apple.com/documentation/foundation/urlsession/1411481-downloadtask
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithRequest:(NSURLRequest * _Nonnull)request SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of the specified URL, saves the results to a file,
+/// and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411608-downloadtask
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithURL:(NSURL * _Nonnull)with completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task that retrieves the contents of a URL based on the specified URL request object,
+/// saves the results to a file, and calls a handler upon completion.
+/// https://developer.apple.com/documentation/foundation/nsurlsession/1411511-downloadtaskwithrequest?language=objc
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task to resume a previously canceled or failed download
+/// https://developer.apple.com/documentation/foundation/urlsession/1409226-downloadtask
+/// NOTE: this call is not protected by Approov
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithResumeData:(NSData * _Nonnull)withResumeData SWIFT_WARN_UNUSED_RESULT;
+/// Creates a download task to resume a previously canceled or failed download and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411598-downloadtask
+/// NOTE: this call is not protected by Approov
+- (NSURLSessionDownloadTask * _Nonnull)downloadTaskWithResumeData:(NSData * _Nonnull)withResumeData completionHandler:(void (^ _Nonnull)(NSURL * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for the specified URL request object and uploads the provided data
+/// https://developer.apple.com/documentation/foundation/urlsession/1409763-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromData:(NSData * _Nonnull)from SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for the specified URL request object, uploads the provided data,
+/// and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411518-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromData:(NSData * _Nullable)from completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for uploading the specified file
+/// https://developer.apple.com/documentation/foundation/urlsession/1411550-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromFile:(NSURL * _Nonnull)fromFile SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for the specified URL request object, uploads the provided data,
+/// and calls a handler upon completion
+/// https://developer.apple.com/documentation/foundation/urlsession/1411518-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithRequest:(NSURLRequest * _Nonnull)request fromFile:(NSURL * _Nonnull)fromFile completionHandler:(void (^ _Nonnull)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Creates a task that performs an HTTP request for uploading data based on the specified URL request
+/// https://developer.apple.com/documentation/foundation/urlsession/1410934-uploadtask
+- (NSURLSessionUploadTask * _Nonnull)uploadTaskWithStreamedRequest:(NSURLRequest * _Nonnull)withStreamedRequest SWIFT_WARN_UNUSED_RESULT;
+/// Invalidates the session, allowing any outstanding tasks to finish
+/// https://developer.apple.com/documentation/foundation/urlsession/1407428-finishtasksandinvalidate
+- (void)finishTasksAndInvalidate;
+/// Flushes cookies and credentials to disk, clears transient caches, and ensures that future requests
+/// occur on a new TCP connection
+/// https://developer.apple.com/documentation/foundation/urlsession/1411622-flush
+- (void)flushWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+/// Asynchronously calls a completion callback with all data, upload, and download tasks in a session
+/// https://developer.apple.com/documentation/foundation/urlsession/1411578-gettaskswithcompletionhandler
+- (void)getTasksWithCompletionHandler:(void (^ _Nonnull)(NSArray<NSURLSessionDataTask *> * _Nonnull, NSArray<NSURLSessionUploadTask *> * _Nonnull, NSArray<NSURLSessionDownloadTask *> * _Nonnull))completionHandler;
+/// Asynchronously calls a completion callback with all tasks in a session
+/// https://developer.apple.com/documentation/foundation/urlsession/1411618-getalltasks
+- (void)getAllTasksWithCompletionHandler:(void (^ _Nonnull)(NSArray<NSURLSessionTask *> * _Nonnull))completionHandler;
+/// Cancels all outstanding tasks and then invalidates the session
+/// https://developer.apple.com/documentation/foundation/urlsession/1411538-invalidateandcancel
+- (void)invalidateAndCancel;
+/// Empties all cookies, caches and credential stores, removes disk files, flushes in-progress downloads to disk,
+/// and ensures that future requests occur on a new socket
+/// https://developer.apple.com/documentation/foundation/urlsession/1411479-reset
+- (void)resetWithCompletionHandler:(void (^ _Nonnull)(void))completionHandler;
+/// Creates a WebSocket task for the provided URL
+/// https://developer.apple.com/documentation/foundation/urlsession/3181171-websockettask
+- (NSURLSessionWebSocketTask * _Nonnull)webSocketTaskWithURL:(NSURL * _Nonnull)with SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Creates a WebSocket task for the provided URL request
+/// https://developer.apple.com/documentation/foundation/urlsession/3235750-websockettask
+- (NSURLSessionWebSocketTask * _Nonnull)webSocketTaskWithRequest:(NSURLRequest * _Nonnull)with SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Creates a WebSocket task given a URL and an array of protocols
+/// https://developer.apple.com/documentation/foundation/urlsession/3181172-websockettask
+- (NSURLSessionWebSocketTask * _Nonnull)webSocketTaskWithURL:(NSURL * _Nonnull)with protocols:(NSArray<NSString *> * _Nonnull)protocols SWIFT_WARN_UNUSED_RESULT SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSCoder;
 SWIFT_CLASS("_TtC15WeavrComponents11SecureLabel")
 @interface SecureLabel : UILabel
@@ -710,7 +929,6 @@ SWIFT_CLASS("_TtC15WeavrComponents11SecureLabel")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 SWIFT_CLASS("_TtC15WeavrComponents14SecureCVVLabel")
 @interface SecureCVVLabel : SecureLabel
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
