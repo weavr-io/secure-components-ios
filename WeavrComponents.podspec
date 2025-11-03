@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '3.1.3-RC7'
+  spec.version      = '3.1.3-RC8'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
@@ -25,12 +25,12 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Combined' do |sp|
     sp.dependency 'WeavrComponents/Core' 
-    sp.dependency 'https://github.com/approov/approov-ios-sdk/releases/download/3.3.0/Approov.xcframework.zip'
+    sp.vendored_frameworks 'https://github.com/approov/approov-ios-sdk/releases/download/3.3.0/Approov.xcframework.zip'
   end
   
   spec.subspec 'Flutter' do |sp|
     sp.dependency 'WeavrComponents/Core'
-    sp.dependency 'https://github.com/approov/approov-ios-sdk/releases/download/3.3.0/Approov.xcframework.zip'
+    sp.vendored_frameworks 'https://github.com/approov/approov-ios-sdk/releases/download/3.3.0/Approov.xcframework.zip'
   end
 
   spec.subspec 'KYC' do |sp|
