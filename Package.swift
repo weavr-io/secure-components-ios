@@ -17,20 +17,29 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.31.0"),
-        .package(url: "https://github.com/approov/approov-service-urlsession", from: "3.3.1")
+        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.31.0")
     ],
     targets: [
         .binaryTarget(
             name: "WeavrComponentsStandalone",
             path: "./WeavrComponents.xcframework"
         ),
+        .binaryTarget(
+            name: "ApproovURLSession",
+            path: "./dependencies/ApproovURLSession.xcframework"
+        ),
+        .binaryTarget(
+            name: "Approov",
+            url: "https://github.com/approov/approov-ios-sdk/releases/download/3.3.1/Approov.xcframework.zip",
+            checksum: "8c8737a2cea95e7101f6e05114c37f3f45a600abd196aca05d2c58edb90634dd"
+        ),
         .target(
             name: "WeavrComponents",
             dependencies: [
                 .product(name: "IdensicMobileSDK", package: "IdensicMobileSDK-iOS"),
-                .product(name: "ApproovURLSession", package: "approov-service-urlsession"),
-                "WeavrComponentsStandalone"
+                "WeavrComponentsStandalone",
+                "ApproovURLSession",
+                "Approov"
             ],
             path: "Wrapper"
         )
