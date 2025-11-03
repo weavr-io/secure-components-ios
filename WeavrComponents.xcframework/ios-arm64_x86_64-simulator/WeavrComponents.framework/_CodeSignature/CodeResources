@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0HtfEfrv6uDo14/MZH2uEfrTGXY=
+		K1iusnsdbOinffPv9K/ZgC9oBdw=
 		</data>
 		<key>InitialSumsubVC.nib</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R7Y9HqRIje6IsQcAkSSDC9y//WQ=
+		14v1MJr9JvAIs5xCXtUxNFVjwPc=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S1McKqBhRHR81I8jNTlk695sX4U=
+		qajHs1tqptE5PvXvCkMRSdjpOVU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -277,7 +277,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1NqB+GGp2/sHaOtTVrPVoP8bxq4pi17KPRe76oQdQWU=
+			lQOIDP2iQIysRAUXfJLNqBZgjAQcrxAu+/W6iM91/o8=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -312,7 +312,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bgjvtrf/fI/7HBkbrdVp0tsC0I+N1E+yRjM2YWmboUk=
+			dKIKfszNcoKG+SalrLJjqNX84Ka1YO8xkDazH1fNFPw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
