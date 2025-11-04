@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '3.1.3-RC13'
+  spec.version      = '3.1.3-RC14'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
@@ -13,10 +13,27 @@ Pod::Spec.new do |spec|
     # 'LIBRARY_SEARCH_PATHS' => '$(SDKROOT)/usr/lib/swift',
   }
 
-  spec.vendored_frameworks = 'WeavrComponents.xcframework', 'Approov.xcframework'
-  spec.prepare_command = <<-CMD
-    curl -L https://github.com/approov/approov-ios-sdk/releases/download/3.3.0/Approov.xcframework.zip > Approov.xcframework.zip
-    unzip -o Approov.xcframework.zip
-    rm -f Approov.xcframework.zip
-  CMD
+  spec.default_subspec = 'Default'
+
+  spec.subspec 'Default' do |sp|
+    sp.dependency 'WeavrComponents/Combined'
+  end
+
+  spec.subspec 'Core' do |sp|
+    sp.vendored_frameworks = 'WeavrComponents.xcframework' 
+  end
+
+  spec.subspec 'Combined' do |sp|
+    sp.dependency 'WeavrComponents/Core' 
+    sp.dependency 'ApproovURLSession', '~> 3.3.3'
+  end
+  
+  spec.subspec 'Flutter' do |sp|
+    sp.dependency 'WeavrComponents/Core'
+    sp.dependency 'ApproovURLSession', '~> 3.3.3'
+  end
+
+  spec.subspec 'KYC' do |sp|
+    sp.dependency 'WeavrComponents/Core'
+  end
 end
