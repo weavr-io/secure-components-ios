@@ -17,8 +17,8 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.39.0"),
-        .package(url: "https://github.com/approov/approov-ios-sdk", from: "3.5.1")
+        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", .upToNextMinor(from: "1.31.0")),
+        .package(url: "https://github.com/approov/approov-ios-sdk", .upToNextMinor: "3.5.1")
     ],
     targets: [
         .binaryTarget(

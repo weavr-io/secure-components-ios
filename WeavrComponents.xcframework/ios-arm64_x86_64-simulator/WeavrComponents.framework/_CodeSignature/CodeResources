@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qJLal5KdxgiddDxB+rz+qKE/pj8=
+		IuUqwotFbpcoPcYl+psQQxOQegA=
 		</data>
 		<key>InitialSumsubVC.nib</key>
 		<data>
@@ -62,43 +62,43 @@
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LgU+7nIxEtY1f6Et2Vcv5Ndv/AA=
+		lY9wRNzObWevFrHfD6Ryh+6Kcq8=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GWEbkmrDhOh7SwumwM3PB69ahuM=
+		0y7vZcHdDQB1POPoTlH6dVXPZg8=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Bt7mURGiamDftj42itaStzPQ8gQ=
+		d/1h/nA167LodNkx8hXBEPB0anI=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GWEbkmrDhOh7SwumwM3PB69ahuM=
+		0y7vZcHdDQB1POPoTlH6dVXPZg8=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		npTzEmiSWvESzJ5h7fuXOuFcSX0=
+		ZrX9I/nNIch3eJuZtQr7LgDpORY=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LgU+7nIxEtY1f6Et2Vcv5Ndv/AA=
+		lY9wRNzObWevFrHfD6Ryh+6Kcq8=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Mk+OdHmPxx7m1/o9w1UwkPRkhZo=
+		fmvtRP9MI7VOmhLvtfl7Zs36fNU=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XQOyG7rjU+4wAqZPVxPI1b/h/X4=
+		2tv+qw3c9FduOgPTBD007uSGXOg=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Mk+OdHmPxx7m1/o9w1UwkPRkhZo=
+		fmvtRP9MI7VOmhLvtfl7Zs36fNU=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ei/SO1FSCV1meOvmx62XnHQ7VGc=
+		3AxDEH+64RqL/q60ABwqQY2NPZU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -238,70 +238,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PAXCleQZ4g0EwlaJMT4JkTT280ekE0MdYhAI3DDOGjc=
+			KAaqUpqv2V35bn5S3LWF3l2ZUI5HiMCgthO2bLgep94=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z+ajx80ysQe2OYJJmEFw7IyQwiULK+he1j2TSnuWgrY=
+			xy5LpvENu660z6KACiTcpps21YpH1Z5mBWCQcSCAUsU=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DHKf2PNpU9r6RUfOVSBbIZLb+5naynF49+Zt+pWYpmY=
+			PCAFpkqfs7PvUO9ubwidy84i+ZlguuQAz1/3ZWFKFqA=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z+ajx80ysQe2OYJJmEFw7IyQwiULK+he1j2TSnuWgrY=
+			xy5LpvENu660z6KACiTcpps21YpH1Z5mBWCQcSCAUsU=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lz7CgwTm+C6bhj/iE7c9dgoOxSZtWJFnRZsLc3Jdv4=
+			7rE3VWUI3Ov3BEihQaRns4IMaxBePdWP+i72D9maCR0=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PAXCleQZ4g0EwlaJMT4JkTT280ekE0MdYhAI3DDOGjc=
+			KAaqUpqv2V35bn5S3LWF3l2ZUI5HiMCgthO2bLgep94=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ilCY73Endjm5mqE38HxAn3G3F+/iLlttlorR00ikkRY=
+			OnpnFTIRpc12uqniduzGHvj1rl0ZS778tUibOv7Zm2U=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NRusb2DCbm4o2d3/sMHd4y9rvhibeBWfB+9yUHY1p+A=
+			u3NFZwhbQSVkindNtq4cMzhUlc0zt7mqsOodtTsVq5E=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ilCY73Endjm5mqE38HxAn3G3F+/iLlttlorR00ikkRY=
+			OnpnFTIRpc12uqniduzGHvj1rl0ZS778tUibOv7Zm2U=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ZHagxNekg3BGD0WTLbpA9O0GrHvD6+vQcERt4dEHBo=
+			EDobgmUW2bj9aJdAG5v+30ZS7stOSwUGmkIIAveZ19s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
