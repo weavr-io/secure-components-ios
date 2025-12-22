@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -17,24 +17,20 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.31.0"),
+        .package(url: "https://github.com/SumSubstance/IdensicMobileSDK-iOS", from: "1.39.0"),
+        .package(url: "https://github.com/approov/approov-ios-sdk", from: "3.5.1")
     ],
     targets: [
         .binaryTarget(
             name: "WeavrComponentsStandalone",
             path: "./WeavrComponents.xcframework"
         ),
-        .binaryTarget(
-            name: "Approov",
-            url: "https://github.com/approov/approov-ios-sdk/releases/download/3.3.0/Approov.xcframework.zip",
-            checksum: "8c8737a2cea95e7101f6e05114c37f3f45a600abd196aca05d2c58edb90634dd"
-        ),
         .target(
             name: "WeavrComponents",
             dependencies: [
                 .product(name: "IdensicMobileSDK", package: "IdensicMobileSDK-iOS"),
-                "WeavrComponentsStandalone",
-                "Approov"
+                .product(name: "Approov", package: "approov-ios-sdk"),
+                "WeavrComponentsStandalone"
             ],
             path: "Wrapper"
         )
