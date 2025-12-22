@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'WeavrComponents'
-  spec.version      = '3.1.4-RC4'
+  spec.version      = '3.1.4-RC5'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://weavr.io'
   spec.authors      = { 'Weavr' => 'info@weavr.com' }
@@ -14,6 +14,5 @@ Pod::Spec.new do |spec|
   }
 
   spec.vendored_frameworks = 'WeavrComponents.xcframework' 
-  spec.dependency 'IdensicMobileSDK', '~> 1.31.0'
   spec.dependency 'approov-ios-sdk', '~> 3.5.1'
 end
