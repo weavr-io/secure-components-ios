@@ -3,8 +3,8 @@
 
 ````ruby
 //Weavr Component and KYC
-pod 'WeavrComponents' ,'3.1.5'
-pod 'IdensicMobileSDK' , '~> 1.31.0'
+pod 'WeavrComponents' ,'3.2.0'
+pod 'IdensicMobileSDK' , '~> 1.41.0'
 ````
 ````ruby
 source 'https://cdn.cocoapods.org/'

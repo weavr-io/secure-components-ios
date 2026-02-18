@@ -379,7 +379,7 @@ SWIFT_CLASS("_TtC15WeavrComponents19SecurePasswordField")
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 @end
 
-SWIFT_CLASS("_TtC15WeavrComponents13WeavrKYCTheme")
+SWIFT_CLASS("_TtC15WeavrComponents13WeavrKYCTheme") SWIFT_DEPRECATED_MSG("This class will be removed in upcoming versions of the SDK")
 @interface WeavrKYCTheme : SNSTheme
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
