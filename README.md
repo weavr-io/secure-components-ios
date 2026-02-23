@@ -3,7 +3,7 @@
 
 ````ruby
 //Weavr Component and KYC
-pod 'WeavrComponents' ,'3.2.0'
+pod 'WeavrComponents' ,'3.2.1'
 pod 'IdensicMobileSDK' , '~> 1.41.0'
 ````
 ````ruby
