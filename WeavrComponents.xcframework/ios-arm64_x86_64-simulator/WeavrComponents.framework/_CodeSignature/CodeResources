@@ -18,7 +18,7 @@
 		</data>
 		<key>ConfirmBeneficiaryViewController.nib</key>
 		<data>
-		HYqM/uuocF/ZbQ6iDKvKbw6UOVk=
+		uZ/6USbYm4utU7LUBY23qA/Wxmw=
 		</data>
 		<key>DocumentViewController.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SJGkcZavkGjl4Ss6UVXAvI8zd0A=
+		jjqZszydFQPZs0cQ/Gt1CwR0aOo=
 		</data>
 		<key>Inter-Bold.otf</key>
 		<data>
@@ -50,43 +50,43 @@
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		T2xxZEEvfpU3JWk91ZfAGzMJ090=
+		QCsSL9Wt05EiJfZWN092+2tt5U8=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YzdnT4vuf3aU8mo8g+26Gmnrrdc=
+		2Af1PhkXdG6Gyhg32kcuVIg4awo=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HFT649fYI37EXlkoBT0Pt8xg9Zg=
+		Fu1ajvK0VNotUufqFPQEa8HnXBA=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YzdnT4vuf3aU8mo8g+26Gmnrrdc=
+		2Af1PhkXdG6Gyhg32kcuVIg4awo=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WmA/lo7WGyZ9EOex3hU+kbvJods=
+		50PG63EA2bAIIocg0pht40oIc2M=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		T2xxZEEvfpU3JWk91ZfAGzMJ090=
+		QCsSL9Wt05EiJfZWN092+2tt5U8=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZIJCCq1dUBc85yVS1o+M5S1lhcA=
+		Ocs6W4OBzA4Pnr5E8rNQslUsOHc=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Bpyl7Epa2oHFPpXjAOutqctet6g=
+		wsPwhIse/IcY74AJwznWDm1FMY4=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZIJCCq1dUBc85yVS1o+M5S1lhcA=
+		Ocs6W4OBzA4Pnr5E8rNQslUsOHc=
 		</data>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LfK8HTFZ4BbpWl2/9KUNGNsSMpU=
+		5ju9+8t761cCBemSxV5ZyCq2Dlo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>OtpViewController.nib</key>
 		<data>
-		LW4gpJ7HHUEarkSKkKXWG4aE1lA=
+		+dHbGjvX6Ex3jtzAa6g56T8Qa4A=
 		</data>
 		<key>PasswordEntryView.nib</key>
 		<data>
@@ -126,8 +126,26 @@
 		</data>
 		<key>UserConsentVC.nib</key>
 		<data>
-		ib4ddfZEPEvUW7TWg1YJvUrzQ54=
+		M9YvIgIWhVWSAUo67/Y8c4yOato=
 		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			szx7FnJqjDXfUUJ8LJR7t5sX4L0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bgpbDgmpUHwY3Y+c//xUTktMyoY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -156,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVfktqXxTJnQBhudhXsYSqPLkZtIrJU0Brxmy7H+AvA=
+			Nt1Ha7LokFRQwyALujaTAR/vrSODL/YyuEK9Vptdri8=
 			</data>
 		</dict>
 		<key>DocumentViewController.nib</key>
@@ -205,70 +223,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			no4gX7bUh7ugEro/0oDPo2L3picPQEQOnV0StaRqeXU=
+			gYKod6vsNmK5VnaOAVldJA5YIcg+H1fR1jXAhAHcBh4=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iB3nFS196BVp1Yo56KFK1fnexQOe/1iUm4QxczgprgI=
+			zk6IEhGlYqlkpfbMySSV2cHPdAQfTns83Yd9qUTH+8U=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B/B0O17xKrWB0Eu5Kqet+7Xs/0m88+43w+ZVqRTfLkY=
+			+I9F92rDoIfoMka/LfB2aLmrMGKi7V7wKJddvXuWxf8=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iB3nFS196BVp1Yo56KFK1fnexQOe/1iUm4QxczgprgI=
+			zk6IEhGlYqlkpfbMySSV2cHPdAQfTns83Yd9qUTH+8U=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oC7MoIcumbzINvNQeAMBdgqUHz0OvX7caU35VD6u7qE=
+			1Qo6/si0faZEz07u4e2hcx42i7GDFlkrWN53jQUSSuQ=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			no4gX7bUh7ugEro/0oDPo2L3picPQEQOnV0StaRqeXU=
+			gYKod6vsNmK5VnaOAVldJA5YIcg+H1fR1jXAhAHcBh4=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bzbAwn5aMb8Ez7eu0OzEAh/+VEQ8Nqh/ItlYAuT6QxA=
+			h2aV0NaRXuMNdiM/yZ09d4Q7O4QkRyFf4H+kQvgqjIM=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			itgpDwIKqa86gOmmFqkPBNGgUEjzICvtEImqKUghi8Y=
+			jTdq2jYuKMXR4zqbYIlwmFawSXtH1iHr08iHWb43oNU=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bzbAwn5aMb8Ez7eu0OzEAh/+VEQ8Nqh/ItlYAuT6QxA=
+			h2aV0NaRXuMNdiM/yZ09d4Q7O4QkRyFf4H+kQvgqjIM=
 			</data>
 		</dict>
 		<key>Modules/WeavrComponents.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/qvRZ1uuoh1uAiXOS0OM2GhWquvAdJ0BPn4PPwYmqQk=
+			gRyc8LNrKFMLgn9ro3zDSGWhGWEP2/Wdork6FyIoQzM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -282,7 +300,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fqT8/yd0exoFpFl0DHQslhfxAUK31XBu8w2MIerE1/k=
+			RFnkq1B0GV8H6xfj27MgVp7yWmJrKa88zhH8/JyQR7c=
 			</data>
 		</dict>
 		<key>PasswordEntryView.nib</key>
@@ -338,8 +356,26 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jyI9dA7BAsqD5NEZZgPzwhs8fTZrE54QkwV5PZXU2co=
+			UVHesbUqZQ4Cb8JmEg/cRG2fF4HHnK1GBOWpSbV9l8Q=
 			</data>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/v9krGo/bAFY4opA4BLsWoxKY/QJ9kp3sHN5+2WQhXY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>it.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			99+CmlHhuA0yo47NoCRHKXtZdl6jXdiVzVWz6XxVpto=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
