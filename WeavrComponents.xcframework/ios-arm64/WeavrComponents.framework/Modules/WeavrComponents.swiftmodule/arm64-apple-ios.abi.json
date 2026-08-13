@@ -878,6 +878,651 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Traceability",
+        "printedName": "Traceability",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sessionId",
+            "printedName": "sessionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvp",
+            "mangledName": "$s15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvg",
+                "mangledName": "$s15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "operationId",
+            "printedName": "operationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvp",
+            "mangledName": "$s15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvp",
+            "moduleName": "WeavrComponents",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UUID",
+                    "printedName": "Foundation.UUID",
+                    "usr": "s:10Foundation4UUIDV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvg",
+                "mangledName": "$s15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Traceability",
+                "printedName": "WeavrComponents.Traceability",
+                "usr": "s:15WeavrComponents12TraceabilityV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Traceability",
+                "printedName": "WeavrComponents.Traceability",
+                "usr": "s:15WeavrComponents12TraceabilityV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents12TraceabilityV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15WeavrComponents12TraceabilityV2eeoiySbAC_ACtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:15WeavrComponents12TraceabilityV",
+        "mangledName": "$s15WeavrComponents12TraceabilityV",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "InternalEnvironment",
+        "printedName": "InternalEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "QA",
+            "printedName": "QA",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.InternalEnvironment.Type) -> WeavrComponents.InternalEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InternalEnvironment",
+                    "printedName": "WeavrComponents.InternalEnvironment",
+                    "usr": "s:15WeavrComponents19InternalEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.InternalEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InternalEnvironment",
+                        "printedName": "WeavrComponents.InternalEnvironment",
+                        "usr": "s:15WeavrComponents19InternalEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents19InternalEnvironmentO2QAyA2CmF",
+            "mangledName": "$s15WeavrComponents19InternalEnvironmentO2QAyA2CmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "Sandbox",
+            "printedName": "Sandbox",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.InternalEnvironment.Type) -> WeavrComponents.InternalEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InternalEnvironment",
+                    "printedName": "WeavrComponents.InternalEnvironment",
+                    "usr": "s:15WeavrComponents19InternalEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.InternalEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InternalEnvironment",
+                        "printedName": "WeavrComponents.InternalEnvironment",
+                        "usr": "s:15WeavrComponents19InternalEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents19InternalEnvironmentO7SandboxyA2CmF",
+            "mangledName": "$s15WeavrComponents19InternalEnvironmentO7SandboxyA2CmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Var",
+            "name": "Production",
+            "printedName": "Production",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WeavrComponents.InternalEnvironment.Type) -> WeavrComponents.InternalEnvironment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InternalEnvironment",
+                    "printedName": "WeavrComponents.InternalEnvironment",
+                    "usr": "s:15WeavrComponents19InternalEnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WeavrComponents.InternalEnvironment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "InternalEnvironment",
+                        "printedName": "WeavrComponents.InternalEnvironment",
+                        "usr": "s:15WeavrComponents19InternalEnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15WeavrComponents19InternalEnvironmentO10ProductionyA2CmF",
+            "mangledName": "$s15WeavrComponents19InternalEnvironmentO10ProductionyA2CmF",
+            "moduleName": "WeavrComponents"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InternalEnvironment",
+                "printedName": "WeavrComponents.InternalEnvironment",
+                "usr": "s:15WeavrComponents19InternalEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InternalEnvironment",
+                "printedName": "WeavrComponents.InternalEnvironment",
+                "usr": "s:15WeavrComponents19InternalEnvironmentO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents19InternalEnvironmentO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s15WeavrComponents19InternalEnvironmentO2eeoiySbAC_ACtFZ",
+            "moduleName": "WeavrComponents",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15WeavrComponents19InternalEnvironmentO9hashValueSivp",
+            "mangledName": "$s15WeavrComponents19InternalEnvironmentO9hashValueSivp",
+            "moduleName": "WeavrComponents",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15WeavrComponents19InternalEnvironmentO9hashValueSivg",
+                "mangledName": "$s15WeavrComponents19InternalEnvironmentO9hashValueSivg",
+                "moduleName": "WeavrComponents",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15WeavrComponents19InternalEnvironmentO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s15WeavrComponents19InternalEnvironmentO4hash4intoys6HasherVz_tF",
+            "moduleName": "WeavrComponents",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15WeavrComponents19InternalEnvironmentO",
+        "mangledName": "$s15WeavrComponents19InternalEnvironmentO",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
       {
@@ -22866,634 +23511,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "Traceability",
-        "printedName": "Traceability",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "sessionId",
-            "printedName": "sessionId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvp",
-            "mangledName": "$s15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UUID",
-                    "printedName": "Foundation.UUID",
-                    "usr": "s:10Foundation4UUIDV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvg",
-                "mangledName": "$s15WeavrComponents12TraceabilityV9sessionId10Foundation4UUIDVvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "operationId",
-            "printedName": "operationId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UUID",
-                "printedName": "Foundation.UUID",
-                "usr": "s:10Foundation4UUIDV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvp",
-            "mangledName": "$s15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvp",
-            "moduleName": "WeavrComponents",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UUID",
-                    "printedName": "Foundation.UUID",
-                    "usr": "s:10Foundation4UUIDV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvg",
-                "mangledName": "$s15WeavrComponents12TraceabilityV11operationId10Foundation4UUIDVvg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Traceability",
-                "printedName": "WeavrComponents.Traceability",
-                "usr": "s:15WeavrComponents12TraceabilityV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Traceability",
-                "printedName": "WeavrComponents.Traceability",
-                "usr": "s:15WeavrComponents12TraceabilityV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15WeavrComponents12TraceabilityV2eeoiySbAC_ACtFZ",
-            "mangledName": "$s15WeavrComponents12TraceabilityV2eeoiySbAC_ACtFZ",
-            "moduleName": "WeavrComponents",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:15WeavrComponents12TraceabilityV",
-        "mangledName": "$s15WeavrComponents12TraceabilityV",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "InternalEnvironment",
-        "printedName": "InternalEnvironment",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "QA",
-            "printedName": "QA",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WeavrComponents.InternalEnvironment.Type) -> WeavrComponents.InternalEnvironment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InternalEnvironment",
-                    "printedName": "WeavrComponents.InternalEnvironment",
-                    "usr": "s:15WeavrComponents19InternalEnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WeavrComponents.InternalEnvironment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InternalEnvironment",
-                        "printedName": "WeavrComponents.InternalEnvironment",
-                        "usr": "s:15WeavrComponents19InternalEnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15WeavrComponents19InternalEnvironmentO2QAyA2CmF",
-            "mangledName": "$s15WeavrComponents19InternalEnvironmentO2QAyA2CmF",
-            "moduleName": "WeavrComponents"
-          },
-          {
-            "kind": "Var",
-            "name": "Sandbox",
-            "printedName": "Sandbox",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WeavrComponents.InternalEnvironment.Type) -> WeavrComponents.InternalEnvironment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InternalEnvironment",
-                    "printedName": "WeavrComponents.InternalEnvironment",
-                    "usr": "s:15WeavrComponents19InternalEnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WeavrComponents.InternalEnvironment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InternalEnvironment",
-                        "printedName": "WeavrComponents.InternalEnvironment",
-                        "usr": "s:15WeavrComponents19InternalEnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15WeavrComponents19InternalEnvironmentO7SandboxyA2CmF",
-            "mangledName": "$s15WeavrComponents19InternalEnvironmentO7SandboxyA2CmF",
-            "moduleName": "WeavrComponents"
-          },
-          {
-            "kind": "Var",
-            "name": "Production",
-            "printedName": "Production",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WeavrComponents.InternalEnvironment.Type) -> WeavrComponents.InternalEnvironment",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InternalEnvironment",
-                    "printedName": "WeavrComponents.InternalEnvironment",
-                    "usr": "s:15WeavrComponents19InternalEnvironmentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WeavrComponents.InternalEnvironment.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InternalEnvironment",
-                        "printedName": "WeavrComponents.InternalEnvironment",
-                        "usr": "s:15WeavrComponents19InternalEnvironmentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15WeavrComponents19InternalEnvironmentO10ProductionyA2CmF",
-            "mangledName": "$s15WeavrComponents19InternalEnvironmentO10ProductionyA2CmF",
-            "moduleName": "WeavrComponents"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InternalEnvironment",
-                "printedName": "WeavrComponents.InternalEnvironment",
-                "usr": "s:15WeavrComponents19InternalEnvironmentO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InternalEnvironment",
-                "printedName": "WeavrComponents.InternalEnvironment",
-                "usr": "s:15WeavrComponents19InternalEnvironmentO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15WeavrComponents19InternalEnvironmentO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s15WeavrComponents19InternalEnvironmentO2eeoiySbAC_ACtFZ",
-            "moduleName": "WeavrComponents",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15WeavrComponents19InternalEnvironmentO9hashValueSivp",
-            "mangledName": "$s15WeavrComponents19InternalEnvironmentO9hashValueSivp",
-            "moduleName": "WeavrComponents",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15WeavrComponents19InternalEnvironmentO9hashValueSivg",
-                "mangledName": "$s15WeavrComponents19InternalEnvironmentO9hashValueSivg",
-                "moduleName": "WeavrComponents",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15WeavrComponents19InternalEnvironmentO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s15WeavrComponents19InternalEnvironmentO4hash4intoys6HasherVz_tF",
-            "moduleName": "WeavrComponents",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:15WeavrComponents19InternalEnvironmentO",
-        "mangledName": "$s15WeavrComponents19InternalEnvironmentO",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "WeavrComponents",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
       {
@@ -23584,6 +23601,13 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "WeavrComponents"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "WeavrComponents"
       },
@@ -24946,545 +24970,6 @@
       "value": "\"PASSWORD\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/encryption\/RSA\/RSA.swift",
-      "kind": "IntegerLiteral",
-      "offset": 583,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/data\/WeavrKycResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 328,
-      "length": 16,
-      "value": "\"externalUserId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/data\/WeavrKyiResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 385,
-      "length": 16,
-      "value": "\"externalUserId\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsItemView\/TermsItemView.swift",
-      "kind": "StringLiteral",
-      "offset": 424,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsItemView\/TermsItemView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 463,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsViewController\/TermsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 62,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsViewController\/TermsViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 89,
-      "length": 3,
-      "value": "\"2\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/deprecated\/WeavrRepo.swift",
-      "kind": "StringLiteral",
-      "offset": 309,
-      "length": 37,
-      "value": "\"UXComponents need to be initialised\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/deprecated\/WeavrRepo.swift",
-      "kind": "StringLiteral",
-      "offset": 384,
-      "length": 60,
-      "value": "\"No user has been associated. Make sure you have logged in.\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/deprecated\/WeavrRepo.swift",
-      "kind": "StringLiteral",
-      "offset": 479,
-      "length": 19,
-      "value": "\"Missing device id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/SecuredAPIClient.swift",
-      "kind": "StringLiteral",
-      "offset": 268,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 99,
-      "length": 2,
-      "value": "64"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 130,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 156,
-      "length": 2,
-      "value": "56"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 182,
-      "length": 2,
-      "value": "52"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 215,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 249,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 282,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 309,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 339,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 363,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 384,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 413,
-      "length": 3,
-      "value": "173"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 455,
-      "length": 3,
-      "value": "174"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 503,
-      "length": 3,
-      "value": "175"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 537,
-      "length": 3,
-      "value": "176"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 587,
-      "length": 3,
-      "value": "177"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 625,
-      "length": 3,
-      "value": "178"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 662,
-      "length": 3,
-      "value": "179"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 693,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 736,
-      "length": 3,
-      "value": "181"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 770,
-      "length": 3,
-      "value": "182"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 799,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 864,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 926,
-      "length": 3,
-      "value": "103"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 994,
-      "length": 3,
-      "value": "104"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1053,
-      "length": 3,
-      "value": "105"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1117,
-      "length": 3,
-      "value": "106"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "Array",
-      "offset": 466,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 510,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "BooleanLiteral",
-      "offset": 541,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "BooleanLiteral",
-      "offset": 691,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "FloatLiteral",
-      "offset": 861,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "FloatLiteral",
-      "offset": 938,
-      "length": 3,
-      "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "FloatLiteral",
-      "offset": 1014,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "FloatLiteral",
-      "offset": 1079,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "Array",
-      "offset": 1122,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5447,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecureTextField.swift",
-      "kind": "StringLiteral",
-      "offset": 498,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/labels\/SecureCardNumberLabel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 111,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 781,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1142,
-      "length": 4,
-      "value": "1001"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1393,
-      "length": 4,
-      "value": "1002"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1727,
-      "length": 4,
-      "value": "1003"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1950,
-      "length": 4,
-      "value": "1004"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2182,
-      "length": 4,
-      "value": "1005"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2308,
-      "length": 4,
-      "value": "2001"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 923,
-      "length": 9,
-      "value": "\"#000000\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1031,
-      "length": 9,
-      "value": "\"#ffffff\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1151,
-      "length": 9,
-      "value": "\"#0086FF\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1415,
-      "length": 9,
-      "value": "\"#B8D0E6\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 1538,
-      "length": 9,
-      "value": "\"#CACCD3\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2610,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3284,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4344,
-      "length": 6,
-      "value": "\"#ff0\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4400,
-      "length": 6,
-      "value": "\"#0F0\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4456,
-      "length": 6,
-      "value": "\"#F00\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4510,
-      "length": 6,
-      "value": "\"#00f\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4564,
-      "length": 6,
-      "value": "\"#00f\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4628,
-      "length": 6,
-      "value": "\"#040\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4681,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4748,
-      "length": 6,
-      "value": "\"#550\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 4800,
-      "length": 6,
-      "value": "\"#f0f\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/UXComponents.swift",
-      "kind": "StringLiteral",
-      "offset": 117,
-      "length": 30,
-      "value": "\"ui_components_and_biometrics\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/WeavrComponentsFeatureFlags.swift",
-      "kind": "StringLiteral",
-      "offset": 894,
-      "length": 39,
-      "value": "\"io.weavr.WeavrComponents.featureFlags\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/WeavrComponentsFeatureFlags.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1001,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/WeavrComponentsMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 329,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/Common\/analytics\/specs\/EventCategory.swift",
       "kind": "StringLiteral",
       "offset": 156,
@@ -26222,9 +25707,23 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/Common\/logging\/Logging.swift",
       "kind": "BooleanLiteral",
-      "offset": 164,
+      "offset": 198,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/Common\/logging\/Logging.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 14,
+      "value": "\"io.weavr.sdk\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/Common\/logging\/Logging.swift",
+      "kind": "StringLiteral",
+      "offset": 323,
+      "length": 5,
+      "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/Common\/networking\/apiclient\/APIClient.swift",
@@ -26339,6 +25838,545 @@
       "value": "409"
     },
     {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/encryption\/RSA\/RSA.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/data\/WeavrKycResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 328,
+      "length": 16,
+      "value": "\"externalUserId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/data\/WeavrKyiResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 385,
+      "length": 16,
+      "value": "\"externalUserId\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsItemView\/TermsItemView.swift",
+      "kind": "StringLiteral",
+      "offset": 424,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsItemView\/TermsItemView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 463,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsViewController\/TermsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 62,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/kyc\/Terms&Conditions\/TermsViewController\/TermsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 89,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/deprecated\/WeavrRepo.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 37,
+      "value": "\"UXComponents need to be initialised\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/deprecated\/WeavrRepo.swift",
+      "kind": "StringLiteral",
+      "offset": 384,
+      "length": 60,
+      "value": "\"No user has been associated. Make sure you have logged in.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/deprecated\/WeavrRepo.swift",
+      "kind": "StringLiteral",
+      "offset": 479,
+      "length": 19,
+      "value": "\"Missing device id\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/networking\/SecuredAPIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 99,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 130,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 156,
+      "length": 2,
+      "value": "56"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 182,
+      "length": 2,
+      "value": "52"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 215,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 249,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 282,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 309,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 339,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 363,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 384,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 413,
+      "length": 3,
+      "value": "173"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 455,
+      "length": 3,
+      "value": "174"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 3,
+      "value": "175"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 537,
+      "length": 3,
+      "value": "176"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 587,
+      "length": 3,
+      "value": "177"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 625,
+      "length": 3,
+      "value": "178"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 662,
+      "length": 3,
+      "value": "179"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 693,
+      "length": 3,
+      "value": "180"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 736,
+      "length": 3,
+      "value": "181"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 770,
+      "length": 3,
+      "value": "182"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 799,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 864,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 926,
+      "length": 3,
+      "value": "103"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 994,
+      "length": 3,
+      "value": "104"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1053,
+      "length": 3,
+      "value": "105"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/biometrics\/WeavrPSASharedStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1117,
+      "length": 3,
+      "value": "106"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "Array",
+      "offset": 466,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 510,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 541,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 691,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "FloatLiteral",
+      "offset": 861,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "FloatLiteral",
+      "offset": 938,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "FloatLiteral",
+      "offset": 1014,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "FloatLiteral",
+      "offset": 1079,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "Array",
+      "offset": 1122,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecurePasscodeFieldStack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5447,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/fields\/SecureTextField.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/components\/labels\/SecureCardNumberLabel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 111,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 781,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1142,
+      "length": 4,
+      "value": "1001"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1393,
+      "length": 4,
+      "value": "1002"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1727,
+      "length": 4,
+      "value": "1003"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1950,
+      "length": 4,
+      "value": "1004"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2182,
+      "length": 4,
+      "value": "1005"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/network\/ErrorResponse.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2308,
+      "length": 4,
+      "value": "2001"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 923,
+      "length": 9,
+      "value": "\"#000000\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1031,
+      "length": 9,
+      "value": "\"#ffffff\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1151,
+      "length": 9,
+      "value": "\"#0086FF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1415,
+      "length": 9,
+      "value": "\"#B8D0E6\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1538,
+      "length": 9,
+      "value": "\"#CACCD3\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2610,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3284,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4344,
+      "length": 6,
+      "value": "\"#ff0\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4400,
+      "length": 6,
+      "value": "\"#0F0\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4456,
+      "length": 6,
+      "value": "\"#F00\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4510,
+      "length": 6,
+      "value": "\"#00f\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4564,
+      "length": 6,
+      "value": "\"#00f\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4628,
+      "length": 6,
+      "value": "\"#040\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4681,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4748,
+      "length": 6,
+      "value": "\"#550\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/BrandingConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 4800,
+      "length": 6,
+      "value": "\"#f0f\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/UXComponents.swift",
+      "kind": "StringLiteral",
+      "offset": 117,
+      "length": 30,
+      "value": "\"ui_components_and_biometrics\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/WeavrComponentsFeatureFlags.swift",
+      "kind": "StringLiteral",
+      "offset": 894,
+      "length": 39,
+      "value": "\"io.weavr.WeavrComponents.featureFlags\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/WeavrComponentsFeatureFlags.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1001,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/public\/WeavrComponentsMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 329,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/Keychain\/KeychainOperations.swift",
       "kind": "StringLiteral",
       "offset": 798,
@@ -26418,91 +26456,91 @@
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2625,
+      "offset": 130,
       "length": 13,
       "value": "\"_num_chunks\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2666,
+      "offset": 171,
       "length": 9,
       "value": "\"_chunk_\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2712,
+      "offset": 217,
       "length": 18,
       "value": "\"passcodeLength94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2762,
+      "offset": 267,
       "length": 9,
       "value": "\"uiKey94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2807,
+      "offset": 312,
       "length": 13,
       "value": "\"randomKey94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 359,
       "length": 15,
       "value": "\"bearerToken94\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2906,
+      "offset": 411,
       "length": 16,
       "value": "\"encryptedNonce\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 2964,
+      "offset": 469,
       "length": 21,
       "value": "\"isReadyForEnrolment\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3023,
+      "offset": 528,
       "length": 25,
       "value": "\"pushNotificationEnabled\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3083,
+      "offset": 588,
       "length": 14,
       "value": "\"enrolmentKey\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3133,
+      "offset": 638,
       "length": 15,
       "value": "\"appCheckToken\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3188,
+      "offset": 693,
       "length": 19,
       "value": "\"deviceFingerprint\""
     },
     {
       "filePath": "\/Users\/runner\/work\/mobile-sdk-native-ios\/mobile-sdk-native-ios\/WeavrComponents\/utils\/UserDefaults\/UserDefaultsOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3242,
+      "offset": 747,
       "length": 14,
       "value": "\"fcmTokenHash\""
     },

@@ -8,6 +8,7 @@ import DeveloperToolsSupport
 import Foundation
 import IdensicMobileSDK
 import LocalAuthentication
+import OSLog
 import Security
 import Swift
 import SwiftUI
@@ -15,6 +16,21 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct Traceability : Swift.Sendable, Swift.Equatable {
+  public let sessionId: Foundation.UUID
+  public let operationId: Foundation.UUID
+  public static func == (a: WeavrComponents.Traceability, b: WeavrComponents.Traceability) -> Swift.Bool
+}
+public enum InternalEnvironment {
+  case QA
+  case Sandbox
+  case Production
+  public static func == (a: WeavrComponents.InternalEnvironment, b: WeavrComponents.InternalEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension WeavrComponents.ErrorResponse {
   @available(*, deprecated, message: "In the future this value will be removed.")
   public var body: Swift.String? {
@@ -650,21 +666,8 @@ public enum WeavrComponentsFeatureFlags {
 public enum WeavrComponentsMetadata {
   public static var platformPrefix: Swift.String
 }
-public struct Traceability : Swift.Sendable, Swift.Equatable {
-  public let sessionId: Foundation.UUID
-  public let operationId: Foundation.UUID
-  public static func == (a: WeavrComponents.Traceability, b: WeavrComponents.Traceability) -> Swift.Bool
-}
-public enum InternalEnvironment {
-  case QA
-  case Sandbox
-  case Production
-  public static func == (a: WeavrComponents.InternalEnvironment, b: WeavrComponents.InternalEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
+extension WeavrComponents.InternalEnvironment : Swift.Equatable {}
+extension WeavrComponents.InternalEnvironment : Swift.Hashable {}
 @available(*, deprecated, message: "Please avoid using `PsaEnv` as it will be removed in the future.")
 extension WeavrComponents.PsaENV : Swift.Equatable {}
 @available(*, deprecated, message: "Please avoid using `PsaEnv` as it will be removed in the future.")
@@ -690,5 +693,3 @@ extension WeavrComponents.AuthenticationType : Swift.Hashable {}
 extension WeavrComponents.WeavrErrorCode : Swift.Equatable {}
 extension WeavrComponents.WeavrErrorCode : Swift.Hashable {}
 extension WeavrComponents.WeavrErrorCode : Swift.RawRepresentable {}
-extension WeavrComponents.InternalEnvironment : Swift.Equatable {}
-extension WeavrComponents.InternalEnvironment : Swift.Hashable {}
